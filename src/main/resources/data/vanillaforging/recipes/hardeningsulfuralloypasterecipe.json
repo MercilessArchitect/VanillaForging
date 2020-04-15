@@ -1,0 +1,11 @@
+{
+  "group": "vanillaforging",
+  "type": "minecraft:campfire_cooking",
+  "experience": 8,
+  "ingredient": {
+    "item": "vanillaforging:sulfuralloypaste"
+  },
+  "result": {
+    "item": "vanillaforging:hardeningsulfuralloypaste"
+  }
+}

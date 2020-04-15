@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "vanillaforging:block/smithingbrickslab"
+    },
+    "type=top": {
+      "model": "vanillaforging:block/smithingbrickslab_top"
+    },
+    "type=double": {
+      "model": "vanillaforging:block/smithingbrickslab_full"
+    }
+  }
+}

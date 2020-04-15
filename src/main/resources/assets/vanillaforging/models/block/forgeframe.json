@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "vanillaforging:blocks/forge_frame",
+    "up": "vanillaforging:blocks/forge_frame",
+    "north": "vanillaforging:blocks/forge_frame",
+    "east": "vanillaforging:blocks/forge_frame",
+    "south": "vanillaforging:blocks/forge_frame",
+    "west": "vanillaforging:blocks/forge_frame",
+    "particle": "vanillaforging:blocks/forge_frame"
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "group": "vanillaforging",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "vanillaforging:daoriteingot"
+    },
+    "1": {
+      "item": "vanillaforging:daoriteingot"
+    },
+    "2": {
+      "item": "vanillaforging:daoriteingot"
+    },
+    "3": {
+      "item": "vanillaforging:daoriteingot"
+    },
+    "4": {
+      "item": "vanillaforging:daoriteingot"
+    },
+    "5": {
+      "item": "vanillaforging:daoriteingot"
+    },
+    "6": {
+      "item": "vanillaforging:daoriteingot"
+    },
+    "7": {
+      "item": "vanillaforging:daoriteingot"
+    },
+    "8": {
+      "item": "vanillaforging:daoriteingot"
+    }
+  },
+  "result": {
+    "item": "vanillaforging:daoriteoreblock",
+    "count": 1
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "vanillaforging:blocks/smithing_brick_end",
+    "up": "vanillaforging:blocks/smithing_brick_end",
+    "north": "vanillaforging:blocks/smithing_brick_end",
+    "east": "vanillaforging:blocks/smithing_brick_end",
+    "south": "vanillaforging:blocks/smithing_brick_end",
+    "west": "vanillaforging:blocks/smithing_brick_end",
+    "particle": "vanillaforging:blocks/smithing_brick_end"
+  }
+}

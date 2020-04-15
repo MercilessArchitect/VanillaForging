@@ -1,0 +1,7 @@
+{
+  "parent": "block/fence_side",
+  "textures": {
+    "texture": "vanillaforging:blocks/light_smithingbrick_block_top",
+    "particle": "vanillaforging:blocks/light_smithingbrick_block_top"
+  }
+}

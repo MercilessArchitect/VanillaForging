@@ -1,0 +1,19 @@
+{
+  "_fv": 6,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Campfire cooking",
+    "xpReward": 1.0,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "campfireCookingInputStack": {
+      "value": "CUSTOM:WeakCastingAlloy"
+    },
+    "campfireCookingReturnStack": {
+      "value": "CUSTOM:Firmweakcastingalloy"
+    },
+    "name": "weakcastingalloystrong",
+    "namespace": "mod"
+  }
+}

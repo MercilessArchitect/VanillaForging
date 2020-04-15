@@ -1,0 +1,101 @@
+{
+  "_fv": 6,
+  "_type": "block",
+  "definition": {
+    "texture": "greenstone_podzol_base",
+    "textureTop": "greenstone_podzol_top",
+    "textureLeft": "greenstone_podzol",
+    "textureFront": "greenstone_podzol",
+    "textureRight": "greenstone_podzol",
+    "textureBack": "greenstone_podzol",
+    "renderType": 10,
+    "customModelName": "Normal",
+    "rotationMode": 0,
+    "hasTransparency": false,
+    "transparencyType": "SOLID",
+    "mx": 0.0,
+    "my": 0.0,
+    "mz": 0.0,
+    "Mx": 1.0,
+    "My": 1.0,
+    "Mz": 1.0,
+    "faceShape": "SOLID",
+    "name": "Greenstone Podzol",
+    "specialInfo": [],
+    "hardness": 1.0,
+    "resistance": 3.0,
+    "hasGravity": true,
+    "creativeTab": {
+      "value": "CUSTOM:MainForgeParts"
+    },
+    "destroyTool": "shovel",
+    "affectedBySilkTouch": true,
+    "customDrop": {
+      "value": "CUSTOM:Greenstonedust"
+    },
+    "dropAmount": 1,
+    "isBeaconBase": false,
+    "enchantPowerBonus": 0.0,
+    "plantsGrowOn": true,
+    "canProvidePower": false,
+    "lightOpacity": 255,
+    "material": {
+      "value": "GRASS"
+    },
+    "tickRate": 10,
+    "tickRandomly": false,
+    "isReplaceable": false,
+    "colorOnMap": "DEFAULT",
+    "creativePickItem": {
+      "value": ""
+    },
+    "flammability": 0,
+    "fireSpreadSpeed": 0,
+    "isLadder": false,
+    "slipperiness": 0.6,
+    "reactionToPushing": "NORMAL",
+    "isNotColidable": false,
+    "soundOnStep": {
+      "value": "GROUND"
+    },
+    "luminance": 0.0,
+    "unbreakable": false,
+    "breakHarvestLevel": 2,
+    "spawnParticles": false,
+    "particleToSpawn": {
+      "value": "EXPLOSION_NORMAL"
+    },
+    "particleSpawningShape": "Spread",
+    "particleSpawningRadious": 0.5,
+    "particleAmount": 4,
+    "particleSpawningCondition": "ALWAYS",
+    "hasInventory": false,
+    "guiBoundTo": "<NONE>",
+    "openGUIOnRightClick": false,
+    "inventorySize": 9,
+    "inventoryStackSize": 64,
+    "inventoryDropWhenDestroyed": true,
+    "inventoryComparatorPower": true,
+    "inventoryOutSlotIDs": [],
+    "spawnWorldTypes": [
+      "Surface"
+    ],
+    "restrictionBiomes": [
+      {
+        "value": "CUSTOM:Orousforest"
+      }
+    ],
+    "blocksToReplace": [
+      {
+        "value": "Blocks.DIRT#2"
+      },
+      {
+        "value": "Blocks.DIRT#1"
+      }
+    ],
+    "frequencyPerChunks": 30,
+    "frequencyOnChunk": 5,
+    "minGenerateHeight": 55,
+    "maxGenerateHeight": 80
+  }
+}

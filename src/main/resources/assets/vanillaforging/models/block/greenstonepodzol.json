@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "vanillaforging:blocks/greenstone_podzol_base",
+    "up": "vanillaforging:blocks/greenstone_podzol_top",
+    "north": "vanillaforging:blocks/greenstone_podzol",
+    "east": "vanillaforging:blocks/greenstone_podzol",
+    "south": "vanillaforging:blocks/greenstone_podzol",
+    "west": "vanillaforging:blocks/greenstone_podzol",
+    "particle": "vanillaforging:blocks/greenstone_podzol_base"
+  }
+}

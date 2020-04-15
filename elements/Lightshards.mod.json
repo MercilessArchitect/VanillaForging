@@ -1,0 +1,27 @@
+{
+  "_fv": 6,
+  "_type": "item",
+  "definition": {
+    "renderType": 0,
+    "texture": "light_shards",
+    "customModelName": "Normal",
+    "name": "Light Shards",
+    "creativeTab": {
+      "value": "CUSTOM:MainForgeParts"
+    },
+    "stackSize": 64,
+    "enchantability": 0,
+    "useDuration": 0,
+    "toolType": 1.0,
+    "damageCount": 0,
+    "destroyAnyBlock": false,
+    "stayInGridWhenCrafting": false,
+    "enableMeleeDamage": false,
+    "damageVsEntity": 0.0,
+    "specialInfo": [
+      "shattered parts of a larger crystal formation",
+      "possibly from another dimension"
+    ],
+    "hasGlow": false
+  }
+}

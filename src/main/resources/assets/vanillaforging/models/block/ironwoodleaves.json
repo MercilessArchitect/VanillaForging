@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "vanillaforging:blocks/ironwood_leaves",
+    "up": "vanillaforging:blocks/ironwood_leaves",
+    "north": "vanillaforging:blocks/ironwood_leaves",
+    "east": "vanillaforging:blocks/ironwood_leaves",
+    "south": "vanillaforging:blocks/ironwood_leaves",
+    "west": "vanillaforging:blocks/ironwood_leaves",
+    "particle": "vanillaforging:blocks/ironwood_leaves"
+  }
+}

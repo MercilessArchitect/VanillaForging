@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "vanillaforging:blocks/daorite_ore",
+    "particle": "vanillaforging:blocks/daorite_ore"
+  }
+}

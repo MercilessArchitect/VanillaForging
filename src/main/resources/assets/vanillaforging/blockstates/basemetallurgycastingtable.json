@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "vanillaforging:block/basemetallurgycastingtable"
+    },
+    "facing=east": {
+      "model": "vanillaforging:block/basemetallurgycastingtable",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "vanillaforging:block/basemetallurgycastingtable",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "vanillaforging:block/basemetallurgycastingtable",
+      "y": 270
+    }
+  }
+}

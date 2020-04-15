@@ -1,0 +1,33 @@
+{
+  "group": "vanillaforging",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0  ",
+    "34 ",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "vanillaforging:smithingbrick"
+    },
+    "3": {
+      "item": "vanillaforging:smithingbrick"
+    },
+    "4": {
+      "item": "vanillaforging:smithingbrick"
+    },
+    "6": {
+      "item": "vanillaforging:smithingbrick"
+    },
+    "7": {
+      "item": "vanillaforging:smithingbrick"
+    },
+    "8": {
+      "item": "vanillaforging:smithingbrick"
+    }
+  },
+  "result": {
+    "item": "vanillaforging:smithingbrickstairs",
+    "count": 8
+  }
+}

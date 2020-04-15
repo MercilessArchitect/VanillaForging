@@ -1,0 +1,22 @@
+{
+  "group": "vanillaforging",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012"
+  ],
+  "key": {
+    "0": {
+      "item": "vanillaforging:lightsmithingbrick"
+    },
+    "1": {
+      "item": "vanillaforging:lightsmithingbrick"
+    },
+    "2": {
+      "item": "vanillaforging:lightsmithingbrick"
+    }
+  },
+  "result": {
+    "item": "vanillaforging:lightsmithingbrickslab",
+    "count": 2
+  }
+}

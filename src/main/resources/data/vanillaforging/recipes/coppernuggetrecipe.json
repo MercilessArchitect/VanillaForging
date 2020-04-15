@@ -1,0 +1,16 @@
+{
+  "group": "vanillaforging",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0"
+  ],
+  "key": {
+    "0": {
+      "item": "vanillaforging:copperingot"
+    }
+  },
+  "result": {
+    "item": "vanillaforging:coppernugget",
+    "count": 9
+  }
+}

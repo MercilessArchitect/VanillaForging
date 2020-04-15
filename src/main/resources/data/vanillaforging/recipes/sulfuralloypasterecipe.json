@@ -1,0 +1,37 @@
+{
+  "group": "vanillaforging",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "vanillaforging:coaldust"
+    },
+    {
+      "item": "vanillaforging:sulfurdust"
+    },
+    {
+      "item": "minecraft:gunpowder"
+    },
+    {
+      "item": "minecraft:clay_ball"
+    },
+    {
+      "item": "minecraft:lava_bucket"
+    },
+    {
+      "item": "minecraft:clay_ball"
+    },
+    {
+      "item": "minecraft:gunpowder"
+    },
+    {
+      "item": "vanillaforging:sulfurdust"
+    },
+    {
+      "item": "vanillaforging:coaldust"
+    }
+  ],
+  "result": {
+    "item": "vanillaforging:sulfuralloypaste",
+    "count": 2
+  }
+}

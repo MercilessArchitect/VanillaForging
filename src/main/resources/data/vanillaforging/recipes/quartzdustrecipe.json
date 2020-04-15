@@ -1,0 +1,9 @@
+{
+  "group": "vanillaforging",
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "minecraft:quartz"
+  },
+  "result": "vanillaforging:quartzdust"
+}

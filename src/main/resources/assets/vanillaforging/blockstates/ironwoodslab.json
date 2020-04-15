@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "vanillaforging:block/ironwoodslab"
+    },
+    "type=top": {
+      "model": "vanillaforging:block/ironwoodslab_top"
+    },
+    "type=double": {
+      "model": "vanillaforging:block/ironwoodslab_full"
+    }
+  }
+}

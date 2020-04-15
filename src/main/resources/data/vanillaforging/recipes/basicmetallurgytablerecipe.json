@@ -1,0 +1,42 @@
+{
+  "group": "vanillaforging",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "vanillaforging:sulfursteelingot"
+    },
+    "1": {
+      "item": "vanillaforging:ironwoodcraftingtable"
+    },
+    "2": {
+      "item": "vanillaforging:sulfursteelingot"
+    },
+    "3": {
+      "item": "minecraft:experience_bottle"
+    },
+    "4": {
+      "item": "minecraft:popped_chorus_fruit"
+    },
+    "5": {
+      "item": "minecraft:experience_bottle"
+    },
+    "6": {
+      "item": "vanillaforging:sulfursteelingot"
+    },
+    "7": {
+      "item": "vanillaforging:lightsmithingbrickslab"
+    },
+    "8": {
+      "item": "vanillaforging:sulfursteelingot"
+    }
+  },
+  "result": {
+    "item": "vanillaforging:basicmetallurgytable",
+    "count": 1
+  }
+}

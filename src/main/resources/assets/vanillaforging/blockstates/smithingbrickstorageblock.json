@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "vanillaforging:block/smithingbrickstorageblock"
+    }
+  }
+}

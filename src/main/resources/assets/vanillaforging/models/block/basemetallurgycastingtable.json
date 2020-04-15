@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "vanillaforging:blocks/light_smithingbrick_block_top",
+    "up": "vanillaforging:blocks/asic_metallurgy_casting_top",
+    "north": "vanillaforging:blocks/asic_metallurgy_casting_front",
+    "east": "vanillaforging:blocks/asic_metallurgy_casting_side",
+    "south": "vanillaforging:blocks/asic_metallurgy_table_back",
+    "west": "vanillaforging:blocks/basic_casting_side",
+    "particle": "vanillaforging:blocks/light_smithingbrick_block_top"
+  }
+}

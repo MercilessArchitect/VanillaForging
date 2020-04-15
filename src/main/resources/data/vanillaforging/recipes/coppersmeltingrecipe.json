@@ -1,0 +1,11 @@
+{
+  "group": "vanillaforging",
+  "type": "minecraft:blasting",
+  "experience": 8,
+  "ingredient": {
+    "item": "vanillaforging:copperore"
+  },
+  "result": {
+    "item": "vanillaforging:copperingot"
+  }
+}

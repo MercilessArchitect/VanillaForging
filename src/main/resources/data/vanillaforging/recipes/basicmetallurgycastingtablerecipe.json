@@ -1,0 +1,42 @@
+{
+  "group": "vanillaforging",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "vanillaforging:castingalloyingot"
+    },
+    "1": {
+      "item": "vanillaforging:ironwoodcraftingtable"
+    },
+    "2": {
+      "item": "vanillaforging:castingalloyingot"
+    },
+    "3": {
+      "item": "minecraft:experience_bottle"
+    },
+    "4": {
+      "item": "minecraft:piston"
+    },
+    "5": {
+      "item": "minecraft:experience_bottle"
+    },
+    "6": {
+      "item": "vanillaforging:sulfursteelingot"
+    },
+    "7": {
+      "item": "vanillaforging:smithingbrickslab"
+    },
+    "8": {
+      "item": "vanillaforging:sulfursteelingot"
+    }
+  },
+  "result": {
+    "item": "vanillaforging:basemetallurgycastingtable",
+    "count": 1
+  }
+}

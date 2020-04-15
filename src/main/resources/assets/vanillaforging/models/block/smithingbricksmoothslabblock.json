@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "vanillaforging:blocks/smithing_brick_top",
+    "up": "vanillaforging:blocks/smithing_brick_top",
+    "north": "vanillaforging:blocks/smithing_brick_top",
+    "east": "vanillaforging:blocks/smithing_brick_top",
+    "south": "vanillaforging:blocks/smithing_brick_top",
+    "west": "vanillaforging:blocks/smithing_brick_top",
+    "particle": "vanillaforging:blocks/smithing_brick_top"
+  }
+}

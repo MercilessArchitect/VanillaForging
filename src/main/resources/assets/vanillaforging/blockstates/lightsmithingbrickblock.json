@@ -1,0 +1,27 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "vanillaforging:block/lightsmithingbrickblock"
+    },
+    "facing=east": {
+      "model": "vanillaforging:block/lightsmithingbrickblock",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "vanillaforging:block/lightsmithingbrickblock",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "vanillaforging:block/lightsmithingbrickblock",
+      "y": 270
+    },
+    "facing=up": {
+      "model": "vanillaforging:block/lightsmithingbrickblock",
+      "x": 270
+    },
+    "facing=down": {
+      "model": "vanillaforging:block/lightsmithingbrickblock",
+      "x": 90
+    }
+  }
+}

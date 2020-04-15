@@ -1,0 +1,7 @@
+{
+  "parent": "block/template_wall_side",
+  "textures": {
+    "wall": "vanillaforging:blocks/light_smithingbrick_block_top",
+    "particle": "vanillaforging:blocks/light_smithingbrick_block_top"
+  }
+}

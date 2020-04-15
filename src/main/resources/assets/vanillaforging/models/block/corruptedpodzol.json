@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "vanillaforging:blocks/dirt_base",
+    "up": "vanillaforging:blocks/corrupted_podzol_top",
+    "north": "vanillaforging:blocks/corrupted_podzol_side",
+    "east": "vanillaforging:blocks/corrupted_podzol_side",
+    "south": "vanillaforging:blocks/corrupted_podzol_side",
+    "west": "vanillaforging:blocks/corrupted_podzol_side",
+    "particle": "vanillaforging:blocks/dirt_base"
+  }
+}

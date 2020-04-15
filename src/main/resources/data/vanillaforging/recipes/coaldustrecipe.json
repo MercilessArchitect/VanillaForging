@@ -1,0 +1,9 @@
+{
+  "group": "vanillaforging",
+  "type": "minecraft:stonecutting",
+  "count": 4,
+  "ingredient": {
+    "item": "minecraft:coal_ore"
+  },
+  "result": "vanillaforging:coaldust"
+}

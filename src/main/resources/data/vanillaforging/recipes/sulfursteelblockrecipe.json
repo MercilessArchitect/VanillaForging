@@ -1,0 +1,42 @@
+{
+  "group": "vanillaforging",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "vanillaforging:sulfursteelingot"
+    },
+    "1": {
+      "item": "vanillaforging:sulfursteelingot"
+    },
+    "2": {
+      "item": "vanillaforging:sulfursteelingot"
+    },
+    "3": {
+      "item": "vanillaforging:sulfursteelingot"
+    },
+    "4": {
+      "item": "vanillaforging:sulfursteelingot"
+    },
+    "5": {
+      "item": "vanillaforging:sulfursteelingot"
+    },
+    "6": {
+      "item": "vanillaforging:sulfursteelingot"
+    },
+    "7": {
+      "item": "vanillaforging:sulfursteelingot"
+    },
+    "8": {
+      "item": "vanillaforging:sulfursteelingot"
+    }
+  },
+  "result": {
+    "item": "vanillaforging:sulfursteelblock",
+    "count": 1
+  }
+}

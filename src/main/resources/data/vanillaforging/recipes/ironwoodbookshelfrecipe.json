@@ -1,0 +1,42 @@
+{
+  "group": "vanillaforging",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "vanillaforging:ironwoodplanks"
+    },
+    "1": {
+      "item": "vanillaforging:ironwoodplanks"
+    },
+    "2": {
+      "item": "vanillaforging:ironwoodplanks"
+    },
+    "3": {
+      "item": "minecraft:book"
+    },
+    "4": {
+      "item": "minecraft:book"
+    },
+    "5": {
+      "item": "minecraft:book"
+    },
+    "6": {
+      "item": "vanillaforging:ironwoodplanks"
+    },
+    "7": {
+      "item": "vanillaforging:ironwoodplanks"
+    },
+    "8": {
+      "item": "vanillaforging:ironwoodplanks"
+    }
+  },
+  "result": {
+    "item": "vanillaforging:ironwoodbookshelf",
+    "count": 1
+  }
+}

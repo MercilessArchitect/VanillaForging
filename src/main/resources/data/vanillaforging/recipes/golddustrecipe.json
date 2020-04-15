@@ -1,0 +1,9 @@
+{
+  "group": "vanillaforging",
+  "type": "minecraft:stonecutting",
+  "count": 2,
+  "ingredient": {
+    "item": "minecraft:gold_ore"
+  },
+  "result": "vanillaforging:sulfurdust"
+}

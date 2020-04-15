@@ -1,0 +1,30 @@
+{
+  "group": "vanillaforging",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " 1 ",
+    "345",
+    " 7 "
+  ],
+  "key": {
+    "1": {
+      "item": "vanillaforging:lightshards"
+    },
+    "3": {
+      "item": "minecraft:redstone"
+    },
+    "4": {
+      "item": "vanillaforging:smithingbrick"
+    },
+    "5": {
+      "item": "minecraft:redstone"
+    },
+    "7": {
+      "item": "vanillaforging:lightshards"
+    }
+  },
+  "result": {
+    "item": "vanillaforging:lightsmithingbrick",
+    "count": 2
+  }
+}

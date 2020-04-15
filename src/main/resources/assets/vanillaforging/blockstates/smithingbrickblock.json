@@ -1,0 +1,27 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "vanillaforging:block/smithingbrickblock"
+    },
+    "facing=east": {
+      "model": "vanillaforging:block/smithingbrickblock",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "vanillaforging:block/smithingbrickblock",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "vanillaforging:block/smithingbrickblock",
+      "y": 270
+    },
+    "facing=up": {
+      "model": "vanillaforging:block/smithingbrickblock",
+      "x": 270
+    },
+    "facing=down": {
+      "model": "vanillaforging:block/smithingbrickblock",
+      "x": 90
+    }
+  }
+}

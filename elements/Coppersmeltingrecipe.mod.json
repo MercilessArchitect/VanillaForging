@@ -1,0 +1,19 @@
+{
+  "_fv": 6,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Blasting",
+    "xpReward": 8.0,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "blastingInputStack": {
+      "value": "CUSTOM:CopperOre"
+    },
+    "blastingReturnStack": {
+      "value": "CUSTOM:Copperingot"
+    },
+    "name": "coppersmeltingrecipe",
+    "namespace": "mod"
+  }
+}

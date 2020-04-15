@@ -1,0 +1,42 @@
+{
+  "group": "vanillaforging",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "vanillaforging:lightshards"
+    },
+    "1": {
+      "item": "vanillaforging:golddust"
+    },
+    "2": {
+      "item": "vanillaforging:quartzdust"
+    },
+    "3": {
+      "item": "vanillaforging:golddust"
+    },
+    "4": {
+      "item": "minecraft:clay_ball"
+    },
+    "5": {
+      "item": "vanillaforging:golddust"
+    },
+    "6": {
+      "item": "vanillaforging:quartzdust"
+    },
+    "7": {
+      "item": "vanillaforging:golddust"
+    },
+    "8": {
+      "item": "vanillaforging:lightshards"
+    }
+  },
+  "result": {
+    "item": "vanillaforging:hardenedsulfursteelingot",
+    "count": 1
+  }
+}

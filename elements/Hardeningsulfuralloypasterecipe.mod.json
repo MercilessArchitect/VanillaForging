@@ -1,0 +1,19 @@
+{
+  "_fv": 6,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Campfire cooking",
+    "xpReward": 8.0,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "campfireCookingInputStack": {
+      "value": "CUSTOM:Sulfuralloypaste"
+    },
+    "campfireCookingReturnStack": {
+      "value": "CUSTOM:HardeningSulfurAlloyPaste"
+    },
+    "name": "hardeningsulfuralloypasterecipe",
+    "namespace": "mod"
+  }
+}

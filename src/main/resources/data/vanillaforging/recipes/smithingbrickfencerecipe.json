@@ -1,0 +1,32 @@
+{
+  "group": "vanillaforging",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345"
+  ],
+  "key": {
+    "0": {
+      "item": "vanillaforging:smithingbrick"
+    },
+    "1": {
+      "item": "minecraft:stick"
+    },
+    "2": {
+      "item": "vanillaforging:smithingbrick"
+    },
+    "3": {
+      "item": "vanillaforging:smithingbrick"
+    },
+    "4": {
+      "item": "minecraft:stick"
+    },
+    "5": {
+      "item": "vanillaforging:smithingbrick"
+    }
+  },
+  "result": {
+    "item": "vanillaforging:smithingbrickfence",
+    "count": 3
+  }
+}

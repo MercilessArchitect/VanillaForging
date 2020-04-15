@@ -1,0 +1,26 @@
+{
+  "group": "vanillaforging",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "01",
+    "23"
+  ],
+  "key": {
+    "0": {
+      "item": "vanillaforging:smithingbrick"
+    },
+    "1": {
+      "item": "vanillaforging:smithingbrick"
+    },
+    "2": {
+      "item": "vanillaforging:smithingbrick"
+    },
+    "3": {
+      "item": "vanillaforging:smithingbrick"
+    }
+  },
+  "result": {
+    "item": "vanillaforging:smithingbrickblock",
+    "count": 1
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "_fv": 6,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:Lightshards"
+      },
+      {
+        "value": "CUSTOM:Golddust"
+      },
+      {
+        "value": "CUSTOM:Quartzdust"
+      },
+      {
+        "value": "CUSTOM:Golddust"
+      },
+      {
+        "value": "Items.CLAY_BALL"
+      },
+      {
+        "value": "CUSTOM:Golddust"
+      },
+      {
+        "value": "CUSTOM:Quartzdust"
+      },
+      {
+        "value": "CUSTOM:Golddust"
+      },
+      {
+        "value": "CUSTOM:Lightshards"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:HardenedSulfurSteelIngot"
+    },
+    "name": "weakcastingalloyrecipe",
+    "namespace": "mod"
+  }
+}

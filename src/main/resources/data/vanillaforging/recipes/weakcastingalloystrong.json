@@ -1,0 +1,11 @@
+{
+  "group": "vanillaforging",
+  "type": "minecraft:campfire_cooking",
+  "experience": 1,
+  "ingredient": {
+    "item": "vanillaforging:weakcastingalloy"
+  },
+  "result": {
+    "item": "vanillaforging:firmweakcastingalloy"
+  }
+}

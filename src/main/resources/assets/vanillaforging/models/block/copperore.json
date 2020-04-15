@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "vanillaforging:blocks/copper_ore",
+    "up": "vanillaforging:blocks/copper_ore",
+    "north": "vanillaforging:blocks/copper_ore",
+    "east": "vanillaforging:blocks/copper_ore",
+    "south": "vanillaforging:blocks/copper_ore",
+    "west": "vanillaforging:blocks/copper_ore",
+    "particle": "vanillaforging:blocks/copper_ore"
+  }
+}

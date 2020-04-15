@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "vanillaforging:blocks/ironwood_plank",
+    "particle": "vanillaforging:blocks/ironwood_plank"
+  }
+}

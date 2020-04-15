@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "vanillaforging:blocks/carbon_infused_podzol_bottom",
+    "up": "vanillaforging:blocks/carbon_infused_podzol_top",
+    "north": "vanillaforging:blocks/carbon_infused_podzol_side",
+    "east": "vanillaforging:blocks/carbon_infused_podzol_side",
+    "south": "vanillaforging:blocks/carbon_infused_podzol_side",
+    "west": "vanillaforging:blocks/carbon_infused_podzol_side",
+    "particle": "vanillaforging:blocks/carbon_infused_podzol_bottom"
+  }
+}

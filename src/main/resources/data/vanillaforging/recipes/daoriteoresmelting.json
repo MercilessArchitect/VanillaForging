@@ -1,0 +1,11 @@
+{
+  "group": "vanillaforging",
+  "type": "minecraft:smelting",
+  "experience": 0.7,
+  "ingredient": {
+    "item": "vanillaforging:daoriteore"
+  },
+  "result": {
+    "item": "vanillaforging:daoriteingot"
+  }
+}

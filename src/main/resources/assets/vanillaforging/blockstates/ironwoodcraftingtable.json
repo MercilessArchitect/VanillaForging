@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "vanillaforging:block/ironwoodcraftingtable"
+    },
+    "facing=east": {
+      "model": "vanillaforging:block/ironwoodcraftingtable",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "vanillaforging:block/ironwoodcraftingtable",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "vanillaforging:block/ironwoodcraftingtable",
+      "y": 270
+    }
+  }
+}

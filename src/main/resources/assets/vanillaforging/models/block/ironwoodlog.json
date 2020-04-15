@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "vanillaforging:blocks/ironwood_log_top",
+    "up": "vanillaforging:blocks/ironwood_log_top",
+    "north": "vanillaforging:blocks/ironwood_log",
+    "east": "vanillaforging:blocks/ironwood_log",
+    "south": "vanillaforging:blocks/ironwood_log",
+    "west": "vanillaforging:blocks/ironwood_log",
+    "particle": "vanillaforging:blocks/ironwood_log_top"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "vanillaforging:blocks/ironwood_plank",
+    "up": "vanillaforging:blocks/ironwood_plank",
+    "north": "vanillaforging:blocks/ironwood_bookshelf",
+    "east": "vanillaforging:blocks/ironwood_bookshelf",
+    "south": "vanillaforging:blocks/ironwood_bookshelf",
+    "west": "vanillaforging:blocks/ironwood_bookshelf",
+    "particle": "vanillaforging:blocks/ironwood_plank"
+  }
+}

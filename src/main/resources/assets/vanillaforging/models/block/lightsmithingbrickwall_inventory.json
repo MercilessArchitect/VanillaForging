@@ -1,0 +1,7 @@
+{
+  "parent": "block/wall_inventory",
+  "textures": {
+    "wall": "vanillaforging:blocks/light_smithingbrick_block_top",
+    "particle": "vanillaforging:blocks/light_smithingbrick_block_top"
+  }
+}

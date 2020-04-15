@@ -1,0 +1,33 @@
+{
+  "group": "vanillaforging",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0  ",
+    "34 ",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "vanillaforging:ironwoodplanks"
+    },
+    "3": {
+      "item": "vanillaforging:ironwoodplanks"
+    },
+    "4": {
+      "item": "vanillaforging:ironwoodplanks"
+    },
+    "6": {
+      "item": "vanillaforging:ironwoodplanks"
+    },
+    "7": {
+      "item": "vanillaforging:ironwoodplanks"
+    },
+    "8": {
+      "item": "vanillaforging:ironwoodplanks"
+    }
+  },
+  "result": {
+    "item": "vanillaforging:ironwoodstairs",
+    "count": 8
+  }
+}

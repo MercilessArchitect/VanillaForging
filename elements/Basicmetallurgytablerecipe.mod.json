@@ -1,0 +1,45 @@
+{
+  "_fv": 6,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:SulfurSteelIngot"
+      },
+      {
+        "value": "CUSTOM:IronwoodCraftingTable"
+      },
+      {
+        "value": "CUSTOM:SulfurSteelIngot"
+      },
+      {
+        "value": "Items.EXPERIENCE_BOTTLE"
+      },
+      {
+        "value": "Items.CHORUS_FRUIT_POPPED"
+      },
+      {
+        "value": "Items.EXPERIENCE_BOTTLE"
+      },
+      {
+        "value": "CUSTOM:SulfurSteelIngot"
+      },
+      {
+        "value": "CUSTOM:LightSmithingbrickslab"
+      },
+      {
+        "value": "CUSTOM:SulfurSteelIngot"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:BasicMetallurgyTable"
+    },
+    "name": "basicmetallurgytablerecipe",
+    "namespace": "mod"
+  }
+}

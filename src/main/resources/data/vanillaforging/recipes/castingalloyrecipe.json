@@ -1,0 +1,42 @@
+{
+  "group": "vanillaforging",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:gold_nugget"
+    },
+    "1": {
+      "item": "vanillaforging:coppernugget"
+    },
+    "2": {
+      "item": "minecraft:gold_nugget"
+    },
+    "3": {
+      "item": "vanillaforging:sulfursteelnugget"
+    },
+    "4": {
+      "item": "vanillaforging:weakcastingalloy"
+    },
+    "5": {
+      "item": "vanillaforging:sulfursteelnugget"
+    },
+    "6": {
+      "item": "minecraft:gold_nugget"
+    },
+    "7": {
+      "item": "vanillaforging:coppernugget"
+    },
+    "8": {
+      "item": "minecraft:gold_nugget"
+    }
+  },
+  "result": {
+    "item": "vanillaforging:castingalloy",
+    "count": 2
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "group": "vanillaforging",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "vanillaforging:ironwoodlog"
+    }
+  ],
+  "result": {
+    "item": "vanillaforging:ironwoodplanks",
+    "count": 4
+  }
+}

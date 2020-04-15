@@ -1,0 +1,13 @@
+{
+  "group": "vanillaforging",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "vanillaforging:smithingbrickstorageblock"
+    }
+  ],
+  "result": {
+    "item": "vanillaforging:smithingbrick",
+    "count": 8
+  }
+}

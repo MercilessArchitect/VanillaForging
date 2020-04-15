@@ -1,0 +1,7 @@
+{
+  "parent": "block/fence_inventory",
+  "textures": {
+    "texture": "vanillaforging:blocks/ironwood_plank",
+    "particle": "vanillaforging:blocks/ironwood_plank"
+  }
+}

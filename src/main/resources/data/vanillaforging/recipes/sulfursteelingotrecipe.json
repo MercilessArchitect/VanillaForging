@@ -1,0 +1,11 @@
+{
+  "group": "vanillaforging",
+  "type": "minecraft:blasting",
+  "experience": 1,
+  "ingredient": {
+    "item": "vanillaforging:sulfursteelalloyscrap"
+  },
+  "result": {
+    "item": "vanillaforging:sulfursteelingot"
+  }
+}

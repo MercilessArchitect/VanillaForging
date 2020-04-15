@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "vanillaforging:blocks/ore_sulfur",
+    "up": "vanillaforging:blocks/ore_sulfur",
+    "north": "vanillaforging:blocks/ore_sulfur",
+    "east": "vanillaforging:blocks/ore_sulfur",
+    "south": "vanillaforging:blocks/ore_sulfur",
+    "west": "vanillaforging:blocks/ore_sulfur",
+    "particle": "vanillaforging:blocks/ore_sulfur"
+  }
+}

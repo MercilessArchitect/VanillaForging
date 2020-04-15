@@ -1,0 +1,45 @@
+{
+  "_fv": 6,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "recipeRetstackSize": 8,
+    "group": "",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:LightSmithingbrick"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:LightSmithingbrick"
+      },
+      {
+        "value": "CUSTOM:LightSmithingbrick"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:LightSmithingbrick"
+      },
+      {
+        "value": "CUSTOM:LightSmithingbrick"
+      },
+      {
+        "value": "CUSTOM:LightSmithingbrick"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:LightSmithingbrickstairs"
+    },
+    "name": "lsbrickstairsrecipe",
+    "namespace": "mod"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "vanillaforging:blocks/smithing_brick_top",
+    "up": "vanillaforging:blocks/ironwood_crafting_top",
+    "north": "vanillaforging:blocks/broken_portal_device",
+    "east": "vanillaforging:blocks/broken_portal_device",
+    "south": "vanillaforging:blocks/broken_portal_device",
+    "west": "vanillaforging:blocks/broken_portal_device",
+    "particle": "vanillaforging:blocks/smithing_brick_top"
+  }
+}
