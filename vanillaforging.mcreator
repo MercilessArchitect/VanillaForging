@@ -1308,6 +1308,14 @@
       "compiles": true,
       "locked_code": false,
       "ids": {}
+    },
+    {
+      "name": "BasicCastingGUI",
+      "type": "gui",
+      "sortid": 164,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
     }
   ],
   "variable_elements": [],
