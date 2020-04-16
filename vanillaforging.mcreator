@@ -1284,6 +1284,30 @@
       "compiles": true,
       "locked_code": false,
       "ids": {}
+    },
+    {
+      "name": "DaoriteNugget",
+      "type": "item",
+      "sortid": 161,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "Daoriteingotrecipe",
+      "type": "recipe",
+      "sortid": 162,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "Daoritenuggetrecipe",
+      "type": "recipe",
+      "sortid": 163,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
     }
   ],
   "variable_elements": [],
@@ -1373,6 +1397,7 @@
       "block.vanillaforging.ironwoodplanks": "Ironwood Planks",
       "block.vanillaforging.smithingbrickstorageblock": "Smithingbrick Storage Block",
       "block.vanillaforging.ironwoodlog": "Ironwood Log",
+      "item.vanillaforging.daoritenugget": "Daorite Nugget",
       "block.vanillaforging.smithingbrickwall": "Smithingbrick Wall",
       "item.vanillaforging.hammer": "Hammer",
       "item.vanillaforging.platecast": "Plate Cast"

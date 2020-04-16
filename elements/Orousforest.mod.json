@@ -54,7 +54,7 @@
     "baseHeight": 0.1,
     "heightVariation": 0.2,
     "spawnBiome": true,
-    "biomeWeight": 128,
+    "biomeWeight": 64,
     "biomeType": "WARM",
     "biomeCategory": "SAVANNA",
     "parent": {
@@ -72,6 +72,9 @@
       },
       {
         "value": "EntitySilverfish"
+      },
+      {
+        "value": "EntityFox"
       }
     ]
   }

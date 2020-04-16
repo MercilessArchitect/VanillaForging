@@ -80,7 +80,11 @@
     "spawnWorldTypes": [
       "Surface"
     ],
-    "restrictionBiomes": [],
+    "restrictionBiomes": [
+      {
+        "value": "swamp"
+      }
+    ],
     "blocksToReplace": [
       {
         "value": "Blocks.STONE"
