@@ -1,0 +1,2 @@
+# Vanilla forging
+vanilla forging is a mod I am currently working on that is based around forging metal. You start out with dust, alloy it together with other things, and then cast and smith the metal multiple times to create it. All metals are multiple stages, using more ingredients to create the alloys. The mod will eventually entail going into other dimensions, each with their own unique boss, to find rarer and more precious alloying materials.
