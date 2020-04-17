@@ -24,7 +24,7 @@ public class BrokenPortalDeviceBlock extends VanillaForgingElements.ModElement {
 	@ObjectHolder("vanillaforging:brokenportaldevice")
 	public static final Block block = null;
 	public BrokenPortalDeviceBlock(VanillaForgingElements instance) {
-		super(instance, 31);
+		super(instance, 34);
 	}
 
 	@Override

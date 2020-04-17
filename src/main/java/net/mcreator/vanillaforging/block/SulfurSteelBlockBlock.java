@@ -26,7 +26,7 @@ public class SulfurSteelBlockBlock extends VanillaForgingElements.ModElement {
 	@ObjectHolder("vanillaforging:sulfursteelblock")
 	public static final Block block = null;
 	public SulfurSteelBlockBlock(VanillaForgingElements instance) {
-		super(instance, 9);
+		super(instance, 12);
 	}
 
 	@Override

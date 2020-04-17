@@ -36,7 +36,7 @@ public class SmithingbrickblockBlock extends VanillaForgingElements.ModElement {
 	@ObjectHolder("vanillaforging:smithingbrickblock")
 	public static final Block block = null;
 	public SmithingbrickblockBlock(VanillaForgingElements instance) {
-		super(instance, 35);
+		super(instance, 38);
 	}
 
 	@Override

@@ -47,7 +47,7 @@ import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
 
 import net.mcreator.vanillaforging.itemgroup.MainForgePartsItemGroup;
-import net.mcreator.vanillaforging.gui.BasicMetallurgyTableGUIGui;
+import net.mcreator.vanillaforging.gui.BasicCastingGUIGui;
 import net.mcreator.vanillaforging.VanillaForgingElements;
 
 import java.util.List;
@@ -62,7 +62,7 @@ public class BaseMetallurgyCastingTableBlock extends VanillaForgingElements.ModE
 	@ObjectHolder("vanillaforging:basemetallurgycastingtable")
 	public static final TileEntityType<CustomTileEntity> tileEntityType = null;
 	public BaseMetallurgyCastingTableBlock(VanillaForgingElements instance) {
-		super(instance, 143);
+		super(instance, 56);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 
@@ -128,7 +128,7 @@ public class BaseMetallurgyCastingTableBlock extends VanillaForgingElements.ModE
 
 					@Override
 					public Container createMenu(int id, PlayerInventory inventory, PlayerEntity player) {
-						return new BasicMetallurgyTableGUIGui.GuiContainerMod(id, inventory,
+						return new BasicCastingGUIGui.GuiContainerMod(id, inventory,
 								new PacketBuffer(Unpooled.buffer()).writeBlockPos(new BlockPos(x, y, z)));
 					}
 				}, new BlockPos(x, y, z));
@@ -246,7 +246,7 @@ public class BaseMetallurgyCastingTableBlock extends VanillaForgingElements.ModE
 
 		@Override
 		public Container createMenu(int id, PlayerInventory player) {
-			return new BasicMetallurgyTableGUIGui.GuiContainerMod(id, player, new PacketBuffer(Unpooled.buffer()).writeBlockPos(this.getPos()));
+			return new BasicCastingGUIGui.GuiContainerMod(id, player, new PacketBuffer(Unpooled.buffer()).writeBlockPos(this.getPos()));
 		}
 
 		@Override

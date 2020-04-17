@@ -40,7 +40,7 @@ public class TemporallyinflictedpodzolBlock extends VanillaForgingElements.ModEl
 	@ObjectHolder("vanillaforging:temporallyinflictedpodzol")
 	public static final Block block = null;
 	public TemporallyinflictedpodzolBlock(VanillaForgingElements instance) {
-		super(instance, 27);
+		super(instance, 30);
 	}
 
 	@Override

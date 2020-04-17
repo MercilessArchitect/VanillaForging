@@ -63,7 +63,7 @@ public class BasicMetallurgyTableBlock extends VanillaForgingElements.ModElement
 	@ObjectHolder("vanillaforging:basicmetallurgytable")
 	public static final TileEntityType<CustomTileEntity> tileEntityType = null;
 	public BasicMetallurgyTableBlock(VanillaForgingElements instance) {
-		super(instance, 51);
+		super(instance, 55);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 

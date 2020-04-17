@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "vanillaforging:blocks/sssence_planks",
+    "particle": "vanillaforging:blocks/sssence_planks"
+  }
+}

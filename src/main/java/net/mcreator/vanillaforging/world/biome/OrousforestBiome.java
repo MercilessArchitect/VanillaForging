@@ -50,7 +50,7 @@ public class OrousforestBiome extends VanillaForgingElements.ModElement {
 	@ObjectHolder("vanillaforging:orousforest")
 	public static final CustomBiome biome = null;
 	public OrousforestBiome(VanillaForgingElements instance) {
-		super(instance, 90);
+		super(instance, 108);
 	}
 
 	@Override

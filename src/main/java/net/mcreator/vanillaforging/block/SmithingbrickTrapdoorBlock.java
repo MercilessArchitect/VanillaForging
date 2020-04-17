@@ -30,7 +30,7 @@ public class SmithingbrickTrapdoorBlock extends VanillaForgingElements.ModElemen
 	@ObjectHolder("vanillaforging:smithingbricktrapdoor")
 	public static final Block block = null;
 	public SmithingbrickTrapdoorBlock(VanillaForgingElements instance) {
-		super(instance, 40);
+		super(instance, 43);
 	}
 
 	@Override

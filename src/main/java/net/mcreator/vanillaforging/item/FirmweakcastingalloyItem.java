@@ -15,7 +15,7 @@ public class FirmweakcastingalloyItem extends VanillaForgingElements.ModElement 
 	@ObjectHolder("vanillaforging:firmweakcastingalloy")
 	public static final Item block = null;
 	public FirmweakcastingalloyItem(VanillaForgingElements instance) {
-		super(instance, 60);
+		super(instance, 62);
 	}
 
 	@Override

@@ -31,7 +31,7 @@ import java.util.Random;
 @VanillaForgingElements.ModElement.Tag
 public class Portalpillarvar2Structure extends VanillaForgingElements.ModElement {
 	public Portalpillarvar2Structure(VanillaForgingElements instance) {
-		super(instance, 103);
+		super(instance, 121);
 	}
 
 	@Override

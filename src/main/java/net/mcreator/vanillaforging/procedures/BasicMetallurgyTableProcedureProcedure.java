@@ -21,7 +21,7 @@ import net.mcreator.vanillaforging.VanillaForgingElements;
 @VanillaForgingElements.ModElement.Tag
 public class BasicMetallurgyTableProcedureProcedure extends VanillaForgingElements.ModElement {
 	public BasicMetallurgyTableProcedureProcedure(VanillaForgingElements instance) {
-		super(instance, 117);
+		super(instance, 135);
 	}
 
 	public static void executeProcedure(java.util.HashMap<String, Object> dependencies) {

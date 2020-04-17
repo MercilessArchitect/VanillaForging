@@ -16,7 +16,7 @@ public class Sulfur_SteelHoeItem extends VanillaForgingElements.ModElement {
 	@ObjectHolder("vanillaforging:sulfur_steelhoe")
 	public static final Item block = null;
 	public Sulfur_SteelHoeItem(VanillaForgingElements instance) {
-		super(instance, 72);
+		super(instance, 85);
 	}
 
 	@Override

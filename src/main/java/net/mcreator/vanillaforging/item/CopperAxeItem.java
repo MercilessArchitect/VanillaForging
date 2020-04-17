@@ -16,7 +16,7 @@ public class CopperAxeItem extends VanillaForgingElements.ModElement {
 	@ObjectHolder("vanillaforging:copperaxe")
 	public static final Item block = null;
 	public CopperAxeItem(VanillaForgingElements instance) {
-		super(instance, 66);
+		super(instance, 79);
 	}
 
 	@Override

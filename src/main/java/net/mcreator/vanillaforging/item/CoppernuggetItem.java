@@ -15,7 +15,7 @@ public class CoppernuggetItem extends VanillaForgingElements.ModElement {
 	@ObjectHolder("vanillaforging:coppernugget")
 	public static final Item block = null;
 	public CoppernuggetItem(VanillaForgingElements instance) {
-		super(instance, 62);
+		super(instance, 5);
 	}
 
 	@Override

@@ -24,7 +24,7 @@ public class LightSmithingbrickStorageBlockBlock extends VanillaForgingElements.
 	@ObjectHolder("vanillaforging:lightsmithingbrickstorageblock")
 	public static final Block block = null;
 	public LightSmithingbrickStorageBlockBlock(VanillaForgingElements instance) {
-		super(instance, 43);
+		super(instance, 46);
 	}
 
 	@Override

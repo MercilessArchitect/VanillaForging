@@ -27,7 +27,7 @@ public class ForgeframeBlock extends VanillaForgingElements.ModElement {
 	@ObjectHolder("vanillaforging:forgeframe")
 	public static final Block block = null;
 	public ForgeframeBlock(VanillaForgingElements instance) {
-		super(instance, 53);
+		super(instance, 54);
 	}
 
 	@Override

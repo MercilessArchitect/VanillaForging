@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "vanillaforging:block/essencewoodslab"
+    },
+    "type=top": {
+      "model": "vanillaforging:block/essencewoodslab_top"
+    },
+    "type=double": {
+      "model": "vanillaforging:block/essencewoodslab_full"
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "vanillaforging:blocks/sssence_planks",
+    "up": "vanillaforging:blocks/sssence_planks",
+    "north": "vanillaforging:blocks/sssence_planks",
+    "east": "vanillaforging:blocks/sssence_planks",
+    "south": "vanillaforging:blocks/sssence_planks",
+    "west": "vanillaforging:blocks/sssence_planks",
+    "particle": "vanillaforging:blocks/sssence_planks"
+  }
+}

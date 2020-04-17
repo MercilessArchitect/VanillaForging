@@ -24,7 +24,7 @@ public class SmithingbrickSmoothSlabblockBlock extends VanillaForgingElements.Mo
 	@ObjectHolder("vanillaforging:smithingbricksmoothslabblock")
 	public static final Block block = null;
 	public SmithingbrickSmoothSlabblockBlock(VanillaForgingElements instance) {
-		super(instance, 41);
+		super(instance, 44);
 	}
 
 	@Override

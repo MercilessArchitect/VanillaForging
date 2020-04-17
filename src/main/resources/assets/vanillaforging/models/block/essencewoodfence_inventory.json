@@ -1,0 +1,7 @@
+{
+  "parent": "block/fence_inventory",
+  "textures": {
+    "texture": "vanillaforging:blocks/sssence_planks",
+    "particle": "vanillaforging:blocks/sssence_planks"
+  }
+}

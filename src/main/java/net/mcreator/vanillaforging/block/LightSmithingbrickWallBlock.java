@@ -37,7 +37,7 @@ public class LightSmithingbrickWallBlock extends VanillaForgingElements.ModEleme
 	@ObjectHolder("vanillaforging:lightsmithingbrickwall")
 	public static final Block block = null;
 	public LightSmithingbrickWallBlock(VanillaForgingElements instance) {
-		super(instance, 48);
+		super(instance, 51);
 	}
 
 	@Override

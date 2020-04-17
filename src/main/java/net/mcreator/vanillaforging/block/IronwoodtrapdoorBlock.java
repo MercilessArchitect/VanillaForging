@@ -30,7 +30,7 @@ public class IronwoodtrapdoorBlock extends VanillaForgingElements.ModElement {
 	@ObjectHolder("vanillaforging:ironwoodtrapdoor")
 	public static final Block block = null;
 	public IronwoodtrapdoorBlock(VanillaForgingElements instance) {
-		super(instance, 20);
+		super(instance, 22);
 	}
 
 	@Override

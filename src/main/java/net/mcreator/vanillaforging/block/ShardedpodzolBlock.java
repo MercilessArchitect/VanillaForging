@@ -43,7 +43,7 @@ public class ShardedpodzolBlock extends VanillaForgingElements.ModElement {
 	@ObjectHolder("vanillaforging:shardedpodzol")
 	public static final Block block = null;
 	public ShardedpodzolBlock(VanillaForgingElements instance) {
-		super(instance, 25);
+		super(instance, 28);
 	}
 
 	@Override

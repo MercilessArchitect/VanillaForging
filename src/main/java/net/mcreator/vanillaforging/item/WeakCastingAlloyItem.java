@@ -15,7 +15,7 @@ public class WeakCastingAlloyItem extends VanillaForgingElements.ModElement {
 	@ObjectHolder("vanillaforging:weakcastingalloy")
 	public static final Item block = null;
 	public WeakCastingAlloyItem(VanillaForgingElements instance) {
-		super(instance, 59);
+		super(instance, 61);
 	}
 
 	@Override

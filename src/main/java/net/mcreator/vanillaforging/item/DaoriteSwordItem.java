@@ -16,7 +16,7 @@ public class DaoriteSwordItem extends VanillaForgingElements.ModElement {
 	@ObjectHolder("vanillaforging:daoritesword")
 	public static final Item block = null;
 	public DaoriteSwordItem(VanillaForgingElements instance) {
-		super(instance, 152);
+		super(instance, 92);
 	}
 
 	@Override

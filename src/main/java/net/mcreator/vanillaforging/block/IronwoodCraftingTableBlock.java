@@ -65,7 +65,7 @@ public class IronwoodCraftingTableBlock extends VanillaForgingElements.ModElemen
 	@ObjectHolder("vanillaforging:ironwoodcraftingtable")
 	public static final TileEntityType<CustomTileEntity> tileEntityType = null;
 	public IronwoodCraftingTableBlock(VanillaForgingElements instance) {
-		super(instance, 14);
+		super(instance, 16);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 
