@@ -1,0 +1,26 @@
+{
+  "group": "vanillaforging",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "01",
+    "23"
+  ],
+  "key": {
+    "0": {
+      "item": "vanillaforging:ironwoodplanks"
+    },
+    "1": {
+      "item": "vanillaforging:ironwoodplanks"
+    },
+    "2": {
+      "item": "vanillaforging:ironwoodplanks"
+    },
+    "3": {
+      "item": "vanillaforging:ironwoodplanks"
+    }
+  },
+  "result": {
+    "item": "minecraft:crafting_table",
+    "count": 1
+  }
+}

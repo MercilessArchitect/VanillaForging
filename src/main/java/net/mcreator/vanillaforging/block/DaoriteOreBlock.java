@@ -86,8 +86,12 @@ public class DaoriteOreBlock extends VanillaForgingElements.ModElement {
 				boolean blockCriteria = false;
 				if (blockAt.getBlock() == Blocks.STONE.getDefaultState().getBlock())
 					blockCriteria = true;
+				if (blockAt.getBlock() == Blocks.DIORITE.getDefaultState().getBlock())
+					blockCriteria = true;
+				if (blockAt.getBlock() == Blocks.GRANITE.getDefaultState().getBlock())
+					blockCriteria = true;
 				return blockCriteria;
-			}), block.getDefaultState(), 7), Placement.COUNT_RANGE, new CountRangeConfig(6, 1, 1, 63)));
+			}), block.getDefaultState(), 7), Placement.COUNT_RANGE, new CountRangeConfig(17, 1, 1, 63)));
 		}
 	}
 }

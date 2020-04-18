@@ -1,0 +1,42 @@
+{
+  "group": "vanillaforging",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "vanillaforging:essencewoodplanks"
+    },
+    "1": {
+      "item": "vanillaforging:essencewoodplanks"
+    },
+    "2": {
+      "item": "vanillaforging:essencewoodplanks"
+    },
+    "3": {
+      "item": "minecraft:book"
+    },
+    "4": {
+      "item": "minecraft:book"
+    },
+    "5": {
+      "item": "minecraft:book"
+    },
+    "6": {
+      "item": "vanillaforging:essencewoodplanks"
+    },
+    "7": {
+      "item": "vanillaforging:essencewoodplanks"
+    },
+    "8": {
+      "item": "vanillaforging:essencewoodplanks"
+    }
+  },
+  "result": {
+    "item": "vanillaforging:essencewoodbookshelf",
+    "count": 1
+  }
+}

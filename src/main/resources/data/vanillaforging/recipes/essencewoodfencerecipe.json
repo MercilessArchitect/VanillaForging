@@ -1,0 +1,32 @@
+{
+  "group": "vanillaforging",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345"
+  ],
+  "key": {
+    "0": {
+      "item": "vanillaforging:essencewoodplanks"
+    },
+    "1": {
+      "item": "minecraft:stick"
+    },
+    "2": {
+      "item": "vanillaforging:essencewoodplanks"
+    },
+    "3": {
+      "item": "vanillaforging:essencewoodplanks"
+    },
+    "4": {
+      "item": "minecraft:stick"
+    },
+    "5": {
+      "item": "vanillaforging:essencewoodplanks"
+    }
+  },
+  "result": {
+    "item": "vanillaforging:essencewoodfence",
+    "count": 4
+  }
+}

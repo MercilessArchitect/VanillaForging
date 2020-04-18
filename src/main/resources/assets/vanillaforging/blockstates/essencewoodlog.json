@@ -1,7 +1,28 @@
 {
   "variants": {
-    "": {
+    "facing=south": {
       "model": "vanillaforging:block/essencewoodlog"
+    },
+    "facing=north": {
+      "model": "vanillaforging:block/essencewoodlog"
+    },
+    "facing=east": {
+      "model": "vanillaforging:block/essencewoodlog",
+      "x": 90
+    },
+    "facing=west": {
+      "model": "vanillaforging:block/essencewoodlog",
+      "x": 90
+    },
+    "facing=up": {
+      "model": "vanillaforging:block/essencewoodlog",
+      "x": 90,
+      "y": 90
+    },
+    "facing=down": {
+      "model": "vanillaforging:block/essencewoodlog",
+      "x": 90,
+      "y": 90
     }
   }
 }

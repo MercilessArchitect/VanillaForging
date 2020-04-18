@@ -1,0 +1,22 @@
+{
+  "group": "vanillaforging",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012"
+  ],
+  "key": {
+    "0": {
+      "item": "vanillaforging:essencewoodplanks"
+    },
+    "1": {
+      "item": "vanillaforging:essencewoodplanks"
+    },
+    "2": {
+      "item": "vanillaforging:essencewoodplanks"
+    }
+  },
+  "result": {
+    "item": "vanillaforging:essencewoodslab",
+    "count": 6
+  }
+}

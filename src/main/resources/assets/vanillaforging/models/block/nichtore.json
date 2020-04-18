@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "vanillaforging:blocks/nicht_ore",
+    "up": "vanillaforging:blocks/nicht_ore",
+    "north": "vanillaforging:blocks/nicht_ore",
+    "east": "vanillaforging:blocks/nicht_ore",
+    "south": "vanillaforging:blocks/nicht_ore",
+    "west": "vanillaforging:blocks/nicht_ore",
+    "particle": "vanillaforging:blocks/nicht_ore"
+  }
+}

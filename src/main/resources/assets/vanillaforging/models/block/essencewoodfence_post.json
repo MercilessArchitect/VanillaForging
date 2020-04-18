@@ -1,7 +1,7 @@
 {
   "parent": "block/fence_post",
   "textures": {
-    "texture": "vanillaforging:blocks/sssence_planks",
-    "particle": "vanillaforging:blocks/sssence_planks"
+    "texture": "vanillaforging:blocks/essencewood_planks",
+    "particle": "vanillaforging:blocks/essencewood_planks"
   }
 }
