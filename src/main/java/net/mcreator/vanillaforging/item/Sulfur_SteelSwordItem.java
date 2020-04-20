@@ -16,7 +16,7 @@ public class Sulfur_SteelSwordItem extends VanillaForgingElements.ModElement {
 	@ObjectHolder("vanillaforging:sulfur_steelsword")
 	public static final Item block = null;
 	public Sulfur_SteelSwordItem(VanillaForgingElements instance) {
-		super(instance, 91);
+		super(instance, 94);
 	}
 
 	@Override
@@ -31,7 +31,7 @@ public class Sulfur_SteelSwordItem extends VanillaForgingElements.ModElement {
 			}
 
 			public float getAttackDamage() {
-				return 0f;
+				return 2f;
 			}
 
 			public int getHarvestLevel() {
@@ -45,7 +45,7 @@ public class Sulfur_SteelSwordItem extends VanillaForgingElements.ModElement {
 			public Ingredient getRepairMaterial() {
 				return Ingredient.EMPTY;
 			}
-		}, 3, -3f, new Item.Properties().group(ItemGroup.COMBAT)) {
+		}, 3, -1f, new Item.Properties().group(ItemGroup.COMBAT)) {
 		}.setRegistryName("sulfur_steelsword"));
 	}
 }

@@ -42,7 +42,7 @@ public class BasicMetallurgyTableGUIGui extends VanillaForgingElements.ModElemen
 	public static HashMap guistate = new HashMap();
 	private static ContainerType<GuiContainerMod> containerType = null;
 	public BasicMetallurgyTableGUIGui(VanillaForgingElements instance) {
-		super(instance, 134);
+		super(instance, 137);
 		elements.addNetworkMessage(ButtonPressedMessage.class, ButtonPressedMessage::buffer, ButtonPressedMessage::new,
 				ButtonPressedMessage::handler);
 		elements.addNetworkMessage(GUISlotChangedMessage.class, GUISlotChangedMessage::buffer, GUISlotChangedMessage::new,

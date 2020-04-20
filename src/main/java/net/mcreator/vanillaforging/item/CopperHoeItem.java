@@ -16,7 +16,7 @@ public class CopperHoeItem extends VanillaForgingElements.ModElement {
 	@ObjectHolder("vanillaforging:copperhoe")
 	public static final Item block = null;
 	public CopperHoeItem(VanillaForgingElements instance) {
-		super(instance, 81);
+		super(instance, 84);
 	}
 
 	@Override

@@ -46,10 +46,12 @@ import net.minecraft.block.HorizontalBlock;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
 
+import net.mcreator.vanillaforging.procedures.BasicCastingGUIProcedureProcedure;
 import net.mcreator.vanillaforging.itemgroup.MainForgePartsItemGroup;
 import net.mcreator.vanillaforging.gui.BasicCastingGUIGui;
 import net.mcreator.vanillaforging.VanillaForgingElements;
 
+import java.util.Random;
 import java.util.List;
 import java.util.Collections;
 
@@ -114,6 +116,32 @@ public class BaseMetallurgyCastingTableBlock extends VanillaForgingElements.ModE
 		}
 
 		@Override
+		public void onBlockAdded(BlockState state, World world, BlockPos pos, BlockState oldState, boolean moving) {
+			super.onBlockAdded(state, world, pos, oldState, moving);
+			int x = pos.getX();
+			int y = pos.getY();
+			int z = pos.getZ();
+			world.getPendingBlockTicks().scheduleTick(new BlockPos(x, y, z), this, this.tickRate(world));
+		}
+
+		@Override
+		public void tick(BlockState state, World world, BlockPos pos, Random random) {
+			super.tick(state, world, pos, random);
+			int x = pos.getX();
+			int y = pos.getY();
+			int z = pos.getZ();
+			{
+				java.util.HashMap<String, Object> $_dependencies = new java.util.HashMap<>();
+				$_dependencies.put("x", x);
+				$_dependencies.put("y", y);
+				$_dependencies.put("z", z);
+				$_dependencies.put("world", world);
+				BasicCastingGUIProcedureProcedure.executeProcedure($_dependencies);
+			}
+			world.getPendingBlockTicks().scheduleTick(new BlockPos(x, y, z), this, this.tickRate(world));
+		}
+
+		@Override
 		public boolean onBlockActivated(BlockState state, World world, BlockPos pos, PlayerEntity entity, Hand hand, BlockRayTraceResult hit) {
 			boolean retval = super.onBlockActivated(state, world, pos, entity, hand, hit);
 			int x = pos.getX();
@@ -173,7 +201,7 @@ public class BaseMetallurgyCastingTableBlock extends VanillaForgingElements.ModE
 	}
 
 	public static class CustomTileEntity extends LockableLootTileEntity {
-		private NonNullList<ItemStack> stacks = NonNullList.<ItemStack>withSize(7, ItemStack.EMPTY);
+		private NonNullList<ItemStack> stacks = NonNullList.<ItemStack>withSize(6, ItemStack.EMPTY);
 		protected CustomTileEntity() {
 			super(tileEntityType);
 		}
@@ -209,7 +237,7 @@ public class BaseMetallurgyCastingTableBlock extends VanillaForgingElements.ModE
 
 		@Override
 		public int getSizeInventory() {
-			return 7;
+			return 6;
 		}
 
 		@Override
@@ -223,8 +251,6 @@ public class BaseMetallurgyCastingTableBlock extends VanillaForgingElements.ModE
 		@Override
 		public boolean isItemValidForSlot(int index, ItemStack stack) {
 			if (index == 5)
-				return false;
-			if (index == 6)
 				return false;
 			return true;
 		}

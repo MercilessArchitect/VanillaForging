@@ -3,10 +3,10 @@
   "textures": {
     "down": "vanillaforging:blocks/essencewood_planks",
     "up": "vanillaforging:blocks/essencewood_planks",
-    "north": "vanillaforging:blocks/essencewood_bookshelf",
-    "east": "vanillaforging:blocks/essencewood_bookshelf",
-    "south": "vanillaforging:blocks/essencewood_bookshelf",
-    "west": "vanillaforging:blocks/essencewood_bookshelf",
+    "north": "vanillaforging:blocks/essencewoodbookshelf",
+    "east": "vanillaforging:blocks/essencewoodbookshelf",
+    "south": "vanillaforging:blocks/essencewoodbookshelf",
+    "west": "vanillaforging:blocks/essencewoodbookshelf",
     "particle": "vanillaforging:blocks/essencewood_planks"
   }
 }

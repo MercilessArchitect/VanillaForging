@@ -31,7 +31,7 @@ import java.util.Random;
 @VanillaForgingElements.ModElement.Tag
 public class EssencetreeStructure extends VanillaForgingElements.ModElement {
 	public EssencetreeStructure(VanillaForgingElements instance) {
-		super(instance, 180);
+		super(instance, 181);
 	}
 
 	@Override

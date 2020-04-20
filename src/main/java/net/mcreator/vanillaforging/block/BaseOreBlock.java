@@ -24,7 +24,7 @@ public class BaseOreBlock extends VanillaForgingElements.ModElement {
 	@ObjectHolder("vanillaforging:baseore")
 	public static final Block block = null;
 	public BaseOreBlock(VanillaForgingElements instance) {
-		super(instance, 177);
+		super(instance, 77);
 	}
 
 	@Override

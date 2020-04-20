@@ -16,7 +16,7 @@ public class DaoriteSwordItem extends VanillaForgingElements.ModElement {
 	@ObjectHolder("vanillaforging:daoritesword")
 	public static final Item block = null;
 	public DaoriteSwordItem(VanillaForgingElements instance) {
-		super(instance, 92);
+		super(instance, 95);
 	}
 
 	@Override
@@ -31,7 +31,7 @@ public class DaoriteSwordItem extends VanillaForgingElements.ModElement {
 			}
 
 			public float getAttackDamage() {
-				return 0f;
+				return 1f;
 			}
 
 			public int getHarvestLevel() {

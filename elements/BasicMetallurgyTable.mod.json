@@ -77,7 +77,7 @@
     "inventoryDropWhenDestroyed": true,
     "inventoryComparatorPower": true,
     "inventoryOutSlotIDs": [],
-    "onRedstoneOn": {
+    "onTickUpdate": {
       "name": "BasicMetallurgyTableProcedure"
     },
     "spawnWorldTypes": [],

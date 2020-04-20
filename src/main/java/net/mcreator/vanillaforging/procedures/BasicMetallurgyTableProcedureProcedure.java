@@ -1,11 +1,16 @@
 package net.mcreator.vanillaforging.procedures;
 
+import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.event.TickEvent;
+import net.minecraftforge.common.MinecraftForge;
+
 import net.minecraft.world.World;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.tileentity.LockableLootTileEntity;
 import net.minecraft.item.Items;
 import net.minecraft.item.ItemStack;
+import net.minecraft.entity.Entity;
 import net.minecraft.block.Blocks;
 
 import net.mcreator.vanillaforging.item.SulfurSteelIngotItem;
@@ -21,7 +26,8 @@ import net.mcreator.vanillaforging.VanillaForgingElements;
 @VanillaForgingElements.ModElement.Tag
 public class BasicMetallurgyTableProcedureProcedure extends VanillaForgingElements.ModElement {
 	public BasicMetallurgyTableProcedureProcedure(VanillaForgingElements instance) {
-		super(instance, 135);
+		super(instance, 138);
+		MinecraftForge.EVENT_BUS.register(this);
 	}
 
 	public static void executeProcedure(java.util.HashMap<String, Object> dependencies) {
@@ -929,6 +935,25 @@ public class BasicMetallurgyTableProcedureProcedure extends VanillaForgingElemen
 					((LockableLootTileEntity) inv).setInventorySlotContents((int) (13), _setstack);
 				}
 			}
+		}
+	}
+
+	@SubscribeEvent
+	public void onPlayerTick(TickEvent.PlayerTickEvent event) {
+		if (event.phase == TickEvent.Phase.END) {
+			Entity entity = event.player;
+			World world = entity.world;
+			int i = (int) entity.posX;
+			int j = (int) entity.posY;
+			int k = (int) entity.posZ;
+			java.util.HashMap<String, Object> dependencies = new java.util.HashMap<>();
+			dependencies.put("x", i);
+			dependencies.put("y", j);
+			dependencies.put("z", k);
+			dependencies.put("world", world);
+			dependencies.put("entity", entity);
+			dependencies.put("event", event);
+			this.executeProcedure(dependencies);
 		}
 	}
 }

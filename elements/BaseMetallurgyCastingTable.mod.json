@@ -72,14 +72,16 @@
     "hasInventory": true,
     "guiBoundTo": "BasicCastingGUI",
     "openGUIOnRightClick": true,
-    "inventorySize": 7,
+    "inventorySize": 6,
     "inventoryStackSize": 64,
     "inventoryDropWhenDestroyed": true,
     "inventoryComparatorPower": false,
     "inventoryOutSlotIDs": [
-      5,
-      6
+      5
     ],
+    "onTickUpdate": {
+      "name": "BasicCastingGUIProcedure"
+    },
     "spawnWorldTypes": [],
     "restrictionBiomes": [],
     "blocksToReplace": [

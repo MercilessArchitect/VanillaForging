@@ -16,7 +16,7 @@ public class Sulfur_SteelPickaxeItem extends VanillaForgingElements.ModElement {
 	@ObjectHolder("vanillaforging:sulfur_steelpickaxe")
 	public static final Item block = null;
 	public Sulfur_SteelPickaxeItem(VanillaForgingElements instance) {
-		super(instance, 82);
+		super(instance, 85);
 	}
 
 	@Override

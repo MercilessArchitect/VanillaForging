@@ -51,6 +51,7 @@ import net.mcreator.vanillaforging.itemgroup.MainForgePartsItemGroup;
 import net.mcreator.vanillaforging.gui.BasicMetallurgyTableGUIGui;
 import net.mcreator.vanillaforging.VanillaForgingElements;
 
+import java.util.Random;
 import java.util.List;
 import java.util.Collections;
 
@@ -114,22 +115,29 @@ public class BasicMetallurgyTableBlock extends VanillaForgingElements.ModElement
 		}
 
 		@Override
-		public void neighborChanged(BlockState state, World world, BlockPos pos, Block neighborBlock, BlockPos fromPos, boolean moving) {
-			super.neighborChanged(state, world, pos, neighborBlock, fromPos, moving);
+		public void onBlockAdded(BlockState state, World world, BlockPos pos, BlockState oldState, boolean moving) {
+			super.onBlockAdded(state, world, pos, oldState, moving);
 			int x = pos.getX();
 			int y = pos.getY();
 			int z = pos.getZ();
-			if (world.getRedstonePowerFromNeighbors(new BlockPos(x, y, z)) > 0) {
-				{
-					java.util.HashMap<String, Object> $_dependencies = new java.util.HashMap<>();
-					$_dependencies.put("x", x);
-					$_dependencies.put("y", y);
-					$_dependencies.put("z", z);
-					$_dependencies.put("world", world);
-					BasicMetallurgyTableProcedureProcedure.executeProcedure($_dependencies);
-				}
-			} else {
+			world.getPendingBlockTicks().scheduleTick(new BlockPos(x, y, z), this, this.tickRate(world));
+		}
+
+		@Override
+		public void tick(BlockState state, World world, BlockPos pos, Random random) {
+			super.tick(state, world, pos, random);
+			int x = pos.getX();
+			int y = pos.getY();
+			int z = pos.getZ();
+			{
+				java.util.HashMap<String, Object> $_dependencies = new java.util.HashMap<>();
+				$_dependencies.put("x", x);
+				$_dependencies.put("y", y);
+				$_dependencies.put("z", z);
+				$_dependencies.put("world", world);
+				BasicMetallurgyTableProcedureProcedure.executeProcedure($_dependencies);
 			}
+			world.getPendingBlockTicks().scheduleTick(new BlockPos(x, y, z), this, this.tickRate(world));
 		}
 
 		@Override

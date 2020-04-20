@@ -1,0 +1,42 @@
+{
+  "group": "vanillaforging",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "vanillaforging:hardenedsulfursteelingot"
+    },
+    "1": {
+      "item": "minecraft:light_gray_stained_glass_pane"
+    },
+    "2": {
+      "item": "vanillaforging:hardenedsulfursteelingot"
+    },
+    "3": {
+      "item": "minecraft:redstone"
+    },
+    "4": {
+      "item": "minecraft:nether_star"
+    },
+    "5": {
+      "item": "minecraft:redstone"
+    },
+    "6": {
+      "item": "vanillaforging:hardenedsulfursteelingot"
+    },
+    "7": {
+      "item": "minecraft:light_gray_stained_glass_pane"
+    },
+    "8": {
+      "item": "vanillaforging:hardenedsulfursteelingot"
+    }
+  },
+  "result": {
+    "item": "vanillaforging:forgeframe",
+    "count": 1
+  }
+}
