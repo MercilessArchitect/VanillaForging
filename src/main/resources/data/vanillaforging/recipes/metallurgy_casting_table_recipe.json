@@ -1,0 +1,42 @@
+{
+  "group": "vanillaforging",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "vanillaforging:castingalloyingot"
+    },
+    "1": {
+      "item": "vanillaforging:basemetallurgycastingtable"
+    },
+    "2": {
+      "item": "vanillaforging:castingalloyingot"
+    },
+    "3": {
+      "item": "vanillaforging:hardenedsulfursteelingot"
+    },
+    "4": {
+      "item": "vanillaforging:forgeframe"
+    },
+    "5": {
+      "item": "vanillaforging:hardenedsulfursteelingot"
+    },
+    "6": {
+      "item": "minecraft:slime_ball"
+    },
+    "7": {
+      "item": "vanillaforging:smithingbrickslab"
+    },
+    "8": {
+      "item": "minecraft:slime_ball"
+    }
+  },
+  "result": {
+    "item": "vanillaforging:metallurgycastingtable",
+    "count": 1
+  }
+}

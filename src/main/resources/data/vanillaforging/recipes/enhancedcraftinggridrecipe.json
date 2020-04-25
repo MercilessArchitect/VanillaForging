@@ -1,0 +1,42 @@
+{
+  "group": "vanillaforging",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "vanillaforging:castingalloyingot"
+    },
+    "1": {
+      "item": "vanillaforging:ironwoodcraftingtable"
+    },
+    "2": {
+      "item": "vanillaforging:castingalloyingot"
+    },
+    "3": {
+      "item": "minecraft:experience_bottle"
+    },
+    "4": {
+      "item": "minecraft:popped_chorus_fruit"
+    },
+    "5": {
+      "item": "minecraft:experience_bottle"
+    },
+    "6": {
+      "item": "minecraft:diamond"
+    },
+    "7": {
+      "item": "vanillaforging:castingalloyingot"
+    },
+    "8": {
+      "item": "minecraft:diamond"
+    }
+  },
+  "result": {
+    "item": "vanillaforging:enhancedcraftinggrid",
+    "count": 1
+  }
+}

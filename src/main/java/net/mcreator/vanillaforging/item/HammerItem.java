@@ -6,10 +6,10 @@ import net.minecraftforge.registries.ObjectHolder;
 import net.minecraft.item.crafting.Ingredient;
 import net.minecraft.item.PickaxeItem;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Item;
 import net.minecraft.item.IItemTier;
 
+import net.mcreator.vanillaforging.itemgroup.MainForgePartsItemGroup;
 import net.mcreator.vanillaforging.VanillaForgingElements;
 
 @VanillaForgingElements.ModElement.Tag
@@ -46,7 +46,7 @@ public class HammerItem extends VanillaForgingElements.ModElement {
 			public Ingredient getRepairMaterial() {
 				return Ingredient.fromStacks(new ItemStack(SmithingBrickItem.block, (int) (1)));
 			}
-		}, 1, -3.8f, new Item.Properties().group(ItemGroup.TOOLS)) {
+		}, 1, -3.8f, new Item.Properties().group(MainForgePartsItemGroup.tab)) {
 		}.setRegistryName("hammer"));
 	}
 }

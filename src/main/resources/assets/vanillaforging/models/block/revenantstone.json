@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "vanillaforging:blocks/revenant_stone_base",
+    "up": "vanillaforging:blocks/revenant_stone_top",
+    "north": "vanillaforging:blocks/revenant_stone_side",
+    "east": "vanillaforging:blocks/revenant_stone_side",
+    "south": "vanillaforging:blocks/revenant_stone_side",
+    "west": "vanillaforging:blocks/revenant_stone_side",
+    "particle": "vanillaforging:blocks/revenant_stone_base"
+  }
+}

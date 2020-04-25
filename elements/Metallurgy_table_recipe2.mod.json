@@ -1,0 +1,45 @@
+{
+  "_fv": 6,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:CastingAlloyIngot"
+      },
+      {
+        "value": "CUSTOM:EnhancedCraftingGrid"
+      },
+      {
+        "value": "CUSTOM:CastingAlloyIngot"
+      },
+      {
+        "value": "CUSTOM:Ironwoodplanks"
+      },
+      {
+        "value": "CUSTOM:Forgeframe"
+      },
+      {
+        "value": "CUSTOM:Ironwoodplanks"
+      },
+      {
+        "value": "CUSTOM:HardenedSulfurSteelIngot"
+      },
+      {
+        "value": "CUSTOM:SmithingbrickSlab"
+      },
+      {
+        "value": "CUSTOM:HardenedSulfurSteelIngot"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:MetallurgyTable"
+    },
+    "name": "metallurgy_table_recipe2",
+    "namespace": "mod"
+  }
+}

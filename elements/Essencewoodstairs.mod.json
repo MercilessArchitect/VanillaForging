@@ -27,7 +27,7 @@
     "resistance": 12.0,
     "hasGravity": false,
     "creativeTab": {
-      "value": "CUSTOM:MainForgeParts"
+      "value": "CUSTOM:Blocks"
     },
     "destroyTool": "axe",
     "affectedBySilkTouch": true,

@@ -7,7 +7,7 @@
     "customModelName": "Normal",
     "name": "Hammer",
     "creativeTab": {
-      "value": "TOOLS"
+      "value": "CUSTOM:MainForgeParts"
     },
     "toolType": "Pickaxe",
     "harvestLevel": 0,

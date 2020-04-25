@@ -49,7 +49,7 @@ import net.minecraft.block.HorizontalBlock;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
 
-import net.mcreator.vanillaforging.itemgroup.MainForgePartsItemGroup;
+import net.mcreator.vanillaforging.itemgroup.BlocksItemGroup;
 import net.mcreator.vanillaforging.gui.IronwoodcraftingtableGUIGui;
 import net.mcreator.vanillaforging.VanillaForgingElements;
 
@@ -72,8 +72,7 @@ public class IronwoodCraftingTableBlock extends VanillaForgingElements.ModElemen
 	@Override
 	public void initElements() {
 		elements.blocks.add(() -> new CustomBlock());
-		elements.items
-				.add(() -> new BlockItem(block, new Item.Properties().group(MainForgePartsItemGroup.tab)).setRegistryName(block.getRegistryName()));
+		elements.items.add(() -> new BlockItem(block, new Item.Properties().group(BlocksItemGroup.tab)).setRegistryName(block.getRegistryName()));
 	}
 
 	@SubscribeEvent

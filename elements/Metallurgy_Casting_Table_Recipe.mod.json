@@ -1,0 +1,45 @@
+{
+  "_fv": 6,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:CastingAlloyIngot"
+      },
+      {
+        "value": "CUSTOM:BaseMetallurgyCastingTable"
+      },
+      {
+        "value": "CUSTOM:CastingAlloyIngot"
+      },
+      {
+        "value": "Items.SLIME_BALL"
+      },
+      {
+        "value": "CUSTOM:Forgeframe"
+      },
+      {
+        "value": "Items.SLIME_BALL"
+      },
+      {
+        "value": "CUSTOM:HardenedSulfurSteelIngot"
+      },
+      {
+        "value": "CUSTOM:SmithingbrickSlab"
+      },
+      {
+        "value": "CUSTOM:HardenedSulfurSteelIngot"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:MetallurgyCastingTable"
+    },
+    "name": "metallurgy_casting_table_recipe1",
+    "namespace": "mod"
+  }
+}

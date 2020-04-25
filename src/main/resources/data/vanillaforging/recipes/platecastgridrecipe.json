@@ -1,0 +1,42 @@
+{
+  "group": "vanillaforging",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "vanillaforging:quartzdust"
+    },
+    "1": {
+      "item": "vanillaforging:castingalloyingot"
+    },
+    "2": {
+      "item": "minecraft:redstone"
+    },
+    "3": {
+      "item": "vanillaforging:hardenedsulfursteelingot"
+    },
+    "4": {
+      "item": "vanillaforging:ironplate"
+    },
+    "5": {
+      "item": "vanillaforging:hardenedsulfursteelingot"
+    },
+    "6": {
+      "item": "minecraft:redstone"
+    },
+    "7": {
+      "item": "vanillaforging:castingalloyingot"
+    },
+    "8": {
+      "item": "vanillaforging:quartzdust"
+    }
+  },
+  "result": {
+    "item": "vanillaforging:platecastgrid",
+    "count": 1
+  }
+}

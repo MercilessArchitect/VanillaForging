@@ -1,0 +1,45 @@
+{
+  "_fv": 6,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:CastingAlloyIngot"
+      },
+      {
+        "value": "CUSTOM:IronwoodCraftingTable"
+      },
+      {
+        "value": "CUSTOM:CastingAlloyIngot"
+      },
+      {
+        "value": "Items.EXPERIENCE_BOTTLE"
+      },
+      {
+        "value": "Items.CHORUS_FRUIT_POPPED"
+      },
+      {
+        "value": "Items.EXPERIENCE_BOTTLE"
+      },
+      {
+        "value": "Items.DIAMOND"
+      },
+      {
+        "value": "CUSTOM:CastingAlloyIngot"
+      },
+      {
+        "value": "Items.DIAMOND"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:EnhancedCraftingGrid"
+    },
+    "name": "enhancedcraftinggridrecipe",
+    "namespace": "mod"
+  }
+}

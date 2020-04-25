@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "vanillaforging:blocks/framed_metallurgy_base",
+    "up": "vanillaforging:blocks/metallurgy_casting_top",
+    "north": "vanillaforging:blocks/metallurgy_casting_front",
+    "east": "vanillaforging:blocks/metallurgy_table_side1",
+    "south": "vanillaforging:blocks/metallurgy_casting_back",
+    "west": "vanillaforging:blocks/metallurgy_table_side",
+    "particle": "vanillaforging:blocks/framed_metallurgy_base"
+  }
+}
