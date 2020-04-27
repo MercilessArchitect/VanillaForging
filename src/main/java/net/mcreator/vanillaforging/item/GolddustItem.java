@@ -15,7 +15,7 @@ public class GolddustItem extends VanillaForgingElements.ModElement {
 	@ObjectHolder("vanillaforging:golddust")
 	public static final Item block = null;
 	public GolddustItem(VanillaForgingElements instance) {
-		super(instance, 59);
+		super(instance, 76);
 	}
 
 	@Override

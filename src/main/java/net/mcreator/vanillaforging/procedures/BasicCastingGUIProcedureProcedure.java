@@ -23,7 +23,7 @@ import net.mcreator.vanillaforging.VanillaForgingElements;
 @VanillaForgingElements.ModElement.Tag
 public class BasicCastingGUIProcedureProcedure extends VanillaForgingElements.ModElement {
 	public BasicCastingGUIProcedureProcedure(VanillaForgingElements instance) {
-		super(instance, 182);
+		super(instance, 196);
 		MinecraftForge.EVENT_BUS.register(this);
 	}
 

@@ -15,7 +15,7 @@ public class RodCastItem extends VanillaForgingElements.ModElement {
 	@ObjectHolder("vanillaforging:rodcast")
 	public static final Item block = null;
 	public RodCastItem(VanillaForgingElements instance) {
-		super(instance, 186);
+		super(instance, 93);
 	}
 
 	@Override

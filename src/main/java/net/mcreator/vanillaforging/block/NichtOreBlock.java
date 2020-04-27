@@ -25,7 +25,7 @@ public class NichtOreBlock extends VanillaForgingElements.ModElement {
 	@ObjectHolder("vanillaforging:nichtore")
 	public static final Block block = null;
 	public NichtOreBlock(VanillaForgingElements instance) {
-		super(instance, 78);
+		super(instance, 4);
 	}
 
 	@Override

@@ -23,7 +23,7 @@ public class RevenantstoneBlock extends VanillaForgingElements.ModElement {
 	@ObjectHolder("vanillaforging:revenantstone")
 	public static final Block block = null;
 	public RevenantstoneBlock(VanillaForgingElements instance) {
-		super(instance, 198);
+		super(instance, 5);
 	}
 
 	@Override

@@ -16,7 +16,7 @@ public class DaoriteShovelItem extends VanillaForgingElements.ModElement {
 	@ObjectHolder("vanillaforging:daoriteshovel")
 	public static final Item block = null;
 	public DaoriteShovelItem(VanillaForgingElements instance) {
-		super(instance, 91);
+		super(instance, 105);
 	}
 
 	@Override

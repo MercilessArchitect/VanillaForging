@@ -15,7 +15,7 @@ public class CopperingotItem extends VanillaForgingElements.ModElement {
 	@ObjectHolder("vanillaforging:copperingot")
 	public static final Item block = null;
 	public CopperingotItem(VanillaForgingElements instance) {
-		super(instance, 4);
+		super(instance, 55);
 	}
 
 	@Override

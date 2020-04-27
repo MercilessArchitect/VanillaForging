@@ -1,0 +1,42 @@
+{
+  "group": "vanillaforging",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "vanillaforging:sulfursteelnugget"
+    },
+    "1": {
+      "item": "vanillaforging:hardenedsulfursteelplate"
+    },
+    "2": {
+      "item": "vanillaforging:sulfursteelnugget"
+    },
+    "3": {
+      "item": "vanillaforging:sulfurdust"
+    },
+    "4": {
+      "item": "minecraft:grindstone"
+    },
+    "5": {
+      "item": "vanillaforging:sulfurdust"
+    },
+    "6": {
+      "item": "vanillaforging:daoriteingot"
+    },
+    "7": {
+      "item": "vanillaforging:hardenedsulfursteelplate"
+    },
+    "8": {
+      "item": "vanillaforging:daoriteingot"
+    }
+  },
+  "result": {
+    "item": "vanillaforging:enhancedgrindstone",
+    "count": 1
+  }
+}

@@ -31,7 +31,7 @@ public class IronwoodleavesBlock extends VanillaForgingElements.ModElement {
 	@ObjectHolder("vanillaforging:ironwoodleaves")
 	public static final Block block = null;
 	public IronwoodleavesBlock(VanillaForgingElements instance) {
-		super(instance, 15);
+		super(instance, 8);
 	}
 
 	@Override

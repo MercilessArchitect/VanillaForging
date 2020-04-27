@@ -30,7 +30,7 @@ public class IronwoodstairsBlock extends VanillaForgingElements.ModElement {
 	@ObjectHolder("vanillaforging:ironwoodstairs")
 	public static final Block block = null;
 	public IronwoodstairsBlock(VanillaForgingElements instance) {
-		super(instance, 19);
+		super(instance, 12);
 	}
 
 	@Override

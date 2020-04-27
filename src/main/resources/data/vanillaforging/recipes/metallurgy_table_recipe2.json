@@ -11,19 +11,19 @@
       "item": "vanillaforging:castingalloyingot"
     },
     "1": {
-      "item": "vanillaforging:basicmetallurgytable"
+      "item": "vanillaforging:enhancedcraftinggrid"
     },
     "2": {
       "item": "vanillaforging:castingalloyingot"
     },
     "3": {
-      "item": "minecraft:slime_ball"
+      "item": "vanillaforging:ironwoodplanks"
     },
     "4": {
       "item": "vanillaforging:forgeframe"
     },
     "5": {
-      "item": "minecraft:slime_ball"
+      "item": "vanillaforging:ironwoodplanks"
     },
     "6": {
       "item": "vanillaforging:hardenedsulfursteelingot"

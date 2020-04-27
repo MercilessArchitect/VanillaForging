@@ -15,7 +15,7 @@ public class DaoriteNuggetItem extends VanillaForgingElements.ModElement {
 	@ObjectHolder("vanillaforging:daoritenugget")
 	public static final Item block = null;
 	public DaoriteNuggetItem(VanillaForgingElements instance) {
-		super(instance, 69);
+		super(instance, 82);
 	}
 
 	@Override

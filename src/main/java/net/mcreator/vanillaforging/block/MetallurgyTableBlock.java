@@ -31,7 +31,7 @@ public class MetallurgyTableBlock extends VanillaForgingElements.ModElement {
 	@ObjectHolder("vanillaforging:metallurgytable")
 	public static final Block block = null;
 	public MetallurgyTableBlock(VanillaForgingElements instance) {
-		super(instance, 187);
+		super(instance, 50);
 	}
 
 	@Override

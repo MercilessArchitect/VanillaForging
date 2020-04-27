@@ -15,7 +15,7 @@ public class HardeningSulfurAlloyPasteItem extends VanillaForgingElements.ModEle
 	@ObjectHolder("vanillaforging:hardeningsulfuralloypaste")
 	public static final Item block = null;
 	public HardeningSulfurAlloyPasteItem(VanillaForgingElements instance) {
-		super(instance, 7);
+		super(instance, 58);
 	}
 
 	@Override

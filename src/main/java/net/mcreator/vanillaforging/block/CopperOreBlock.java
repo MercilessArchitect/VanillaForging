@@ -39,7 +39,7 @@ public class CopperOreBlock extends VanillaForgingElements.ModElement {
 	@ObjectHolder("vanillaforging:copperore")
 	public static final Block block = null;
 	public CopperOreBlock(VanillaForgingElements instance) {
-		super(instance, 3);
+		super(instance, 2);
 	}
 
 	@Override

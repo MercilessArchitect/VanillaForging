@@ -10,7 +10,7 @@ import net.mcreator.vanillaforging.VanillaForgingElements;
 @VanillaForgingElements.ModElement.Tag
 public class CoaldustRightClickedInAirProcedure extends VanillaForgingElements.ModElement {
 	public CoaldustRightClickedInAirProcedure(VanillaForgingElements instance) {
-		super(instance, 98);
+		super(instance, 112);
 	}
 
 	public static void executeProcedure(java.util.HashMap<String, Object> dependencies) {

@@ -42,7 +42,7 @@ public class BasicCastingGUIGui extends VanillaForgingElements.ModElement {
 	public static HashMap guistate = new HashMap();
 	private static ContainerType<GuiContainerMod> containerType = null;
 	public BasicCastingGUIGui(VanillaForgingElements instance) {
-		super(instance, 171);
+		super(instance, 185);
 		elements.addNetworkMessage(ButtonPressedMessage.class, ButtonPressedMessage::buffer, ButtonPressedMessage::new,
 				ButtonPressedMessage::handler);
 		elements.addNetworkMessage(GUISlotChangedMessage.class, GUISlotChangedMessage::buffer, GUISlotChangedMessage::new,

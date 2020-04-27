@@ -15,7 +15,7 @@ public class SulfurSteelAlloyScrapItem extends VanillaForgingElements.ModElement
 	@ObjectHolder("vanillaforging:sulfursteelalloyscrap")
 	public static final Item block = null;
 	public SulfurSteelAlloyScrapItem(VanillaForgingElements instance) {
-		super(instance, 8);
+		super(instance, 59);
 	}
 
 	@Override

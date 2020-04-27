@@ -1,0 +1,19 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "11": "warning_area",
+        "12": "grindstone_topside",
+        "13": "orge_frame_ack",
+        "15": "grindstone_support",
+        "6": "grindstone_top",
+        "7": "lock_slabs",
+        "8": "framed_metallurgy_base",
+        "missing": "grindstone_grinder",
+        "9": "grindstone_lower_side",
+        "10": "forge_framed"
+      },
+      "name": "default"
+    }
+  }
+}

@@ -17,13 +17,13 @@
       "item": "minecraft:redstone"
     },
     "3": {
-      "item": "vanillaforging:hardenedsulfursteelingot"
+      "item": "vanillaforging:hardenedsulfursteelrod"
     },
     "4": {
-      "item": "vanillaforging:ironplate"
+      "item": "vanillaforging:hardenedsulfursteelplate"
     },
     "5": {
-      "item": "vanillaforging:hardenedsulfursteelingot"
+      "item": "vanillaforging:hardenedsulfursteelrod"
     },
     "6": {
       "item": "minecraft:redstone"

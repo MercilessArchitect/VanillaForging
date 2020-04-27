@@ -20,7 +20,7 @@ public class CoaldustItem extends VanillaForgingElements.ModElement {
 	@ObjectHolder("vanillaforging:coaldust")
 	public static final Item block = null;
 	public CoaldustItem(VanillaForgingElements instance) {
-		super(instance, 25);
+		super(instance, 67);
 	}
 
 	@Override

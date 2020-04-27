@@ -21,7 +21,7 @@ public class InfusedcarbonItem extends VanillaForgingElements.ModElement {
 	@ObjectHolder("vanillaforging:infusedcarbon")
 	public static final Item block = null;
 	public InfusedcarbonItem(VanillaForgingElements instance) {
-		super(instance, 24);
+		super(instance, 66);
 	}
 
 	@Override

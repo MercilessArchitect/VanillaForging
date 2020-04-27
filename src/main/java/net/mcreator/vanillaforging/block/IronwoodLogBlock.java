@@ -32,7 +32,7 @@ public class IronwoodLogBlock extends VanillaForgingElements.ModElement {
 	@ObjectHolder("vanillaforging:ironwoodlog")
 	public static final Block block = null;
 	public IronwoodLogBlock(VanillaForgingElements instance) {
-		super(instance, 14);
+		super(instance, 7);
 	}
 
 	@Override

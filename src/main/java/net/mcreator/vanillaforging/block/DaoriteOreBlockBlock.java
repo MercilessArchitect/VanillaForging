@@ -24,7 +24,7 @@ public class DaoriteOreBlockBlock extends VanillaForgingElements.ModElement {
 	@ObjectHolder("vanillaforging:daoriteoreblock")
 	public static final Block block = null;
 	public DaoriteOreBlockBlock(VanillaForgingElements instance) {
-		super(instance, 67);
+		super(instance, 42);
 	}
 
 	@Override

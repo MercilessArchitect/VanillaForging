@@ -24,7 +24,7 @@ public class SmithingbrickstorageblockBlock extends VanillaForgingElements.ModEl
 	@ObjectHolder("vanillaforging:smithingbrickstorageblock")
 	public static final Block block = null;
 	public SmithingbrickstorageblockBlock(VanillaForgingElements instance) {
-		super(instance, 37);
+		super(instance, 21);
 	}
 
 	@Override

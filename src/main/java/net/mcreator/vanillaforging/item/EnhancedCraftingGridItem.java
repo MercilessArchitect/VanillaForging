@@ -15,7 +15,7 @@ public class EnhancedCraftingGridItem extends VanillaForgingElements.ModElement 
 	@ObjectHolder("vanillaforging:enhancedcraftinggrid")
 	public static final Item block = null;
 	public EnhancedCraftingGridItem(VanillaForgingElements instance) {
-		super(instance, 190);
+		super(instance, 85);
 	}
 
 	@Override

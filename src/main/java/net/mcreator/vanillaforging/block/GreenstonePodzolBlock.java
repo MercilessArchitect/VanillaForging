@@ -44,7 +44,7 @@ public class GreenstonePodzolBlock extends VanillaForgingElements.ModElement {
 	@ObjectHolder("vanillaforging:greenstonepodzol")
 	public static final Block block = null;
 	public GreenstonePodzolBlock(VanillaForgingElements instance) {
-		super(instance, 26);
+		super(instance, 17);
 	}
 
 	@Override

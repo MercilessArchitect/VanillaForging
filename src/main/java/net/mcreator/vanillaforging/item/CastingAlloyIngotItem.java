@@ -15,7 +15,7 @@ public class CastingAlloyIngotItem extends VanillaForgingElements.ModElement {
 	@ObjectHolder("vanillaforging:castingalloyingot")
 	public static final Item block = null;
 	public CastingAlloyIngotItem(VanillaForgingElements instance) {
-		super(instance, 65);
+		super(instance, 80);
 	}
 
 	@Override

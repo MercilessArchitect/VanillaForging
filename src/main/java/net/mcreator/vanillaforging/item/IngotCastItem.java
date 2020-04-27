@@ -15,7 +15,7 @@ public class IngotCastItem extends VanillaForgingElements.ModElement {
 	@ObjectHolder("vanillaforging:ingotcast")
 	public static final Item block = null;
 	public IngotCastItem(VanillaForgingElements instance) {
-		super(instance, 57);
+		super(instance, 91);
 	}
 
 	@Override

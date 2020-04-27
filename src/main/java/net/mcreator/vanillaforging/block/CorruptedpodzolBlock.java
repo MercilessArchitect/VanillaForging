@@ -41,7 +41,7 @@ public class CorruptedpodzolBlock extends VanillaForgingElements.ModElement {
 	@ObjectHolder("vanillaforging:corruptedpodzol")
 	public static final Block block = null;
 	public CorruptedpodzolBlock(VanillaForgingElements instance) {
-		super(instance, 32);
+		super(instance, 20);
 	}
 
 	@Override

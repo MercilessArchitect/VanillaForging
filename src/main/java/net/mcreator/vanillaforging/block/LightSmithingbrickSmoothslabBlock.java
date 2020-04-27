@@ -24,7 +24,7 @@ public class LightSmithingbrickSmoothslabBlock extends VanillaForgingElements.Mo
 	@ObjectHolder("vanillaforging:lightsmithingbricksmoothslab")
 	public static final Block block = null;
 	public LightSmithingbrickSmoothslabBlock(VanillaForgingElements instance) {
-		super(instance, 53);
+		super(instance, 36);
 	}
 
 	@Override

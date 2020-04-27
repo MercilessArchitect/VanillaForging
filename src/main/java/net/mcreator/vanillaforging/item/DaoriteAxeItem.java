@@ -16,7 +16,7 @@ public class DaoriteAxeItem extends VanillaForgingElements.ModElement {
 	@ObjectHolder("vanillaforging:daoriteaxe")
 	public static final Item block = null;
 	public DaoriteAxeItem(VanillaForgingElements instance) {
-		super(instance, 90);
+		super(instance, 104);
 	}
 
 	@Override

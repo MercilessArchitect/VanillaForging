@@ -15,7 +15,7 @@ public class IronplateItem extends VanillaForgingElements.ModElement {
 	@ObjectHolder("vanillaforging:ironplate")
 	public static final Item block = null;
 	public IronplateItem(VanillaForgingElements instance) {
-		super(instance, 63);
+		super(instance, 90);
 	}
 
 	@Override

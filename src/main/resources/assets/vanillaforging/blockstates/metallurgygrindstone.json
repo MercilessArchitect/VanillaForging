@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "vanillaforging:block/metallurgygrindstone"
+    },
+    "facing=east": {
+      "model": "vanillaforging:block/metallurgygrindstone",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "vanillaforging:block/metallurgygrindstone",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "vanillaforging:block/metallurgygrindstone",
+      "y": 270
+    }
+  }
+}

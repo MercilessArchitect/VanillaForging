@@ -24,7 +24,7 @@ public class MetallurgySmithingTableBlock extends VanillaForgingElements.ModElem
 	@ObjectHolder("vanillaforging:metallurgysmithingtable")
 	public static final Block block = null;
 	public MetallurgySmithingTableBlock(VanillaForgingElements instance) {
-		super(instance, 197);
+		super(instance, 52);
 	}
 
 	@Override

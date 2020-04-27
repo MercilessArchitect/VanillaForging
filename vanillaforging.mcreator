@@ -12,7 +12,7 @@
     {
       "name": "Sulfurdust",
       "type": "item",
-      "sortid": 2,
+      "sortid": 54,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -20,7 +20,7 @@
     {
       "name": "Copperingot",
       "type": "item",
-      "sortid": 4,
+      "sortid": 55,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -28,7 +28,7 @@
     {
       "name": "MainForgeParts",
       "type": "tab",
-      "sortid": 96,
+      "sortid": 110,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -36,7 +36,7 @@
     {
       "name": "Coppersmeltingrecipe",
       "type": "recipe",
-      "sortid": 97,
+      "sortid": 111,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -44,7 +44,7 @@
     {
       "name": "Forgeframe",
       "type": "block",
-      "sortid": 54,
+      "sortid": 37,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -52,7 +52,7 @@
     {
       "name": "Coaldust",
       "type": "item",
-      "sortid": 25,
+      "sortid": 67,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -60,7 +60,7 @@
     {
       "name": "CoaldustRightClickedInAir",
       "type": "procedure",
-      "sortid": 98,
+      "sortid": 112,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -76,7 +76,7 @@
     {
       "name": "Sulfuralloypaste",
       "type": "item",
-      "sortid": 6,
+      "sortid": 57,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -84,7 +84,7 @@
     {
       "name": "HardeningSulfurAlloyPaste",
       "type": "item",
-      "sortid": 7,
+      "sortid": 58,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -92,7 +92,7 @@
     {
       "name": "Hardeningsulfuralloypasterecipe",
       "type": "recipe",
-      "sortid": 99,
+      "sortid": 113,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -100,7 +100,7 @@
     {
       "name": "Sulfuralloypasterecipe",
       "type": "recipe",
-      "sortid": 100,
+      "sortid": 114,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -108,7 +108,7 @@
     {
       "name": "Coaldustrecipe",
       "type": "recipe",
-      "sortid": 101,
+      "sortid": 115,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -116,7 +116,7 @@
     {
       "name": "SulfurSteelAlloyScrap",
       "type": "item",
-      "sortid": 8,
+      "sortid": 59,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -124,7 +124,7 @@
     {
       "name": "SulfurSteelAlloyRecipe",
       "type": "recipe",
-      "sortid": 102,
+      "sortid": 116,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -132,7 +132,7 @@
     {
       "name": "SulfurSteelIngot",
       "type": "item",
-      "sortid": 9,
+      "sortid": 60,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -140,7 +140,7 @@
     {
       "name": "Sulfursteelingotrecipe",
       "type": "recipe",
-      "sortid": 103,
+      "sortid": 117,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -148,7 +148,7 @@
     {
       "name": "IronwoodLog",
       "type": "block",
-      "sortid": 14,
+      "sortid": 7,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -156,7 +156,7 @@
     {
       "name": "Ironwoodplanks",
       "type": "block",
-      "sortid": 18,
+      "sortid": 11,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -164,7 +164,7 @@
     {
       "name": "Ironwoodstairs",
       "type": "block",
-      "sortid": 19,
+      "sortid": 12,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -172,7 +172,7 @@
     {
       "name": "Ironwoodslab",
       "type": "block",
-      "sortid": 20,
+      "sortid": 13,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -180,7 +180,7 @@
     {
       "name": "IronwoodFence",
       "type": "block",
-      "sortid": 21,
+      "sortid": 14,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -188,7 +188,7 @@
     {
       "name": "Ironwoodtrapdoor",
       "type": "block",
-      "sortid": 22,
+      "sortid": 15,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -196,7 +196,7 @@
     {
       "name": "IronwoodBookshelf",
       "type": "block",
-      "sortid": 17,
+      "sortid": 10,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -204,7 +204,7 @@
     {
       "name": "IronwoodCraftingTable",
       "type": "block",
-      "sortid": 16,
+      "sortid": 9,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -212,7 +212,7 @@
     {
       "name": "IronwoodplanksRecipe",
       "type": "recipe",
-      "sortid": 104,
+      "sortid": 118,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -220,7 +220,7 @@
     {
       "name": "Ironwoodstairsrecipe",
       "type": "recipe",
-      "sortid": 105,
+      "sortid": 119,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -228,7 +228,7 @@
     {
       "name": "Ironwoodslabrecipe",
       "type": "recipe",
-      "sortid": 106,
+      "sortid": 120,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -236,7 +236,7 @@
     {
       "name": "Ironwoodfencerecipe",
       "type": "recipe",
-      "sortid": 107,
+      "sortid": 121,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -244,7 +244,7 @@
     {
       "name": "Ironwoodtrapdoorrecipe",
       "type": "recipe",
-      "sortid": 108,
+      "sortid": 122,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -252,7 +252,7 @@
     {
       "name": "Ironwoodbookshelfrecipe",
       "type": "recipe",
-      "sortid": 109,
+      "sortid": 123,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -260,7 +260,7 @@
     {
       "name": "Ironwoodcraftingtablerecipe",
       "type": "recipe",
-      "sortid": 110,
+      "sortid": 124,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -268,7 +268,7 @@
     {
       "name": "Ironwoodleaves",
       "type": "block",
-      "sortid": 15,
+      "sortid": 8,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -276,7 +276,7 @@
     {
       "name": "Carboninfusedpodzol",
       "type": "block",
-      "sortid": 23,
+      "sortid": 16,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -284,7 +284,7 @@
     {
       "name": "CopperOre",
       "type": "block",
-      "sortid": 3,
+      "sortid": 2,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -292,7 +292,7 @@
     {
       "name": "Orousforest",
       "type": "biome",
-      "sortid": 111,
+      "sortid": 125,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -300,7 +300,7 @@
     {
       "name": "Infusedcarbon",
       "type": "item",
-      "sortid": 24,
+      "sortid": 66,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -308,7 +308,7 @@
     {
       "name": "GreenstonePodzol",
       "type": "block",
-      "sortid": 26,
+      "sortid": 17,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -316,7 +316,7 @@
     {
       "name": "Greenstonedust",
       "type": "item",
-      "sortid": 27,
+      "sortid": 68,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -324,7 +324,7 @@
     {
       "name": "Smithingbrickblock",
       "type": "block",
-      "sortid": 38,
+      "sortid": 22,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -332,7 +332,7 @@
     {
       "name": "Smithingbrickstairs",
       "type": "block",
-      "sortid": 39,
+      "sortid": 23,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -340,7 +340,7 @@
     {
       "name": "Smithingbrickfence",
       "type": "block",
-      "sortid": 40,
+      "sortid": 24,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -348,7 +348,7 @@
     {
       "name": "Smithingbrickwall",
       "type": "block",
-      "sortid": 41,
+      "sortid": 25,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -356,7 +356,7 @@
     {
       "name": "SmithingbrickSlab",
       "type": "block",
-      "sortid": 42,
+      "sortid": 26,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -364,7 +364,7 @@
     {
       "name": "SmithingbrickTrapdoor",
       "type": "block",
-      "sortid": 43,
+      "sortid": 27,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -372,7 +372,7 @@
     {
       "name": "SmithingbrickSmoothSlabblock",
       "type": "block",
-      "sortid": 44,
+      "sortid": 28,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -380,7 +380,7 @@
     {
       "name": "SmithingBrick",
       "type": "item",
-      "sortid": 36,
+      "sortid": 73,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -388,7 +388,7 @@
     {
       "name": "SmithingBrickRecipe",
       "type": "recipe",
-      "sortid": 112,
+      "sortid": 126,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -396,7 +396,7 @@
     {
       "name": "SmithingBrickBlockrecipe",
       "type": "recipe",
-      "sortid": 113,
+      "sortid": 127,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -404,7 +404,7 @@
     {
       "name": "Smithingbrickstairsrecipe",
       "type": "recipe",
-      "sortid": 114,
+      "sortid": 128,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -412,7 +412,7 @@
     {
       "name": "Smithingbrickfencerecipe",
       "type": "recipe",
-      "sortid": 115,
+      "sortid": 129,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -420,7 +420,7 @@
     {
       "name": "Smithingbrickwallrecipe",
       "type": "recipe",
-      "sortid": 116,
+      "sortid": 130,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -428,7 +428,7 @@
     {
       "name": "Smithingbrickslabrecipe",
       "type": "recipe",
-      "sortid": 117,
+      "sortid": 131,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -436,7 +436,7 @@
     {
       "name": "Smithingbricksmoothslabrecipe",
       "type": "recipe",
-      "sortid": 118,
+      "sortid": 132,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -444,7 +444,7 @@
     {
       "name": "Smithingbricktrapdoorrecipe",
       "type": "recipe",
-      "sortid": 119,
+      "sortid": 133,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -452,7 +452,7 @@
     {
       "name": "Portalcore",
       "type": "item",
-      "sortid": 35,
+      "sortid": 72,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -460,7 +460,7 @@
     {
       "name": "BrokenPortalDevice",
       "type": "block",
-      "sortid": 34,
+      "sortid": 40,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -468,7 +468,7 @@
     {
       "name": "Smithingbrickstorageblock",
       "type": "block",
-      "sortid": 37,
+      "sortid": 21,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -476,7 +476,7 @@
     {
       "name": "Smithingbrickstoragerecipe",
       "type": "recipe",
-      "sortid": 120,
+      "sortid": 134,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -484,7 +484,7 @@
     {
       "name": "Smithingbrickstorageusagerecipe",
       "type": "recipe",
-      "sortid": 121,
+      "sortid": 135,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -492,7 +492,7 @@
     {
       "name": "Shardedpodzol",
       "type": "block",
-      "sortid": 28,
+      "sortid": 18,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -500,7 +500,7 @@
     {
       "name": "Lightshards",
       "type": "item",
-      "sortid": 29,
+      "sortid": 69,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -508,7 +508,7 @@
     {
       "name": "Temporaldust",
       "type": "item",
-      "sortid": 31,
+      "sortid": 70,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -516,7 +516,7 @@
     {
       "name": "Temporallyinflictedpodzol",
       "type": "block",
-      "sortid": 30,
+      "sortid": 19,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -524,7 +524,7 @@
     {
       "name": "Corruptingdust",
       "type": "item",
-      "sortid": 33,
+      "sortid": 71,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -532,7 +532,7 @@
     {
       "name": "Corruptedpodzol",
       "type": "block",
-      "sortid": 32,
+      "sortid": 20,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -540,7 +540,7 @@
     {
       "name": "PortalPillar",
       "type": "structure",
-      "sortid": 122,
+      "sortid": 136,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -548,7 +548,7 @@
     {
       "name": "PortalPillarvar1",
       "type": "structure",
-      "sortid": 123,
+      "sortid": 137,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -556,7 +556,7 @@
     {
       "name": "Portalpillarvar2",
       "type": "structure",
-      "sortid": 124,
+      "sortid": 138,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -564,7 +564,7 @@
     {
       "name": "LightSmithingbrickBlock",
       "type": "block",
-      "sortid": 47,
+      "sortid": 30,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -572,7 +572,7 @@
     {
       "name": "LightSmithingbrickstairs",
       "type": "block",
-      "sortid": 48,
+      "sortid": 31,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -580,7 +580,7 @@
     {
       "name": "LightSmithingbrickFence",
       "type": "block",
-      "sortid": 49,
+      "sortid": 32,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -588,7 +588,7 @@
     {
       "name": "LightSmithingbrickslab",
       "type": "block",
-      "sortid": 50,
+      "sortid": 33,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -596,7 +596,7 @@
     {
       "name": "LightSmithingbrickWall",
       "type": "block",
-      "sortid": 51,
+      "sortid": 34,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -604,7 +604,7 @@
     {
       "name": "LightSmithingbrickTrapdoor",
       "type": "block",
-      "sortid": 52,
+      "sortid": 35,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -612,7 +612,7 @@
     {
       "name": "LightSmithingbrickSmoothslab",
       "type": "block",
-      "sortid": 53,
+      "sortid": 36,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -620,7 +620,7 @@
     {
       "name": "LightSmithingbrick",
       "type": "item",
-      "sortid": 45,
+      "sortid": 74,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -628,7 +628,7 @@
     {
       "name": "LightSmithingbrickrecipe",
       "type": "recipe",
-      "sortid": 125,
+      "sortid": 139,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -636,7 +636,7 @@
     {
       "name": "LightSmithingbrickStorageBlock",
       "type": "block",
-      "sortid": 46,
+      "sortid": 29,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -644,7 +644,7 @@
     {
       "name": "LSbrickstairsrecipe",
       "type": "recipe",
-      "sortid": 126,
+      "sortid": 140,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -652,7 +652,7 @@
     {
       "name": "LSbrickfencerecipe",
       "type": "recipe",
-      "sortid": 127,
+      "sortid": 141,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -660,7 +660,7 @@
     {
       "name": "LSbrickblockrecipe",
       "type": "recipe",
-      "sortid": 128,
+      "sortid": 142,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -668,7 +668,7 @@
     {
       "name": "LSbrickwallrecipe",
       "type": "recipe",
-      "sortid": 129,
+      "sortid": 143,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -676,7 +676,7 @@
     {
       "name": "LSbrickslabrecipe",
       "type": "recipe",
-      "sortid": 130,
+      "sortid": 144,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -684,7 +684,7 @@
     {
       "name": "LSbricktrapdoorrecipe",
       "type": "recipe",
-      "sortid": 131,
+      "sortid": 145,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -692,7 +692,7 @@
     {
       "name": "LSbricksmoothslabrecipe",
       "type": "recipe",
-      "sortid": 132,
+      "sortid": 146,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -700,7 +700,7 @@
     {
       "name": "LSbrickstorageblockrecipe",
       "type": "recipe",
-      "sortid": 133,
+      "sortid": 147,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -708,7 +708,7 @@
     {
       "name": "LSbrickrecipestorage",
       "type": "recipe",
-      "sortid": 134,
+      "sortid": 148,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -716,7 +716,7 @@
     {
       "name": "BasicMetallurgyTable",
       "type": "block",
-      "sortid": 55,
+      "sortid": 38,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -724,7 +724,7 @@
     {
       "name": "IronwoodcraftingtableGUI",
       "type": "gui",
-      "sortid": 135,
+      "sortid": 149,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -732,7 +732,7 @@
     {
       "name": "Basicmetallurgytablerecipe",
       "type": "recipe",
-      "sortid": 136,
+      "sortid": 150,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -740,7 +740,7 @@
     {
       "name": "BasicMetallurgyTableGUI",
       "type": "gui",
-      "sortid": 137,
+      "sortid": 151,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -748,7 +748,7 @@
     {
       "name": "BasicMetallurgyTableProcedure",
       "type": "procedure",
-      "sortid": 138,
+      "sortid": 152,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -776,7 +776,7 @@
     {
       "name": "SulfurSteelNugget",
       "type": "item",
-      "sortid": 10,
+      "sortid": 61,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -784,7 +784,7 @@
     {
       "name": "SulfurSteelBlock",
       "type": "block",
-      "sortid": 12,
+      "sortid": 6,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -792,7 +792,7 @@
     {
       "name": "Sulfursteelnuggetrecipe",
       "type": "recipe",
-      "sortid": 139,
+      "sortid": 153,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -800,7 +800,7 @@
     {
       "name": "Sulfursteelingotrecipe1",
       "type": "recipe",
-      "sortid": 140,
+      "sortid": 154,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -808,7 +808,7 @@
     {
       "name": "Sulfursteelblockrecipe",
       "type": "recipe",
-      "sortid": 141,
+      "sortid": 155,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -816,7 +816,7 @@
     {
       "name": "Sulfursteelingotrecipe3",
       "type": "recipe",
-      "sortid": 142,
+      "sortid": 156,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -824,7 +824,7 @@
     {
       "name": "HardenedSulfurSteelIngot",
       "type": "item",
-      "sortid": 13,
+      "sortid": 63,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -832,7 +832,7 @@
     {
       "name": "HardenedSulfurSteelBucket",
       "type": "item",
-      "sortid": 11,
+      "sortid": 62,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -840,7 +840,7 @@
     {
       "name": "Golddust",
       "type": "item",
-      "sortid": 59,
+      "sortid": 76,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -848,7 +848,7 @@
     {
       "name": "Quartzdust",
       "type": "item",
-      "sortid": 64,
+      "sortid": 75,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -856,7 +856,7 @@
     {
       "name": "Golddustrecipe",
       "type": "recipe",
-      "sortid": 143,
+      "sortid": 157,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -864,7 +864,7 @@
     {
       "name": "Quartzdustrecipe",
       "type": "recipe",
-      "sortid": 144,
+      "sortid": 158,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -872,7 +872,7 @@
     {
       "name": "Weakcastingalloyrecipe",
       "type": "recipe",
-      "sortid": 145,
+      "sortid": 159,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -880,7 +880,7 @@
     {
       "name": "WeakCastingAlloy",
       "type": "item",
-      "sortid": 61,
+      "sortid": 78,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -888,7 +888,7 @@
     {
       "name": "Firmweakcastingalloy",
       "type": "item",
-      "sortid": 62,
+      "sortid": 79,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -896,7 +896,7 @@
     {
       "name": "Weakcastingalloystrong",
       "type": "recipe",
-      "sortid": 146,
+      "sortid": 160,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -904,7 +904,7 @@
     {
       "name": "Castingalloy",
       "type": "item",
-      "sortid": 60,
+      "sortid": 77,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -912,7 +912,7 @@
     {
       "name": "Coppernugget",
       "type": "item",
-      "sortid": 5,
+      "sortid": 56,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -920,7 +920,7 @@
     {
       "name": "CopperNuggetrecipe",
       "type": "recipe",
-      "sortid": 147,
+      "sortid": 161,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -928,7 +928,7 @@
     {
       "name": "CastingAlloyRecipe",
       "type": "recipe",
-      "sortid": 148,
+      "sortid": 162,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -936,7 +936,7 @@
     {
       "name": "CastingAlloyIngot",
       "type": "item",
-      "sortid": 65,
+      "sortid": 80,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -944,7 +944,7 @@
     {
       "name": "Castingalloyingotrecipe",
       "type": "recipe",
-      "sortid": 149,
+      "sortid": 163,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -952,7 +952,7 @@
     {
       "name": "Hammer",
       "type": "tool",
-      "sortid": 80,
+      "sortid": 84,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -960,7 +960,7 @@
     {
       "name": "CopperPickaxe",
       "type": "tool",
-      "sortid": 81,
+      "sortid": 95,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -968,7 +968,7 @@
     {
       "name": "CopperAxe",
       "type": "tool",
-      "sortid": 82,
+      "sortid": 96,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -976,7 +976,7 @@
     {
       "name": "CopperSword",
       "type": "tool",
-      "sortid": 93,
+      "sortid": 107,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -984,7 +984,7 @@
     {
       "name": "CopperShovel",
       "type": "tool",
-      "sortid": 83,
+      "sortid": 97,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -992,7 +992,7 @@
     {
       "name": "CopperHoe",
       "type": "tool",
-      "sortid": 84,
+      "sortid": 98,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -1000,7 +1000,7 @@
     {
       "name": "CopperPickaxeRecipe",
       "type": "recipe",
-      "sortid": 150,
+      "sortid": 164,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -1008,7 +1008,7 @@
     {
       "name": "CopperAxeRecipe",
       "type": "recipe",
-      "sortid": 151,
+      "sortid": 165,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -1016,7 +1016,7 @@
     {
       "name": "CopperSwordRecipe",
       "type": "recipe",
-      "sortid": 152,
+      "sortid": 166,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -1024,7 +1024,7 @@
     {
       "name": "CopperShovelRecipe",
       "type": "recipe",
-      "sortid": 153,
+      "sortid": 167,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -1032,7 +1032,7 @@
     {
       "name": "CopperHoeRecipe",
       "type": "recipe",
-      "sortid": 154,
+      "sortid": 168,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -1040,7 +1040,7 @@
     {
       "name": "Sulfur_SteelPickaxe",
       "type": "tool",
-      "sortid": 85,
+      "sortid": 99,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -1048,7 +1048,7 @@
     {
       "name": "Sulfur_SteelAxe",
       "type": "tool",
-      "sortid": 86,
+      "sortid": 100,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -1056,7 +1056,7 @@
     {
       "name": "Sulfur_SteelSword",
       "type": "tool",
-      "sortid": 94,
+      "sortid": 108,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -1064,7 +1064,7 @@
     {
       "name": "Sulfur_SteelShovel",
       "type": "tool",
-      "sortid": 87,
+      "sortid": 101,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -1072,7 +1072,7 @@
     {
       "name": "Sulfur_SteelHoe",
       "type": "tool",
-      "sortid": 88,
+      "sortid": 102,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -1080,7 +1080,7 @@
     {
       "name": "Sulfur_SteelPickaxeRecipe",
       "type": "recipe",
-      "sortid": 155,
+      "sortid": 169,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -1088,7 +1088,7 @@
     {
       "name": "Sulfur_SteelAxeRecipe",
       "type": "recipe",
-      "sortid": 156,
+      "sortid": 170,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -1096,7 +1096,7 @@
     {
       "name": "Sulfur_SteelSwordRecipe",
       "type": "recipe",
-      "sortid": 157,
+      "sortid": 171,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -1104,7 +1104,7 @@
     {
       "name": "Sulfur_SteelShovelRecipe",
       "type": "recipe",
-      "sortid": 158,
+      "sortid": 172,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -1112,7 +1112,7 @@
     {
       "name": "Sulfur_SteelHoeRecipe",
       "type": "recipe",
-      "sortid": 159,
+      "sortid": 173,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -1120,7 +1120,7 @@
     {
       "name": "BasicMetallurgyCastingTableRecipe",
       "type": "recipe",
-      "sortid": 160,
+      "sortid": 174,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -1128,7 +1128,7 @@
     {
       "name": "IngotCast",
       "type": "item",
-      "sortid": 57,
+      "sortid": 91,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -1136,7 +1136,7 @@
     {
       "name": "PlateCast",
       "type": "item",
-      "sortid": 58,
+      "sortid": 94,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -1144,7 +1144,7 @@
     {
       "name": "BaseMetallurgyCastingTable",
       "type": "block",
-      "sortid": 56,
+      "sortid": 39,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -1152,7 +1152,7 @@
     {
       "name": "DaoriteOre",
       "type": "block",
-      "sortid": 66,
+      "sortid": 41,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -1160,7 +1160,7 @@
     {
       "name": "DaoriteOreBlock",
       "type": "block",
-      "sortid": 67,
+      "sortid": 42,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -1168,7 +1168,7 @@
     {
       "name": "DaoriteIngot",
       "type": "item",
-      "sortid": 68,
+      "sortid": 81,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -1176,7 +1176,7 @@
     {
       "name": "DaoriteOreBlockRecipe",
       "type": "recipe",
-      "sortid": 161,
+      "sortid": 175,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -1184,7 +1184,7 @@
     {
       "name": "DaoriteBlockOreRecipe",
       "type": "recipe",
-      "sortid": 162,
+      "sortid": 176,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -1192,7 +1192,7 @@
     {
       "name": "DaoriteOreSmelting",
       "type": "recipe",
-      "sortid": 163,
+      "sortid": 177,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -1200,7 +1200,7 @@
     {
       "name": "DaoritePickaxe",
       "type": "tool",
-      "sortid": 89,
+      "sortid": 103,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -1208,7 +1208,7 @@
     {
       "name": "DaoriteAxe",
       "type": "tool",
-      "sortid": 90,
+      "sortid": 104,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -1216,7 +1216,7 @@
     {
       "name": "DaoriteSword",
       "type": "tool",
-      "sortid": 95,
+      "sortid": 109,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -1224,7 +1224,7 @@
     {
       "name": "DaoriteShovel",
       "type": "tool",
-      "sortid": 91,
+      "sortid": 105,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -1232,7 +1232,7 @@
     {
       "name": "DaoriteHoe",
       "type": "tool",
-      "sortid": 92,
+      "sortid": 106,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -1240,7 +1240,7 @@
     {
       "name": "DaoritePickaxeRecipe",
       "type": "recipe",
-      "sortid": 164,
+      "sortid": 178,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -1248,7 +1248,7 @@
     {
       "name": "DaoriteAxeRecipe",
       "type": "recipe",
-      "sortid": 165,
+      "sortid": 179,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -1256,7 +1256,7 @@
     {
       "name": "DaoriteSwordRecipe",
       "type": "recipe",
-      "sortid": 166,
+      "sortid": 180,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -1264,7 +1264,7 @@
     {
       "name": "DaoriteShovelRecipe",
       "type": "recipe",
-      "sortid": 167,
+      "sortid": 181,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -1272,7 +1272,7 @@
     {
       "name": "DaoriteHoeRecipe",
       "type": "recipe",
-      "sortid": 168,
+      "sortid": 182,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -1280,7 +1280,7 @@
     {
       "name": "Ironplate",
       "type": "item",
-      "sortid": 63,
+      "sortid": 90,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -1288,7 +1288,7 @@
     {
       "name": "DaoriteNugget",
       "type": "item",
-      "sortid": 69,
+      "sortid": 82,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -1296,7 +1296,7 @@
     {
       "name": "Daoriteingotrecipe",
       "type": "recipe",
-      "sortid": 169,
+      "sortid": 183,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -1304,7 +1304,7 @@
     {
       "name": "Daoritenuggetrecipe",
       "type": "recipe",
-      "sortid": 170,
+      "sortid": 184,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -1312,7 +1312,7 @@
     {
       "name": "BasicCastingGUI",
       "type": "gui",
-      "sortid": 171,
+      "sortid": 185,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -1320,7 +1320,7 @@
     {
       "name": "Essencewoodlog",
       "type": "block",
-      "sortid": 71,
+      "sortid": 44,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -1328,7 +1328,7 @@
     {
       "name": "EssencewoodPlanks",
       "type": "block",
-      "sortid": 72,
+      "sortid": 45,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -1336,7 +1336,7 @@
     {
       "name": "Essencewoodstairs",
       "type": "block",
-      "sortid": 73,
+      "sortid": 46,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -1344,7 +1344,7 @@
     {
       "name": "EssencewoodFence",
       "type": "block",
-      "sortid": 74,
+      "sortid": 47,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -1352,7 +1352,7 @@
     {
       "name": "Essencewoodslab",
       "type": "block",
-      "sortid": 75,
+      "sortid": 48,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -1360,7 +1360,7 @@
     {
       "name": "EssencewoodTrapdoor",
       "type": "block",
-      "sortid": 76,
+      "sortid": 49,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -1368,7 +1368,7 @@
     {
       "name": "EssencewoodBookshelf",
       "type": "block",
-      "sortid": 70,
+      "sortid": 43,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -1376,7 +1376,7 @@
     {
       "name": "Essencewoodplanksrecipe",
       "type": "recipe",
-      "sortid": 172,
+      "sortid": 186,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -1384,7 +1384,7 @@
     {
       "name": "Essencewoodstairsrecipe",
       "type": "recipe",
-      "sortid": 173,
+      "sortid": 187,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -1392,7 +1392,7 @@
     {
       "name": "Essencewoodslabrecipe",
       "type": "recipe",
-      "sortid": 174,
+      "sortid": 188,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -1400,7 +1400,7 @@
     {
       "name": "Essencewoodfencerecipe",
       "type": "recipe",
-      "sortid": 175,
+      "sortid": 189,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -1408,7 +1408,7 @@
     {
       "name": "Essencewoodtrapdoorrecipe",
       "type": "recipe",
-      "sortid": 176,
+      "sortid": 190,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -1416,7 +1416,7 @@
     {
       "name": "Essencewoodbookshelfrecipe",
       "type": "recipe",
-      "sortid": 177,
+      "sortid": 191,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -1424,7 +1424,7 @@
     {
       "name": "Craftingtablerecipe1",
       "type": "recipe",
-      "sortid": 178,
+      "sortid": 192,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -1432,7 +1432,7 @@
     {
       "name": "Craftingtablerecipe2",
       "type": "recipe",
-      "sortid": 179,
+      "sortid": 193,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -1440,7 +1440,7 @@
     {
       "name": "BaseOre",
       "type": "block",
-      "sortid": 77,
+      "sortid": 3,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -1448,7 +1448,7 @@
     {
       "name": "NichtOre",
       "type": "block",
-      "sortid": 78,
+      "sortid": 4,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -1456,7 +1456,7 @@
     {
       "name": "Nichtshard",
       "type": "item",
-      "sortid": 79,
+      "sortid": 83,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -1464,7 +1464,7 @@
     {
       "name": "Orepile",
       "type": "structure",
-      "sortid": 180,
+      "sortid": 194,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -1472,7 +1472,7 @@
     {
       "name": "Essencetree",
       "type": "structure",
-      "sortid": 181,
+      "sortid": 195,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -1480,7 +1480,7 @@
     {
       "name": "BasicCastingGUIProcedure",
       "type": "procedure",
-      "sortid": 182,
+      "sortid": 196,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1508,7 +1508,7 @@
     {
       "name": "ForgeFrameRecipe",
       "type": "recipe",
-      "sortid": 183,
+      "sortid": 197,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -1516,7 +1516,7 @@
     {
       "name": "IronToolRod",
       "type": "item",
-      "sortid": 184,
+      "sortid": 89,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -1524,7 +1524,7 @@
     {
       "name": "Blocks",
       "type": "tab",
-      "sortid": 185,
+      "sortid": 198,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -1532,7 +1532,7 @@
     {
       "name": "RodCast",
       "type": "item",
-      "sortid": 186,
+      "sortid": 93,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -1540,7 +1540,7 @@
     {
       "name": "MetallurgyTable",
       "type": "block",
-      "sortid": 187,
+      "sortid": 50,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -1548,7 +1548,7 @@
     {
       "name": "Metallurgytablerecipe1",
       "type": "recipe",
-      "sortid": 188,
+      "sortid": 199,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -1556,7 +1556,7 @@
     {
       "name": "Metallurgy_table_recipe2",
       "type": "recipe",
-      "sortid": 189,
+      "sortid": 200,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -1564,7 +1564,7 @@
     {
       "name": "EnhancedCraftingGrid",
       "type": "item",
-      "sortid": 190,
+      "sortid": 85,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -1572,7 +1572,7 @@
     {
       "name": "Enhancedcraftinggridrecipe",
       "type": "recipe",
-      "sortid": 191,
+      "sortid": 201,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -1580,7 +1580,7 @@
     {
       "name": "MetallurgyCastingTable",
       "type": "block",
-      "sortid": 192,
+      "sortid": 51,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -1588,7 +1588,7 @@
     {
       "name": "Metallurgy_Casting_Table_Recipe",
       "type": "recipe",
-      "sortid": 193,
+      "sortid": 202,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -1596,7 +1596,7 @@
     {
       "name": "Metallurgy_Casting_Table_Recipe1",
       "type": "recipe",
-      "sortid": 194,
+      "sortid": 203,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -1604,7 +1604,7 @@
     {
       "name": "PlateCastGrid",
       "type": "item",
-      "sortid": 195,
+      "sortid": 86,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -1612,7 +1612,7 @@
     {
       "name": "PlateCastGridRecipe",
       "type": "recipe",
-      "sortid": 196,
+      "sortid": 204,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -1620,7 +1620,7 @@
     {
       "name": "MetallurgySmithingTable",
       "type": "block",
-      "sortid": 197,
+      "sortid": 52,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -1628,7 +1628,79 @@
     {
       "name": "Revenantstone",
       "type": "block",
-      "sortid": 198,
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "MetallurgyGrindstone",
+      "type": "block",
+      "sortid": 53,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "EnhancedGrindstone",
+      "type": "item",
+      "sortid": 87,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "GearCast",
+      "type": "item",
+      "sortid": 92,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "IronGear",
+      "type": "item",
+      "sortid": 88,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "Irongearrecipe",
+      "type": "recipe",
+      "sortid": 205,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "HardenedSulfurSteelGear",
+      "type": "item",
+      "sortid": 64,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "HardenedSulfurSteelRod",
+      "type": "item",
+      "sortid": 65,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "HardenedSulfurSteelPlate",
+      "type": "item",
+      "sortid": 206,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "Enhancedgrindstonerecipe",
+      "type": "recipe",
+      "sortid": 207,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -1649,31 +1721,34 @@
       "item.vanillaforging.sulfur_steelaxe": "Sulfur Steel Axe",
       "item.vanillaforging.hardenedsulfursteelbucket": "Hardened Sulfur Steel Bucket",
       "item.vanillaforging.weakcastingalloy": "Weak Casting Alloy",
-      "item.vanillaforging.copperpickaxe": "Copper Pickaxe",
       "item.vanillaforging.copperaxe": "Copper Axe",
+      "item.vanillaforging.copperpickaxe": "Copper Pickaxe",
+      "item.vanillaforging.hardenedsulfursteelrod": "Hardened Sulfur Steel Rod",
       "item.vanillaforging.infusedcarbon": "Infused Carbon",
       "block.vanillaforging.lightsmithingbrickfence": "Light Smithingbrick Fence",
       "block.vanillaforging.smithingbrickfence": "Smithingbrick Fence",
       "item.vanillaforging.portalcore": "Portal Core",
       "item.vanillaforging.sulfur_steelshovel": "Sulfur Steel Shovel",
-      "block.vanillaforging.lightsmithingbricksmoothslab": "Light Smithingbrick Smoothslab",
       "itemGroup.tabmainforgeparts": "Main Forge Parts",
+      "block.vanillaforging.lightsmithingbricksmoothslab": "Light Smithingbrick Smoothslab",
       "item.vanillaforging.greenstonedust": "Greenstonedust",
       "block.vanillaforging.corruptedpodzol": "Corruptedpodzol",
       "block.vanillaforging.smithingbricksmoothslabblock": "Smithingbrick Slab Block",
       "item.vanillaforging.ingotcast": "Ingot Cast",
       "item.vanillaforging.hardeningsulfuralloypaste": "Hardening Sulfur Alloy Paste",
+      "item.vanillaforging.hardenedsulfursteelgear": "Hardened Sulfur Steel Gear",
       "block.vanillaforging.greenstonepodzol": "Greenstone Podzol",
       "item.vanillaforging.smithingbrick": "Smithing Brick",
       "item.vanillaforging.sulfursteelingot": "Sulfur Steel Ingot",
       "item.vanillaforging.daoritehoe": "Daorite Hoe",
       "item.vanillaforging.enhancedcraftinggrid": "Enhanced Crafting Grid",
+      "item.vanillaforging.hardenedsulfursteelplate": "Hardened Sulfur Steel Plate",
       "item.vanillaforging.sulfur_steelhoe": "Sulfur Steel Hoe",
-      "block.vanillaforging.basemetallurgycastingtable": "Base Metallurgy Casting Table",
       "item.vanillaforging.nichtshard": "Nicht Shard",
+      "block.vanillaforging.basemetallurgycastingtable": "Base Metallurgy Casting Table",
       "block.vanillaforging.basicmetallurgytable": "Basic Metallurgy Table",
-      "item.vanillaforging.corruptingdust": "Corruptingdust",
       "block.vanillaforging.smithingbrickblock": "Smithingbrick Block",
+      "item.vanillaforging.corruptingdust": "Corruptingdust",
       "block.vanillaforging.forgeframe": "Forge Frame",
       "block.vanillaforging.ironwoodleaves": "Ironwoodleaves",
       "item.vanillaforging.sulfursteelalloyscrap": "Sulfur Steel Alloy Scrap",
@@ -1689,6 +1764,7 @@
       "block.vanillaforging.brokenportaldevice": "Broken Portal Device",
       "block.vanillaforging.shardedpodzol": "Sharded Podzol",
       "item.vanillaforging.copperhoe": "Copper Hoe",
+      "item.vanillaforging.enhancedgrindstone": "Enhanced Grindstone",
       "item.vanillaforging.daoriteaxe": "Daorite Axe",
       "item.vanillaforging.daoritesword": "Daorite Sword",
       "block.vanillaforging.sulfurore": "Sulfur Ore",
@@ -1711,7 +1787,9 @@
       "block.vanillaforging.temporallyinflictedpodzol": "Temporallyinflictedpodzol",
       "item.vanillaforging.quartzdust": "Quartzdust",
       "block.vanillaforging.lightsmithingbrickstairs": "Light Smithingbrickstairs",
+      "item.vanillaforging.gearcast": "Gear Cast",
       "block.vanillaforging.essencewoodslab": "Essencewoodslab",
+      "block.vanillaforging.metallurgygrindstone": "Metallurgy Grindstone",
       "item.vanillaforging.copperingot": "Copper Ingot",
       "block.vanillaforging.smithingbrickstairs": "Smithingbrick Stairs",
       "block.vanillaforging.baseore": "Base Ore",
@@ -1742,6 +1820,7 @@
       "block.vanillaforging.ironwoodcraftingtable": "Ironwood Crafting Table",
       "block.vanillaforging.smithingbrickstorageblock": "Smithingbrick Storage Block",
       "block.vanillaforging.ironwoodlog": "Ironwood Log",
+      "item.vanillaforging.irongear": "Iron Gear",
       "block.vanillaforging.smithingbrickwall": "Smithingbrick Wall",
       "item.vanillaforging.hammer": "Hammer"
     }

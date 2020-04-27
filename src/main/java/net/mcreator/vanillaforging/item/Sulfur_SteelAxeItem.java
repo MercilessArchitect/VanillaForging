@@ -16,7 +16,7 @@ public class Sulfur_SteelAxeItem extends VanillaForgingElements.ModElement {
 	@ObjectHolder("vanillaforging:sulfur_steelaxe")
 	public static final Item block = null;
 	public Sulfur_SteelAxeItem(VanillaForgingElements instance) {
-		super(instance, 86);
+		super(instance, 100);
 	}
 
 	@Override

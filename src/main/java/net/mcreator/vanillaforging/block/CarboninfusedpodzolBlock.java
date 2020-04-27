@@ -44,7 +44,7 @@ public class CarboninfusedpodzolBlock extends VanillaForgingElements.ModElement 
 	@ObjectHolder("vanillaforging:carboninfusedpodzol")
 	public static final Block block = null;
 	public CarboninfusedpodzolBlock(VanillaForgingElements instance) {
-		super(instance, 23);
+		super(instance, 16);
 	}
 
 	@Override

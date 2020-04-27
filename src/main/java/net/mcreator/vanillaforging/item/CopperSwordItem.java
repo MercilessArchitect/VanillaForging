@@ -16,7 +16,7 @@ public class CopperSwordItem extends VanillaForgingElements.ModElement {
 	@ObjectHolder("vanillaforging:coppersword")
 	public static final Item block = null;
 	public CopperSwordItem(VanillaForgingElements instance) {
-		super(instance, 93);
+		super(instance, 107);
 	}
 
 	@Override

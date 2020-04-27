@@ -21,7 +21,7 @@ public class GreenstonedustItem extends VanillaForgingElements.ModElement {
 	@ObjectHolder("vanillaforging:greenstonedust")
 	public static final Item block = null;
 	public GreenstonedustItem(VanillaForgingElements instance) {
-		super(instance, 27);
+		super(instance, 68);
 	}
 
 	@Override

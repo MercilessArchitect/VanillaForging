@@ -15,7 +15,7 @@ public class PortalcoreItem extends VanillaForgingElements.ModElement {
 	@ObjectHolder("vanillaforging:portalcore")
 	public static final Item block = null;
 	public PortalcoreItem(VanillaForgingElements instance) {
-		super(instance, 35);
+		super(instance, 72);
 	}
 
 	@Override
