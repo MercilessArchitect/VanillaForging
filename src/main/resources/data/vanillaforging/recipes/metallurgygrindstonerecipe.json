@@ -1,0 +1,42 @@
+{
+  "group": "vanillaforging",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "vanillaforging:hardenedsulfursteelplate"
+    },
+    "1": {
+      "item": "vanillaforging:forgeframe"
+    },
+    "2": {
+      "item": "vanillaforging:hardenedsulfursteelplate"
+    },
+    "3": {
+      "item": "minecraft:iron_bars"
+    },
+    "4": {
+      "item": "vanillaforging:enhancedgrindstone"
+    },
+    "5": {
+      "item": "minecraft:iron_bars"
+    },
+    "6": {
+      "item": "minecraft:blaze_powder"
+    },
+    "7": {
+      "item": "vanillaforging:hardenedsulfursteelgear"
+    },
+    "8": {
+      "item": "minecraft:blaze_powder"
+    }
+  },
+  "result": {
+    "item": "vanillaforging:metallurgygrindstone",
+    "count": 1
+  }
+}

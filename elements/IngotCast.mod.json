@@ -3,7 +3,7 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "ingot_cast",
+    "texture": "ingot_cast_2",
     "customModelName": "Normal",
     "name": "Ingot Cast",
     "creativeTab": {
