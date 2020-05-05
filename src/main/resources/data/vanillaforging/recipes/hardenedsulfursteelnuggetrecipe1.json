@@ -1,0 +1,13 @@
+{
+  "group": "vanillaforging",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "vanillaforging:hardenedsulfursteelingot"
+    }
+  ],
+  "result": {
+    "item": "vanillaforging:hardenedsulfursteelnugget",
+    "count": 9
+  }
+}

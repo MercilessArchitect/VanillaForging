@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "vanillaforging:blocks/hardened_sulfur_steel_block",
+    "up": "vanillaforging:blocks/hardened_sulfur_steel_block",
+    "north": "vanillaforging:blocks/hardened_sulfur_steel_block",
+    "east": "vanillaforging:blocks/hardened_sulfur_steel_block",
+    "south": "vanillaforging:blocks/hardened_sulfur_steel_block",
+    "west": "vanillaforging:blocks/hardened_sulfur_steel_block",
+    "particle": "vanillaforging:blocks/hardened_sulfur_steel_block"
+  }
+}

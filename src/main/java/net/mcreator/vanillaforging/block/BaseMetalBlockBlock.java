@@ -20,11 +20,11 @@ import java.util.List;
 import java.util.Collections;
 
 @VanillaForgingElements.ModElement.Tag
-public class DaoriteOreBlockBlock extends VanillaForgingElements.ModElement {
-	@ObjectHolder("vanillaforging:daoriteoreblock")
+public class BaseMetalBlockBlock extends VanillaForgingElements.ModElement {
+	@ObjectHolder("vanillaforging:basemetalblock")
 	public static final Block block = null;
-	public DaoriteOreBlockBlock(VanillaForgingElements instance) {
-		super(instance, 42);
+	public BaseMetalBlockBlock(VanillaForgingElements instance) {
+		super(instance, 215);
 	}
 
 	@Override
@@ -34,9 +34,9 @@ public class DaoriteOreBlockBlock extends VanillaForgingElements.ModElement {
 	}
 	public static class CustomBlock extends Block {
 		public CustomBlock() {
-			super(Block.Properties.create(Material.IRON).sound(SoundType.METAL).hardnessAndResistance(6f, 30f).lightValue(0).harvestLevel(2)
+			super(Block.Properties.create(Material.IRON).sound(SoundType.METAL).hardnessAndResistance(6f, 30f).lightValue(0).harvestLevel(3)
 					.harvestTool(ToolType.PICKAXE));
-			setRegistryName("daoriteoreblock");
+			setRegistryName("basemetalblock");
 		}
 
 		@Override

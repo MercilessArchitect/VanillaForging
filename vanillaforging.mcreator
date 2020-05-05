@@ -1038,86 +1038,6 @@
       "ids": {}
     },
     {
-      "name": "Sulfur_SteelPickaxe",
-      "type": "tool",
-      "sortid": 99,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {}
-    },
-    {
-      "name": "Sulfur_SteelAxe",
-      "type": "tool",
-      "sortid": 100,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {}
-    },
-    {
-      "name": "Sulfur_SteelSword",
-      "type": "tool",
-      "sortid": 108,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {}
-    },
-    {
-      "name": "Sulfur_SteelShovel",
-      "type": "tool",
-      "sortid": 101,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {}
-    },
-    {
-      "name": "Sulfur_SteelHoe",
-      "type": "tool",
-      "sortid": 102,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {}
-    },
-    {
-      "name": "Sulfur_SteelPickaxeRecipe",
-      "type": "recipe",
-      "sortid": 169,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {}
-    },
-    {
-      "name": "Sulfur_SteelAxeRecipe",
-      "type": "recipe",
-      "sortid": 170,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {}
-    },
-    {
-      "name": "Sulfur_SteelSwordRecipe",
-      "type": "recipe",
-      "sortid": 171,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {}
-    },
-    {
-      "name": "Sulfur_SteelShovelRecipe",
-      "type": "recipe",
-      "sortid": 172,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {}
-    },
-    {
-      "name": "Sulfur_SteelHoeRecipe",
-      "type": "recipe",
-      "sortid": 173,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {}
-    },
-    {
       "name": "BasicMetallurgyCastingTableRecipe",
       "type": "recipe",
       "sortid": 174,
@@ -1720,6 +1640,194 @@
       "compiles": true,
       "locked_code": false,
       "ids": {}
+    },
+    {
+      "name": "BaseIngot",
+      "type": "item",
+      "sortid": 210,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "BaseNugget",
+      "type": "item",
+      "sortid": 212,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "BaseNuggetRecipe",
+      "type": "recipe",
+      "sortid": 213,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "BaseNuggetRecipe1",
+      "type": "recipe",
+      "sortid": 214,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "BaseMetalBlock",
+      "type": "block",
+      "sortid": 215,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "BaseMetalBlockRecipe",
+      "type": "recipe",
+      "sortid": 216,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "BaseMetalBlockRecipe1",
+      "type": "recipe",
+      "sortid": 217,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "HardenedSulfurSteelNugget",
+      "type": "item",
+      "sortid": 218,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "HardenedSulfurSteelNuggetRecipe1",
+      "type": "recipe",
+      "sortid": 219,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "HardenedSulfurSteelNuggetRecipe",
+      "type": "recipe",
+      "sortid": 220,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "HardenedSulfurSteelBlock",
+      "type": "block",
+      "sortid": 221,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "HardenedSulfursteelblockrecipe",
+      "type": "recipe",
+      "sortid": 222,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "HardenedSulfurSteelBlockRecipe1",
+      "type": "recipe",
+      "sortid": 223,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "IronDust",
+      "type": "item",
+      "sortid": 224,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "EmeraldDust",
+      "type": "item",
+      "sortid": 225,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "DiamondDust",
+      "type": "item",
+      "sortid": 226,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "HardenedSulfurSteelDust",
+      "type": "item",
+      "sortid": 227,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "BaseDust",
+      "type": "item",
+      "sortid": 227,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "Stardust",
+      "type": "item",
+      "sortid": 228,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "GrindstoneGUI",
+      "type": "gui",
+      "sortid": 229,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "GrindstoneGUIProcedure",
+      "type": "procedure",
+      "sortid": 230,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "int"
+          },
+          {
+            "name": "y",
+            "type": "int"
+          },
+          {
+            "name": "z",
+            "type": "int"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -1728,23 +1836,23 @@
     "en_us": {
       "item.vanillaforging.firmweakcastingalloy": "Firmweakcastingalloy",
       "block.vanillaforging.essencewoodplanks": "Essencewood Planks",
+      "block.vanillaforging.hardenedsulfursteelblock": "Hardened Sulfur Steel Block",
       "item.vanillaforging.castingalloy": "Casting Alloy",
       "block.vanillaforging.lightsmithingbrickslab": "Light Smithingbrick Slab",
-      "item.vanillaforging.temporaldust": "Temporal Dust",
       "block.vanillaforging.nichtore": "Nicht Ore",
+      "item.vanillaforging.temporaldust": "Temporal Dust",
       "block.vanillaforging.copperore": "Copper Ore",
       "biome.vanillaforging.orousforest": "Orous Forest",
-      "item.vanillaforging.sulfur_steelaxe": "Sulfur Steel Axe",
       "item.vanillaforging.hardenedsulfursteelbucket": "Hardened Sulfur Steel Bucket",
       "item.vanillaforging.weakcastingalloy": "Weak Casting Alloy",
-      "item.vanillaforging.copperpickaxe": "Copper Pickaxe",
       "item.vanillaforging.copperaxe": "Copper Axe",
+      "item.vanillaforging.copperpickaxe": "Copper Pickaxe",
+      "item.vanillaforging.hardenedsulfursteeldust": "Hardened Sulfur Steel Dust",
       "item.vanillaforging.hardenedsulfursteelrod": "Hardened Sulfur Steel Rod",
       "item.vanillaforging.infusedcarbon": "Infused Carbon",
       "block.vanillaforging.lightsmithingbrickfence": "Light Smithingbrick Fence",
       "block.vanillaforging.smithingbrickfence": "Smithingbrick Fence",
       "item.vanillaforging.portalcore": "Portal Core",
-      "item.vanillaforging.sulfur_steelshovel": "Sulfur Steel Shovel",
       "block.vanillaforging.lightsmithingbricksmoothslab": "Light Smithingbrick Smoothslab",
       "itemGroup.tabmainforgeparts": "Main Forge Parts",
       "item.vanillaforging.greenstonedust": "Greenstonedust",
@@ -1758,14 +1866,17 @@
       "item.vanillaforging.sulfursteelingot": "Sulfur Steel Ingot",
       "item.vanillaforging.daoritehoe": "Daorite Hoe",
       "item.vanillaforging.enhancedcraftinggrid": "Enhanced Crafting Grid",
+      "block.vanillaforging.basemetalblock": "Base Metal Block",
       "item.vanillaforging.hardenedsulfursteelplate": "Hardened Sulfur Steel Plate",
-      "item.vanillaforging.sulfur_steelhoe": "Sulfur Steel Hoe",
+      "item.vanillaforging.stardust": "Stardust",
       "block.vanillaforging.basemetallurgycastingtable": "Base Metallurgy Casting Table",
       "item.vanillaforging.nichtshard": "Nicht Shard",
       "block.vanillaforging.basicmetallurgytable": "Basic Metallurgy Table",
-      "item.vanillaforging.corruptingdust": "Corruptingdust",
       "block.vanillaforging.smithingbrickblock": "Smithingbrick Block",
+      "item.vanillaforging.corruptingdust": "Corruptingdust",
+      "item.vanillaforging.baseingot": "Base Ingot",
       "block.vanillaforging.forgeframe": "Forge Frame",
+      "item.vanillaforging.emeralddust": "Emerald Dust",
       "block.vanillaforging.ironwoodleaves": "Ironwoodleaves",
       "item.vanillaforging.sulfursteelalloyscrap": "Sulfur Steel Alloy Scrap",
       "block.vanillaforging.lightsmithingbricktrapdoor": "Light Smithingbrick Trapdoor",
@@ -1782,6 +1893,7 @@
       "item.vanillaforging.copperhoe": "Copper Hoe",
       "item.vanillaforging.enhancedgrindstone": "Enhanced Grindstone",
       "item.vanillaforging.daoriteaxe": "Daorite Axe",
+      "item.vanillaforging.basedust": "Base Dust",
       "item.vanillaforging.daoritesword": "Daorite Sword",
       "block.vanillaforging.sulfurore": "Sulfur Ore",
       "item.vanillaforging.coaldust": "Coal Dust",
@@ -1793,7 +1905,7 @@
       "block.vanillaforging.lightsmithingbrickwall": "Light Smithingbrick Wall",
       "block.vanillaforging.metallurgytable": "Metallurgy Table",
       "block.vanillaforging.smithingbrickslab": "Smithingbrick Slab",
-      "item.vanillaforging.sulfur_steelpickaxe": "Sulfur Steel Pickaxe",
+      "item.vanillaforging.hardenedsulfursteelnugget": "Hardened Sulfur Steel Nugget",
       "block.vanillaforging.sulfursteelblock": "Sulfur Steel Block",
       "block.vanillaforging.essencewoodbookshelf": "Essencewood Bookshelf",
       "block.vanillaforging.daoriteore": "Daorite Ore",
@@ -1810,6 +1922,7 @@
       "block.vanillaforging.smithingbrickstairs": "Smithingbrick Stairs",
       "block.vanillaforging.baseore": "Base Ore",
       "item.vanillaforging.lightsmithingbrick": "Light Smithingbrick",
+      "item.vanillaforging.diamonddust": "Diamond Dust",
       "block.vanillaforging.ironwoodslab": "Ironwoodslab",
       "block.vanillaforging.smithingbricktrapdoor": "Smithingbrick Trapdoor",
       "block.vanillaforging.lightsmithingbrickblock": "Light Smithingbrick Block",
@@ -1825,7 +1938,7 @@
       "block.vanillaforging.essencewoodlog": "Essencewood Log",
       "block.vanillaforging.essencewoodfence": "Essencewood Fence",
       "block.vanillaforging.daoriteoreblock": "Block of Daorite",
-      "item.vanillaforging.sulfur_steelsword": "Sulfur_Steel Sword",
+      "item.vanillaforging.irondust": "Iron Dust",
       "block.vanillaforging.lightsmithingbrickstorageblock": "Light Smithingbrick Storage Block",
       "block.vanillaforging.metallurgysmithingtable": "Metallurgy Smithing Table",
       "item.vanillaforging.castingalloyingot": "Casting Alloy Ingot",
@@ -1836,6 +1949,7 @@
       "block.vanillaforging.ironwoodcraftingtable": "Ironwood Crafting Table",
       "block.vanillaforging.smithingbrickstorageblock": "Smithingbrick Storage Block",
       "block.vanillaforging.ironwoodlog": "Ironwood Log",
+      "item.vanillaforging.basenugget": "Base Metal Nugget",
       "item.vanillaforging.irongear": "Iron Gear",
       "block.vanillaforging.smithingbrickwall": "Smithingbrick Wall",
       "item.vanillaforging.hammer": "Hammer"

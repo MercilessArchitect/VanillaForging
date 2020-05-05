@@ -1,0 +1,13 @@
+{
+  "group": "vanillaforging",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "vanillaforging:basemetalblock"
+    }
+  ],
+  "result": {
+    "item": "vanillaforging:baseingot",
+    "count": 9
+  }
+}

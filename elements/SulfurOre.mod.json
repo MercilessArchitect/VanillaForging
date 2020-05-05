@@ -84,6 +84,9 @@
     "blocksToReplace": [
       {
         "value": "Blocks.QUARTZ_ORE"
+      },
+      {
+        "value": "Blocks.NETHERRACK"
       }
     ],
     "frequencyPerChunks": 6,

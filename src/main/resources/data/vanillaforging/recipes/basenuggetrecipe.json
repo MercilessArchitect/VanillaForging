@@ -1,0 +1,42 @@
+{
+  "group": "vanillaforging",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "vanillaforging:basenugget"
+    },
+    "1": {
+      "item": "vanillaforging:basenugget"
+    },
+    "2": {
+      "item": "vanillaforging:basenugget"
+    },
+    "3": {
+      "item": "vanillaforging:basenugget"
+    },
+    "4": {
+      "item": "vanillaforging:basenugget"
+    },
+    "5": {
+      "item": "vanillaforging:basenugget"
+    },
+    "6": {
+      "item": "vanillaforging:basenugget"
+    },
+    "7": {
+      "item": "vanillaforging:basenugget"
+    },
+    "8": {
+      "item": "vanillaforging:basenugget"
+    }
+  },
+  "result": {
+    "item": "vanillaforging:baseingot",
+    "count": 1
+  }
+}

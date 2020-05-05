@@ -80,6 +80,8 @@ public class SulfurOreBlock extends VanillaForgingElements.ModElement {
 				boolean blockCriteria = false;
 				if (blockAt.getBlock() == Blocks.NETHER_QUARTZ_ORE.getDefaultState().getBlock())
 					blockCriteria = true;
+				if (blockAt.getBlock() == Blocks.NETHERRACK.getDefaultState().getBlock())
+					blockCriteria = true;
 				return blockCriteria;
 			}), block.getDefaultState(), 1), Placement.COUNT_RANGE, new CountRangeConfig(6, 0, 0, 128)));
 		}
