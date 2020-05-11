@@ -38,11 +38,11 @@ import java.util.Map;
 import java.util.HashMap;
 
 @VanillaForgingElements.ModElement.Tag
-public class MetallurgyTableGUIGui extends VanillaForgingElements.ModElement {
+public class Metallurgy_Table_UIGui extends VanillaForgingElements.ModElement {
 	public static HashMap guistate = new HashMap();
 	private static ContainerType<GuiContainerMod> containerType = null;
-	public MetallurgyTableGUIGui(VanillaForgingElements instance) {
-		super(instance, 209);
+	public Metallurgy_Table_UIGui(VanillaForgingElements instance) {
+		super(instance, 232);
 		elements.addNetworkMessage(ButtonPressedMessage.class, ButtonPressedMessage::buffer, ButtonPressedMessage::new,
 				ButtonPressedMessage::handler);
 		elements.addNetworkMessage(GUISlotChangedMessage.class, GUISlotChangedMessage::buffer, GUISlotChangedMessage::new,
@@ -58,7 +58,7 @@ public class MetallurgyTableGUIGui extends VanillaForgingElements.ModElement {
 
 	@SubscribeEvent
 	public void registerContainer(RegistryEvent.Register<ContainerType<?>> event) {
-		event.getRegistry().register(containerType.setRegistryName("metallurgytablegui"));
+		event.getRegistry().register(containerType.setRegistryName("metallurgy_table_ui"));
 	}
 	public static class GuiContainerModFactory implements IContainerFactory {
 		public GuiContainerMod create(int id, PlayerInventory inv, PacketBuffer extraData) {
@@ -295,7 +295,7 @@ public class MetallurgyTableGUIGui extends VanillaForgingElements.ModElement {
 			this.xSize = 176;
 			this.ySize = 186;
 		}
-		private static final ResourceLocation texture = new ResourceLocation("vanillaforging:textures/metallurgytablegui.png");
+		private static final ResourceLocation texture = new ResourceLocation("vanillaforging:textures/metallurgy_table_ui.png");
 		@Override
 		public void render(int mouseX, int mouseY, float partialTicks) {
 			this.renderBackground();

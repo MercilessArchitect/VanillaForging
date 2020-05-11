@@ -47,7 +47,7 @@ import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
 
 import net.mcreator.vanillaforging.itemgroup.BlocksItemGroup;
-import net.mcreator.vanillaforging.gui.MetallurgyTableGUIGui;
+import net.mcreator.vanillaforging.gui.Metallurgy_Table_UIGui;
 import net.mcreator.vanillaforging.VanillaForgingElements;
 
 import java.util.List;
@@ -126,7 +126,7 @@ public class MetallurgyTableBlock extends VanillaForgingElements.ModElement {
 
 					@Override
 					public Container createMenu(int id, PlayerInventory inventory, PlayerEntity player) {
-						return new MetallurgyTableGUIGui.GuiContainerMod(id, inventory,
+						return new Metallurgy_Table_UIGui.GuiContainerMod(id, inventory,
 								new PacketBuffer(Unpooled.buffer()).writeBlockPos(new BlockPos(x, y, z)));
 					}
 				}, new BlockPos(x, y, z));
@@ -242,7 +242,7 @@ public class MetallurgyTableBlock extends VanillaForgingElements.ModElement {
 
 		@Override
 		public Container createMenu(int id, PlayerInventory player) {
-			return new MetallurgyTableGUIGui.GuiContainerMod(id, player, new PacketBuffer(Unpooled.buffer()).writeBlockPos(this.getPos()));
+			return new Metallurgy_Table_UIGui.GuiContainerMod(id, player, new PacketBuffer(Unpooled.buffer()).writeBlockPos(this.getPos()));
 		}
 
 		@Override

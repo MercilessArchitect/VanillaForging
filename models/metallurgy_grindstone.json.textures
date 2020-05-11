@@ -2,7 +2,7 @@
   "mappings": {
     "default": {
       "map": {
-        "11": "warning_area",
+        "11": "hardened_sulfur_steel_block",
         "12": "grindstone_topside",
         "13": "orge_frame_ack",
         "15": "grindstone_support",

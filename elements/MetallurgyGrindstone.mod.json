@@ -10,7 +10,7 @@
     "textureBack": "",
     "renderType": 2,
     "customModelName": "metallurgy_grindstone:default",
-    "rotationMode": 1,
+    "rotationMode": 3,
     "hasTransparency": true,
     "transparencyType": "SOLID",
     "mx": 0.0,

@@ -121,7 +121,9 @@ public class MetallurgyGrindstoneBlock extends VanillaForgingElements.ModElement
 
 		@Override
 		public BlockState getStateForPlacement(BlockItemUseContext context) {
-			return this.getDefaultState().with(FACING, context.getPlacementHorizontalFacing().getOpposite());
+			if (context.getFace() == Direction.UP || context.getFace() == Direction.DOWN)
+				return this.getDefaultState().with(FACING, Direction.NORTH);
+			return this.getDefaultState().with(FACING, context.getFace());
 		}
 
 		@Override

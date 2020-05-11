@@ -70,7 +70,7 @@
     "particleAmount": 4,
     "particleSpawningCondition": "ALWAYS",
     "hasInventory": true,
-    "guiBoundTo": "MetallurgyTableGUI",
+    "guiBoundTo": "Metallurgy_Table_UI",
     "openGUIOnRightClick": true,
     "inventorySize": 9,
     "inventoryStackSize": 64,

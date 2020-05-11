@@ -1634,14 +1634,6 @@
       "ids": {}
     },
     {
-      "name": "MetallurgyTableGUI",
-      "type": "gui",
-      "sortid": 209,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {}
-    },
-    {
       "name": "BaseIngot",
       "type": "item",
       "sortid": 210,
@@ -1828,6 +1820,22 @@
           }
         ]
       }
+    },
+    {
+      "name": "WootzSulfurSteelBucket",
+      "type": "item",
+      "sortid": 231,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "Metallurgy_Table_UI",
+      "type": "gui",
+      "sortid": 232,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
     }
   ],
   "variable_elements": [],
@@ -1845,9 +1853,9 @@
       "biome.vanillaforging.orousforest": "Orous Forest",
       "item.vanillaforging.hardenedsulfursteelbucket": "Hardened Sulfur Steel Bucket",
       "item.vanillaforging.weakcastingalloy": "Weak Casting Alloy",
-      "item.vanillaforging.copperaxe": "Copper Axe",
-      "item.vanillaforging.copperpickaxe": "Copper Pickaxe",
       "item.vanillaforging.hardenedsulfursteeldust": "Hardened Sulfur Steel Dust",
+      "item.vanillaforging.copperpickaxe": "Copper Pickaxe",
+      "item.vanillaforging.copperaxe": "Copper Axe",
       "item.vanillaforging.hardenedsulfursteelrod": "Hardened Sulfur Steel Rod",
       "item.vanillaforging.infusedcarbon": "Infused Carbon",
       "block.vanillaforging.lightsmithingbrickfence": "Light Smithingbrick Fence",
@@ -1869,8 +1877,8 @@
       "block.vanillaforging.basemetalblock": "Base Metal Block",
       "item.vanillaforging.hardenedsulfursteelplate": "Hardened Sulfur Steel Plate",
       "item.vanillaforging.stardust": "Stardust",
-      "block.vanillaforging.basemetallurgycastingtable": "Base Metallurgy Casting Table",
       "item.vanillaforging.nichtshard": "Nicht Shard",
+      "block.vanillaforging.basemetallurgycastingtable": "Base Metallurgy Casting Table",
       "block.vanillaforging.basicmetallurgytable": "Basic Metallurgy Table",
       "block.vanillaforging.smithingbrickblock": "Smithingbrick Block",
       "item.vanillaforging.corruptingdust": "Corruptingdust",
@@ -1892,6 +1900,7 @@
       "block.vanillaforging.shardedpodzol": "Sharded Podzol",
       "item.vanillaforging.copperhoe": "Copper Hoe",
       "item.vanillaforging.enhancedgrindstone": "Enhanced Grindstone",
+      "item.vanillaforging.wootzsulfursteelbucket": "Wootz Sulfur Steel Bucket",
       "item.vanillaforging.daoriteaxe": "Daorite Axe",
       "item.vanillaforging.basedust": "Base Dust",
       "item.vanillaforging.daoritesword": "Daorite Sword",

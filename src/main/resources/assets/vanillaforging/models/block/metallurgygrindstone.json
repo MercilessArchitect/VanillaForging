@@ -3,7 +3,7 @@
   "textures": {
     "all": "vanillaforging:blocks/forge_framed",
     "particle": "vanillaforging:blocks/forge_framed",
-    "11": "vanillaforging:blocks/warning_area",
+    "11": "vanillaforging:blocks/hardened_sulfur_steel_block",
     "12": "vanillaforging:blocks/grindstone_topside",
     "13": "vanillaforging:blocks/orge_frame_ack",
     "15": "vanillaforging:blocks/grindstone_support",
