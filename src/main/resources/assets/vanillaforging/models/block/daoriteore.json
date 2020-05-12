@@ -1,7 +1,7 @@
 {
   "parent": "block/cube_all",
   "textures": {
-    "all": "vanillaforging:blocks/daorite_ore",
-    "particle": "vanillaforging:blocks/daorite_ore"
+    "all": "vanillaforging:blocks/lock_slabs",
+    "particle": "vanillaforging:blocks/lock_slabs"
   }
 }

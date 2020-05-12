@@ -83,14 +83,11 @@
     "restrictionBiomes": [],
     "blocksToReplace": [
       {
-        "value": "Blocks.QUARTZ_ORE"
-      },
-      {
         "value": "Blocks.NETHERRACK"
       }
     ],
     "frequencyPerChunks": 6,
-    "frequencyOnChunk": 1,
+    "frequencyOnChunk": 6,
     "minGenerateHeight": 0,
     "maxGenerateHeight": 128
   }

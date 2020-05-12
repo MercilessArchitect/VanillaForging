@@ -78,12 +78,10 @@ public class SulfurOreBlock extends VanillaForgingElements.ModElement {
 				}
 			}, new OreFeatureConfig(OreFeatureConfig.FillerBlockType.create("sulfurore", "sulfurore", blockAt -> {
 				boolean blockCriteria = false;
-				if (blockAt.getBlock() == Blocks.NETHER_QUARTZ_ORE.getDefaultState().getBlock())
-					blockCriteria = true;
 				if (blockAt.getBlock() == Blocks.NETHERRACK.getDefaultState().getBlock())
 					blockCriteria = true;
 				return blockCriteria;
-			}), block.getDefaultState(), 1), Placement.COUNT_RANGE, new CountRangeConfig(6, 0, 0, 128)));
+			}), block.getDefaultState(), 6), Placement.COUNT_RANGE, new CountRangeConfig(6, 0, 0, 128)));
 		}
 	}
 }

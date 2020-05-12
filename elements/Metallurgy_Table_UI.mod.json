@@ -214,9 +214,21 @@
       {
         "type": "outputslot",
         "data": {
+          "id": 18,
+          "name": "Slot #18",
+          "x": 534,
+          "y": 132
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
           "id": 17,
           "name": "Slot #17",
-          "x": 534,
+          "x": 462,
           "y": 132
         }
       }

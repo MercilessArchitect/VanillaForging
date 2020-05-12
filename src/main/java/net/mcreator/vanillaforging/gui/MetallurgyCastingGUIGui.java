@@ -38,11 +38,11 @@ import java.util.Map;
 import java.util.HashMap;
 
 @VanillaForgingElements.ModElement.Tag
-public class Metallurgy_Table_UIGui extends VanillaForgingElements.ModElement {
+public class MetallurgyCastingGUIGui extends VanillaForgingElements.ModElement {
 	public static HashMap guistate = new HashMap();
 	private static ContainerType<GuiContainerMod> containerType = null;
-	public Metallurgy_Table_UIGui(VanillaForgingElements instance) {
-		super(instance, 232);
+	public MetallurgyCastingGUIGui(VanillaForgingElements instance) {
+		super(instance, 234);
 		elements.addNetworkMessage(ButtonPressedMessage.class, ButtonPressedMessage::buffer, ButtonPressedMessage::new,
 				ButtonPressedMessage::handler);
 		elements.addNetworkMessage(GUISlotChangedMessage.class, GUISlotChangedMessage::buffer, GUISlotChangedMessage::new,
@@ -58,7 +58,7 @@ public class Metallurgy_Table_UIGui extends VanillaForgingElements.ModElement {
 
 	@SubscribeEvent
 	public void registerContainer(RegistryEvent.Register<ContainerType<?>> event) {
-		event.getRegistry().register(containerType.setRegistryName("metallurgy_table_ui"));
+		event.getRegistry().register(containerType.setRegistryName("metallurgycastinggui"));
 	}
 	public static class GuiContainerModFactory implements IContainerFactory {
 		public GuiContainerMod create(int id, PlayerInventory inv, PacketBuffer extraData) {
@@ -76,7 +76,7 @@ public class Metallurgy_Table_UIGui extends VanillaForgingElements.ModElement {
 			super(containerType, id);
 			this.entity = inv.player;
 			this.world = inv.player.world;
-			this.internal = new Inventory(19);
+			this.internal = new Inventory(8);
 			if (extraData != null) {
 				BlockPos pos = extraData.readBlockPos();
 				this.x = pos.getX();
@@ -87,55 +87,29 @@ public class Metallurgy_Table_UIGui extends VanillaForgingElements.ModElement {
 					this.internal = (IInventory) ent;
 			}
 			internal.openInventory(inv.player);
-			this.customSlots.put(0, this.addSlot(new Slot(internal, 0, 44, 40) {
+			this.customSlots.put(0, this.addSlot(new Slot(internal, 0, 44, 30) {
 			}));
-			this.customSlots.put(1, this.addSlot(new Slot(internal, 1, 44, 22) {
+			this.customSlots.put(1, this.addSlot(new Slot(internal, 1, 35, 3) {
 			}));
-			this.customSlots.put(2, this.addSlot(new Slot(internal, 2, 62, 40) {
+			this.customSlots.put(2, this.addSlot(new Slot(internal, 2, 53, 3) {
 			}));
-			this.customSlots.put(4, this.addSlot(new Slot(internal, 4, 26, 40) {
+			this.customSlots.put(3, this.addSlot(new Slot(internal, 3, 35, 57) {
 			}));
-			this.customSlots.put(3, this.addSlot(new Slot(internal, 3, 44, 58) {
+			this.customSlots.put(4, this.addSlot(new Slot(internal, 4, 53, 57) {
 			}));
-			this.customSlots.put(5, this.addSlot(new Slot(internal, 5, 26, 22) {
+			this.customSlots.put(5, this.addSlot(new Slot(internal, 5, 8, 21) {
 			}));
-			this.customSlots.put(6, this.addSlot(new Slot(internal, 6, 62, 22) {
+			this.customSlots.put(6, this.addSlot(new Slot(internal, 6, 8, 39) {
 			}));
-			this.customSlots.put(7, this.addSlot(new Slot(internal, 7, 62, 58) {
-			}));
-			this.customSlots.put(9, this.addSlot(new Slot(internal, 9, 8, 40) {
-			}));
-			this.customSlots.put(8, this.addSlot(new Slot(internal, 8, 26, 58) {
-			}));
-			this.customSlots.put(10, this.addSlot(new Slot(internal, 10, 44, 4) {
-			}));
-			this.customSlots.put(11, this.addSlot(new Slot(internal, 11, 80, 40) {
-			}));
-			this.customSlots.put(12, this.addSlot(new Slot(internal, 12, 44, 76) {
-			}));
-			this.customSlots.put(13, this.addSlot(new Slot(internal, 13, 8, 76) {
-			}));
-			this.customSlots.put(14, this.addSlot(new Slot(internal, 14, 8, 4) {
-			}));
-			this.customSlots.put(15, this.addSlot(new Slot(internal, 15, 80, 4) {
-			}));
-			this.customSlots.put(16, this.addSlot(new Slot(internal, 16, 80, 76) {
-			}));
-			this.customSlots.put(18, this.addSlot(new Slot(internal, 18, 143, 40) {
-				@Override
-				public boolean isItemValid(ItemStack stack) {
-					return false;
-				}
-			}));
-			this.customSlots.put(17, this.addSlot(new Slot(internal, 17, 107, 40) {
+			this.customSlots.put(7, this.addSlot(new Slot(internal, 7, 125, 30) {
 			}));
 			int si;
 			int sj;
 			for (si = 0; si < 3; ++si)
 				for (sj = 0; sj < 9; ++sj)
-					this.addSlot(new Slot(inv, sj + (si + 1) * 9, 0 + 8 + sj * 18, 10 + 84 + si * 18));
+					this.addSlot(new Slot(inv, sj + (si + 1) * 9, 0 + 8 + sj * 18, 0 + 84 + si * 18));
 			for (si = 0; si < 9; ++si)
-				this.addSlot(new Slot(inv, si, 0 + 8 + si * 18, 10 + 142));
+				this.addSlot(new Slot(inv, si, 0 + 8 + si * 18, 0 + 142));
 		}
 
 		public Map<Integer, Slot> get() {
@@ -154,18 +128,18 @@ public class Metallurgy_Table_UIGui extends VanillaForgingElements.ModElement {
 			if (slot != null && slot.getHasStack()) {
 				ItemStack itemstack1 = slot.getStack();
 				itemstack = itemstack1.copy();
-				if (index < 19) {
-					if (!this.mergeItemStack(itemstack1, 19, this.inventorySlots.size(), true)) {
+				if (index < 8) {
+					if (!this.mergeItemStack(itemstack1, 8, this.inventorySlots.size(), true)) {
 						return ItemStack.EMPTY;
 					}
 					slot.onSlotChange(itemstack1, itemstack);
-				} else if (!this.mergeItemStack(itemstack1, 0, 19, false)) {
-					if (index < 19 + 27) {
-						if (!this.mergeItemStack(itemstack1, 19 + 27, this.inventorySlots.size(), true)) {
+				} else if (!this.mergeItemStack(itemstack1, 0, 8, false)) {
+					if (index < 8 + 27) {
+						if (!this.mergeItemStack(itemstack1, 8 + 27, this.inventorySlots.size(), true)) {
 							return ItemStack.EMPTY;
 						}
 					} else {
-						if (!this.mergeItemStack(itemstack1, 19, 19 + 27, false)) {
+						if (!this.mergeItemStack(itemstack1, 8, 8 + 27, false)) {
 							return ItemStack.EMPTY;
 						}
 					}
@@ -295,9 +269,9 @@ public class Metallurgy_Table_UIGui extends VanillaForgingElements.ModElement {
 			this.z = container.z;
 			this.entity = container.entity;
 			this.xSize = 176;
-			this.ySize = 186;
+			this.ySize = 166;
 		}
-		private static final ResourceLocation texture = new ResourceLocation("vanillaforging:textures/metallurgy_table_ui.png");
+		private static final ResourceLocation texture = new ResourceLocation("vanillaforging:textures/metallurgycastinggui.png");
 		@Override
 		public void render(int mouseX, int mouseY, float partialTicks) {
 			this.renderBackground();

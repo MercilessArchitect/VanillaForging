@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "vanillaforging:blocks/heat_scarred_bedrock",
+    "up": "vanillaforging:blocks/heat_scarred_bedrock",
+    "north": "vanillaforging:blocks/heat_scarred_bedrock",
+    "east": "vanillaforging:blocks/heat_scarred_bedrock",
+    "south": "vanillaforging:blocks/heat_scarred_bedrock",
+    "west": "vanillaforging:blocks/heat_scarred_bedrock",
+    "particle": "vanillaforging:blocks/heat_scarred_bedrock"
+  }
+}

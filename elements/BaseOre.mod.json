@@ -77,16 +77,40 @@
     "inventoryDropWhenDestroyed": true,
     "inventoryComparatorPower": true,
     "inventoryOutSlotIDs": [],
-    "spawnWorldTypes": [],
-    "restrictionBiomes": [],
+    "spawnWorldTypes": [
+      "Surface"
+    ],
+    "restrictionBiomes": [
+      {
+        "value": "ocean"
+      },
+      {
+        "value": "lukewarm_ocean"
+      },
+      {
+        "value": "deep_warm_ocean"
+      },
+      {
+        "value": "cold_ocean"
+      },
+      {
+        "value": "deep_lukewarm_ocean"
+      },
+      {
+        "value": "deep_cold_ocean"
+      },
+      {
+        "value": "deep_cold_ocean"
+      }
+    ],
     "blocksToReplace": [
       {
         "value": "Blocks.STONE"
       }
     ],
     "frequencyPerChunks": 10,
-    "frequencyOnChunk": 16,
+    "frequencyOnChunk": 6,
     "minGenerateHeight": 0,
-    "maxGenerateHeight": 64
+    "maxGenerateHeight": 40
   }
 }

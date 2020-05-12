@@ -2,14 +2,14 @@
   "_fv": 6,
   "_type": "block",
   "definition": {
-    "texture": "lock_slabs",
-    "textureTop": "",
-    "textureLeft": "",
-    "textureFront": "",
-    "textureRight": "",
-    "textureBack": "",
-    "renderType": 11,
-    "customModelName": "Single texture",
+    "texture": "heat_scarred_bedrock",
+    "textureTop": "heat_scarred_bedrock",
+    "textureLeft": "heat_scarred_bedrock",
+    "textureFront": "heat_scarred_bedrock",
+    "textureRight": "heat_scarred_bedrock",
+    "textureBack": "heat_scarred_bedrock",
+    "renderType": 10,
+    "customModelName": "Normal",
     "rotationMode": 0,
     "hasTransparency": false,
     "transparencyType": "SOLID",
@@ -20,18 +20,18 @@
     "My": 1.0,
     "Mz": 1.0,
     "faceShape": "SOLID",
-    "name": "Daorite Ore",
+    "name": "Heat Scarred Bedrock",
     "specialInfo": [],
-    "hardness": 3.0,
-    "resistance": 5.0,
+    "hardness": 90.0,
+    "resistance": 8000.0,
     "hasGravity": false,
     "creativeTab": {
-      "value": "CUSTOM:Blocks"
+      "value": "CUSTOM:MainForgeParts"
     },
     "destroyTool": "pickaxe",
     "affectedBySilkTouch": true,
     "customDrop": {
-      "value": ""
+      "value": "CUSTOM:HotBedrockDust"
     },
     "dropAmount": 1,
     "isBeaconBase": false,
@@ -45,7 +45,7 @@
     "tickRate": 10,
     "tickRandomly": false,
     "isReplaceable": false,
-    "colorOnMap": "DEFAULT",
+    "colorOnMap": "RED",
     "creativePickItem": {
       "value": ""
     },
@@ -53,14 +53,14 @@
     "fireSpreadSpeed": 0,
     "isLadder": false,
     "slipperiness": 0.6,
-    "reactionToPushing": "NORMAL",
+    "reactionToPushing": "BLOCK",
     "isNotColidable": false,
     "soundOnStep": {
       "value": "STONE"
     },
     "luminance": 0.0,
     "unbreakable": false,
-    "breakHarvestLevel": 2,
+    "breakHarvestLevel": 4,
     "spawnParticles": false,
     "particleToSpawn": {
       "value": "EXPLOSION_NORMAL"
@@ -78,27 +78,17 @@
     "inventoryComparatorPower": true,
     "inventoryOutSlotIDs": [],
     "spawnWorldTypes": [
-      "Surface"
+      "Nether"
     ],
-    "restrictionBiomes": [
-      {
-        "value": "swamp"
-      }
-    ],
+    "restrictionBiomes": [],
     "blocksToReplace": [
       {
-        "value": "Blocks.STONE"
-      },
-      {
-        "value": "Blocks.STONE#3"
-      },
-      {
-        "value": "Blocks.STONE#1"
+        "value": "Blocks.BEDROCK"
       }
     ],
-    "frequencyPerChunks": 17,
-    "frequencyOnChunk": 7,
-    "minGenerateHeight": 1,
-    "maxGenerateHeight": 63
+    "frequencyPerChunks": 8,
+    "frequencyOnChunk": 30,
+    "minGenerateHeight": 123,
+    "maxGenerateHeight": 128
   }
 }

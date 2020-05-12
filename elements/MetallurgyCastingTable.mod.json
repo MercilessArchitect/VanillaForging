@@ -69,14 +69,16 @@
     "particleSpawningRadious": 0.5,
     "particleAmount": 4,
     "particleSpawningCondition": "ALWAYS",
-    "hasInventory": false,
-    "guiBoundTo": "<NONE>",
-    "openGUIOnRightClick": false,
-    "inventorySize": 9,
+    "hasInventory": true,
+    "guiBoundTo": "MetallurgyCastingGUI",
+    "openGUIOnRightClick": true,
+    "inventorySize": 8,
     "inventoryStackSize": 64,
     "inventoryDropWhenDestroyed": true,
     "inventoryComparatorPower": true,
-    "inventoryOutSlotIDs": [],
+    "inventoryOutSlotIDs": [
+      7
+    ],
     "spawnWorldTypes": [],
     "restrictionBiomes": [],
     "blocksToReplace": [

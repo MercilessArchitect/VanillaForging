@@ -1836,6 +1836,110 @@
       "compiles": true,
       "locked_code": false,
       "ids": {}
+    },
+    {
+      "name": "MetallurgyTableGUIProcedure",
+      "type": "procedure",
+      "sortid": 233,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "int"
+          },
+          {
+            "name": "y",
+            "type": "int"
+          },
+          {
+            "name": "z",
+            "type": "int"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "MetallurgyCastingGUI",
+      "type": "gui",
+      "sortid": 234,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "WootzSulfurSteelIngot",
+      "type": "item",
+      "sortid": 235,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "MetallurgyCastingProcedure",
+      "type": "procedure",
+      "sortid": 236,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "int"
+          },
+          {
+            "name": "y",
+            "type": "int"
+          },
+          {
+            "name": "z",
+            "type": "int"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "WootzSulfurSteelDust",
+      "type": "item",
+      "sortid": 237,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "SteelHardeningDust",
+      "type": "item",
+      "sortid": 238,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "HotBedrockDust",
+      "type": "item",
+      "sortid": 239,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "HeatScarredBedrock",
+      "type": "block",
+      "sortid": 240,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
     }
   ],
   "variable_elements": [],
@@ -1853,9 +1957,9 @@
       "biome.vanillaforging.orousforest": "Orous Forest",
       "item.vanillaforging.hardenedsulfursteelbucket": "Hardened Sulfur Steel Bucket",
       "item.vanillaforging.weakcastingalloy": "Weak Casting Alloy",
-      "item.vanillaforging.hardenedsulfursteeldust": "Hardened Sulfur Steel Dust",
-      "item.vanillaforging.copperpickaxe": "Copper Pickaxe",
       "item.vanillaforging.copperaxe": "Copper Axe",
+      "item.vanillaforging.copperpickaxe": "Copper Pickaxe",
+      "item.vanillaforging.hardenedsulfursteeldust": "Hardened Sulfur Steel Dust",
       "item.vanillaforging.hardenedsulfursteelrod": "Hardened Sulfur Steel Rod",
       "item.vanillaforging.infusedcarbon": "Infused Carbon",
       "block.vanillaforging.lightsmithingbrickfence": "Light Smithingbrick Fence",
@@ -1868,6 +1972,7 @@
       "block.vanillaforging.smithingbricksmoothslabblock": "Smithingbrick Slab Block",
       "item.vanillaforging.ingotcast": "Ingot Cast",
       "item.vanillaforging.hardeningsulfuralloypaste": "Hardening Sulfur Alloy Paste",
+      "item.vanillaforging.steelhardeningdust": "Steel Hardening Dust",
       "item.vanillaforging.hardenedsulfursteelgear": "Hardened Sulfur Steel Gear",
       "block.vanillaforging.greenstonepodzol": "Greenstone Podzol",
       "item.vanillaforging.smithingbrick": "Smithing Brick",
@@ -1879,6 +1984,7 @@
       "item.vanillaforging.stardust": "Stardust",
       "item.vanillaforging.nichtshard": "Nicht Shard",
       "block.vanillaforging.basemetallurgycastingtable": "Base Metallurgy Casting Table",
+      "item.vanillaforging.wootzsulfursteelingot": "Wootz Sulfur Steel Ingot",
       "block.vanillaforging.basicmetallurgytable": "Basic Metallurgy Table",
       "block.vanillaforging.smithingbrickblock": "Smithingbrick Block",
       "item.vanillaforging.corruptingdust": "Corruptingdust",
@@ -1930,6 +2036,7 @@
       "item.vanillaforging.copperingot": "Copper Ingot",
       "block.vanillaforging.smithingbrickstairs": "Smithingbrick Stairs",
       "block.vanillaforging.baseore": "Base Ore",
+      "item.vanillaforging.hotbedrockdust": "Hot Bedrock Dust",
       "item.vanillaforging.lightsmithingbrick": "Light Smithingbrick",
       "item.vanillaforging.diamonddust": "Diamond Dust",
       "block.vanillaforging.ironwoodslab": "Ironwoodslab",
@@ -1957,9 +2064,11 @@
       "block.vanillaforging.carboninfusedpodzol": "Carbon Infused Podzol",
       "block.vanillaforging.ironwoodcraftingtable": "Ironwood Crafting Table",
       "block.vanillaforging.smithingbrickstorageblock": "Smithingbrick Storage Block",
+      "item.vanillaforging.wootzsulfursteeldust": "Wootz Sulfur Steel Dust",
       "block.vanillaforging.ironwoodlog": "Ironwood Log",
       "item.vanillaforging.basenugget": "Base Metal Nugget",
       "item.vanillaforging.irongear": "Iron Gear",
+      "block.vanillaforging.heatscarredbedrock": "Heat Scarred Bedrock",
       "block.vanillaforging.smithingbrickwall": "Smithingbrick Wall",
       "item.vanillaforging.hammer": "Hammer"
     }
