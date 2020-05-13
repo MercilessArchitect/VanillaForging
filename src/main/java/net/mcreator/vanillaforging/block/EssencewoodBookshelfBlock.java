@@ -26,7 +26,7 @@ public class EssencewoodBookshelfBlock extends VanillaForgingElements.ModElement
 	@ObjectHolder("vanillaforging:essencewoodbookshelf")
 	public static final Block block = null;
 	public EssencewoodBookshelfBlock(VanillaForgingElements instance) {
-		super(instance, 43);
+		super(instance, 46);
 	}
 
 	@Override

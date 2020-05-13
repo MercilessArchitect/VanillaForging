@@ -15,7 +15,7 @@ public class StardustItem extends VanillaForgingElements.ModElement {
 	@ObjectHolder("vanillaforging:stardust")
 	public static final Item block = null;
 	public StardustItem(VanillaForgingElements instance) {
-		super(instance, 228);
+		super(instance, 83);
 	}
 
 	@Override

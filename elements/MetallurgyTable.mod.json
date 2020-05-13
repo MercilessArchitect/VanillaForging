@@ -79,6 +79,9 @@
     "inventoryOutSlotIDs": [
       17
     ],
+    "onTickUpdate": {
+      "name": "MetallurgyTableGUIProcedure"
+    },
     "spawnWorldTypes": [],
     "restrictionBiomes": [],
     "blocksToReplace": [

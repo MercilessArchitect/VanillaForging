@@ -15,7 +15,7 @@ public class SulfuralloypasteItem extends VanillaForgingElements.ModElement {
 	@ObjectHolder("vanillaforging:sulfuralloypaste")
 	public static final Item block = null;
 	public SulfuralloypasteItem(VanillaForgingElements instance) {
-		super(instance, 57);
+		super(instance, 60);
 	}
 
 	@Override

@@ -15,7 +15,7 @@ public class PlateCastGridItem extends VanillaForgingElements.ModElement {
 	@ObjectHolder("vanillaforging:platecastgrid")
 	public static final Item block = null;
 	public PlateCastGridItem(VanillaForgingElements instance) {
-		super(instance, 86);
+		super(instance, 94);
 	}
 
 	@Override

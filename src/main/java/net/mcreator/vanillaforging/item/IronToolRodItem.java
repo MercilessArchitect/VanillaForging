@@ -15,7 +15,7 @@ public class IronToolRodItem extends VanillaForgingElements.ModElement {
 	@ObjectHolder("vanillaforging:irontoolrod")
 	public static final Item block = null;
 	public IronToolRodItem(VanillaForgingElements instance) {
-		super(instance, 89);
+		super(instance, 97);
 	}
 
 	@Override

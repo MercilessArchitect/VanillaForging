@@ -30,7 +30,7 @@ import net.mcreator.vanillaforging.VanillaForgingElements;
 @VanillaForgingElements.ModElement.Tag
 public class BasicMetallurgyTableProcedureProcedure extends VanillaForgingElements.ModElement {
 	public BasicMetallurgyTableProcedureProcedure(VanillaForgingElements instance) {
-		super(instance, 152);
+		super(instance, 168);
 		MinecraftForge.EVENT_BUS.register(this);
 	}
 

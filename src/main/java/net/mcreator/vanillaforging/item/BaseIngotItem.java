@@ -15,7 +15,7 @@ public class BaseIngotItem extends VanillaForgingElements.ModElement {
 	@ObjectHolder("vanillaforging:baseingot")
 	public static final Item block = null;
 	public BaseIngotItem(VanillaForgingElements instance) {
-		super(instance, 210);
+		super(instance, 105);
 	}
 
 	@Override

@@ -13,7 +13,7 @@ import net.mcreator.vanillaforging.VanillaForgingElements;
 @VanillaForgingElements.ModElement.Tag
 public class MainForgePartsItemGroup extends VanillaForgingElements.ModElement {
 	public MainForgePartsItemGroup(VanillaForgingElements instance) {
-		super(instance, 110);
+		super(instance, 126);
 	}
 
 	@Override

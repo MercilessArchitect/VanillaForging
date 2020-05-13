@@ -17,7 +17,7 @@ public class HammerItem extends VanillaForgingElements.ModElement {
 	@ObjectHolder("vanillaforging:hammer")
 	public static final Item block = null;
 	public HammerItem(VanillaForgingElements instance) {
-		super(instance, 84);
+		super(instance, 92);
 	}
 
 	@Override

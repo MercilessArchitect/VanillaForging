@@ -16,7 +16,7 @@ public class CopperPickaxeItem extends VanillaForgingElements.ModElement {
 	@ObjectHolder("vanillaforging:copperpickaxe")
 	public static final Item block = null;
 	public CopperPickaxeItem(VanillaForgingElements instance) {
-		super(instance, 95);
+		super(instance, 116);
 	}
 
 	@Override

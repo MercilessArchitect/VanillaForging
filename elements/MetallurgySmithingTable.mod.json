@@ -10,7 +10,7 @@
     "textureBack": "metallurgy_casting_back",
     "renderType": 10,
     "customModelName": "Normal",
-    "rotationMode": 0,
+    "rotationMode": 1,
     "hasTransparency": false,
     "transparencyType": "SOLID",
     "mx": 0.0,
@@ -69,14 +69,21 @@
     "particleSpawningRadious": 0.5,
     "particleAmount": 4,
     "particleSpawningCondition": "ALWAYS",
-    "hasInventory": false,
-    "guiBoundTo": "<NONE>",
-    "openGUIOnRightClick": false,
-    "inventorySize": 9,
+    "hasInventory": true,
+    "guiBoundTo": "MetallurgySmithingTableGUI",
+    "openGUIOnRightClick": true,
+    "inventorySize": 16,
     "inventoryStackSize": 64,
     "inventoryDropWhenDestroyed": true,
     "inventoryComparatorPower": true,
-    "inventoryOutSlotIDs": [],
+    "inventoryOutSlotIDs": [
+      13,
+      14,
+      15
+    ],
+    "onTickUpdate": {
+      "name": "MetallurgySmithingProcedure"
+    },
     "spawnWorldTypes": [],
     "restrictionBiomes": [],
     "blocksToReplace": [

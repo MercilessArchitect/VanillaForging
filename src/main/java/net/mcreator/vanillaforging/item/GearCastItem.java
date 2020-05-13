@@ -15,7 +15,7 @@ public class GearCastItem extends VanillaForgingElements.ModElement {
 	@ObjectHolder("vanillaforging:gearcast")
 	public static final Item block = null;
 	public GearCastItem(VanillaForgingElements instance) {
-		super(instance, 92);
+		super(instance, 100);
 	}
 
 	@Override

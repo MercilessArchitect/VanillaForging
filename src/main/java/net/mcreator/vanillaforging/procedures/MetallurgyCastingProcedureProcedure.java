@@ -12,13 +12,12 @@ import net.mcreator.vanillaforging.item.WootzSulfurSteelIngotItem;
 import net.mcreator.vanillaforging.item.WootzSulfurSteelBucketItem;
 import net.mcreator.vanillaforging.item.IngotCastItem;
 import net.mcreator.vanillaforging.item.HammerItem;
-import net.mcreator.vanillaforging.item.CoaldustItem;
 import net.mcreator.vanillaforging.VanillaForgingElements;
 
 @VanillaForgingElements.ModElement.Tag
 public class MetallurgyCastingProcedureProcedure extends VanillaForgingElements.ModElement {
 	public MetallurgyCastingProcedureProcedure(VanillaForgingElements instance) {
-		super(instance, 236);
+		super(instance, 232);
 	}
 
 	public static void executeProcedure(java.util.HashMap<String, Object> dependencies) {
@@ -75,7 +74,7 @@ public class MetallurgyCastingProcedureProcedure extends VanillaForgingElements.
 									return ((LockableLootTileEntity) inv).getStackInSlot(sltid);
 								return ItemStack.EMPTY;
 							}
-						}.getItemStack(new BlockPos((int) x, (int) y, (int) z), (int) (2))).getItem() == new ItemStack(CoaldustItem.block, (int) (1))
+						}.getItemStack(new BlockPos((int) x, (int) y, (int) z), (int) (2))).getItem() == new ItemStack(Items.REDSTONE, (int) (1))
 								.getItem()) && (((new Object() {
 									public ItemStack getItemStack(BlockPos pos, int sltid) {
 										TileEntity inv = world.getTileEntity(pos);
@@ -134,7 +133,7 @@ public class MetallurgyCastingProcedureProcedure extends VanillaForgingElements.
 									return ((LockableLootTileEntity) inv).getStackInSlot(sltid);
 								return ItemStack.EMPTY;
 							}
-						}.getItemStack(new BlockPos((int) x, (int) y, (int) z), (int) (7))).getItem() == new ItemStack(Blocks.CAVE_AIR, (int) (1))
+						}.getItemStack(new BlockPos((int) x, (int) y, (int) z), (int) (7))).getItem() == new ItemStack(Blocks.AIR, (int) (1))
 								.getItem()))))) {
 			{
 				TileEntity inv = world.getTileEntity(new BlockPos((int) x, (int) y, (int) z));

@@ -39,7 +39,7 @@ public class DaoriteOreBlock extends VanillaForgingElements.ModElement {
 	@ObjectHolder("vanillaforging:daoriteore")
 	public static final Block block = null;
 	public DaoriteOreBlock(VanillaForgingElements instance) {
-		super(instance, 41);
+		super(instance, 44);
 	}
 
 	@Override

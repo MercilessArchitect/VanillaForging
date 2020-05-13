@@ -15,7 +15,7 @@ public class WootzSulfurSteelDustItem extends VanillaForgingElements.ModElement 
 	@ObjectHolder("vanillaforging:wootzsulfursteeldust")
 	public static final Item block = null;
 	public WootzSulfurSteelDustItem(VanillaForgingElements instance) {
-		super(instance, 237);
+		super(instance, 110);
 	}
 
 	@Override

@@ -21,7 +21,7 @@ public class TemporaldustItem extends VanillaForgingElements.ModElement {
 	@ObjectHolder("vanillaforging:temporaldust")
 	public static final Item block = null;
 	public TemporaldustItem(VanillaForgingElements instance) {
-		super(instance, 70);
+		super(instance, 74);
 	}
 
 	@Override

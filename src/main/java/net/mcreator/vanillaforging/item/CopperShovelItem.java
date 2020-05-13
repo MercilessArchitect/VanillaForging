@@ -16,7 +16,7 @@ public class CopperShovelItem extends VanillaForgingElements.ModElement {
 	@ObjectHolder("vanillaforging:coppershovel")
 	public static final Item block = null;
 	public CopperShovelItem(VanillaForgingElements instance) {
-		super(instance, 97);
+		super(instance, 118);
 	}
 
 	@Override

@@ -15,7 +15,7 @@ public class EnhancedGrindstoneItem extends VanillaForgingElements.ModElement {
 	@ObjectHolder("vanillaforging:enhancedgrindstone")
 	public static final Item block = null;
 	public EnhancedGrindstoneItem(VanillaForgingElements instance) {
-		super(instance, 87);
+		super(instance, 95);
 	}
 
 	@Override

@@ -15,7 +15,7 @@ public class BaseNuggetItem extends VanillaForgingElements.ModElement {
 	@ObjectHolder("vanillaforging:basenugget")
 	public static final Item block = null;
 	public BaseNuggetItem(VanillaForgingElements instance) {
-		super(instance, 212);
+		super(instance, 106);
 	}
 
 	@Override

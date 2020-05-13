@@ -24,7 +24,7 @@ import net.mcreator.vanillaforging.VanillaForgingElements;
 @VanillaForgingElements.ModElement.Tag
 public class GrindstoneGUIProcedureProcedure extends VanillaForgingElements.ModElement {
 	public GrindstoneGUIProcedureProcedure(VanillaForgingElements instance) {
-		super(instance, 230);
+		super(instance, 228);
 	}
 
 	public static void executeProcedure(java.util.HashMap<String, Object> dependencies) {

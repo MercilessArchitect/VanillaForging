@@ -21,7 +21,7 @@ public class LightshardsItem extends VanillaForgingElements.ModElement {
 	@ObjectHolder("vanillaforging:lightshards")
 	public static final Item block = null;
 	public LightshardsItem(VanillaForgingElements instance) {
-		super(instance, 69);
+		super(instance, 73);
 	}
 
 	@Override

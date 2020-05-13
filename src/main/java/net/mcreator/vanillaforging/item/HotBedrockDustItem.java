@@ -15,7 +15,7 @@ public class HotBedrockDustItem extends VanillaForgingElements.ModElement {
 	@ObjectHolder("vanillaforging:hotbedrockdust")
 	public static final Item block = null;
 	public HotBedrockDustItem(VanillaForgingElements instance) {
-		super(instance, 239);
+		super(instance, 113);
 	}
 
 	@Override

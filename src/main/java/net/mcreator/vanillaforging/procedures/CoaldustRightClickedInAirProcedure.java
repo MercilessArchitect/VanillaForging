@@ -10,7 +10,7 @@ import net.mcreator.vanillaforging.VanillaForgingElements;
 @VanillaForgingElements.ModElement.Tag
 public class CoaldustRightClickedInAirProcedure extends VanillaForgingElements.ModElement {
 	public CoaldustRightClickedInAirProcedure(VanillaForgingElements instance) {
-		super(instance, 112);
+		super(instance, 128);
 	}
 
 	public static void executeProcedure(java.util.HashMap<String, Object> dependencies) {
@@ -20,6 +20,6 @@ public class CoaldustRightClickedInAirProcedure extends VanillaForgingElements.M
 		}
 		Entity entity = (Entity) dependencies.get("entity");
 		if (entity instanceof LivingEntity)
-			((LivingEntity) entity).addPotionEffect(new EffectInstance(Effects.BLINDNESS, (int) 5, (int) 1));
+			((LivingEntity) entity).addPotionEffect(new EffectInstance(Effects.BLINDNESS, (int) 5, (int) 3));
 	}
 }

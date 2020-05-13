@@ -15,7 +15,7 @@ public class CorruptingdustItem extends VanillaForgingElements.ModElement {
 	@ObjectHolder("vanillaforging:corruptingdust")
 	public static final Item block = null;
 	public CorruptingdustItem(VanillaForgingElements instance) {
-		super(instance, 71);
+		super(instance, 75);
 	}
 
 	@Override

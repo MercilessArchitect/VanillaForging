@@ -24,7 +24,7 @@ public class EssencewoodPlanksBlock extends VanillaForgingElements.ModElement {
 	@ObjectHolder("vanillaforging:essencewoodplanks")
 	public static final Block block = null;
 	public EssencewoodPlanksBlock(VanillaForgingElements instance) {
-		super(instance, 45);
+		super(instance, 48);
 	}
 
 	@Override

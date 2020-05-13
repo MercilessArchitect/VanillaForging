@@ -15,7 +15,7 @@ public class WootzSulfurSteelBucketItem extends VanillaForgingElements.ModElemen
 	@ObjectHolder("vanillaforging:wootzsulfursteelbucket")
 	public static final Item block = null;
 	public WootzSulfurSteelBucketItem(VanillaForgingElements instance) {
-		super(instance, 231);
+		super(instance, 108);
 	}
 
 	@Override

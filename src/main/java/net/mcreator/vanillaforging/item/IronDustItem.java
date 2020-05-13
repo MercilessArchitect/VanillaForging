@@ -15,7 +15,7 @@ public class IronDustItem extends VanillaForgingElements.ModElement {
 	@ObjectHolder("vanillaforging:irondust")
 	public static final Item block = null;
 	public IronDustItem(VanillaForgingElements instance) {
-		super(instance, 224);
+		super(instance, 80);
 	}
 
 	@Override

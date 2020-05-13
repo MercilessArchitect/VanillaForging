@@ -15,7 +15,7 @@ public class QuartzdustItem extends VanillaForgingElements.ModElement {
 	@ObjectHolder("vanillaforging:quartzdust")
 	public static final Item block = null;
 	public QuartzdustItem(VanillaForgingElements instance) {
-		super(instance, 75);
+		super(instance, 79);
 	}
 
 	@Override

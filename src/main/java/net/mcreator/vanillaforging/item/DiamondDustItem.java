@@ -15,7 +15,7 @@ public class DiamondDustItem extends VanillaForgingElements.ModElement {
 	@ObjectHolder("vanillaforging:diamonddust")
 	public static final Item block = null;
 	public DiamondDustItem(VanillaForgingElements instance) {
-		super(instance, 226);
+		super(instance, 82);
 	}
 
 	@Override

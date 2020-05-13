@@ -15,7 +15,7 @@ public class BaseDustItem extends VanillaForgingElements.ModElement {
 	@ObjectHolder("vanillaforging:basedust")
 	public static final Item block = null;
 	public BaseDustItem(VanillaForgingElements instance) {
-		super(instance, 227);
+		super(instance, 104);
 	}
 
 	@Override

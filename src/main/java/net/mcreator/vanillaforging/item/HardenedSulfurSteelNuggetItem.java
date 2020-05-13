@@ -15,7 +15,7 @@ public class HardenedSulfurSteelNuggetItem extends VanillaForgingElements.ModEle
 	@ObjectHolder("vanillaforging:hardenedsulfursteelnugget")
 	public static final Item block = null;
 	public HardenedSulfurSteelNuggetItem(VanillaForgingElements instance) {
-		super(instance, 218);
+		super(instance, 107);
 	}
 
 	@Override

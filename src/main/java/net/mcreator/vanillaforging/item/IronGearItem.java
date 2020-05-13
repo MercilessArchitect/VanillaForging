@@ -15,7 +15,7 @@ public class IronGearItem extends VanillaForgingElements.ModElement {
 	@ObjectHolder("vanillaforging:irongear")
 	public static final Item block = null;
 	public IronGearItem(VanillaForgingElements instance) {
-		super(instance, 88);
+		super(instance, 96);
 	}
 
 	@Override

@@ -15,7 +15,7 @@ public class NichtshardItem extends VanillaForgingElements.ModElement {
 	@ObjectHolder("vanillaforging:nichtshard")
 	public static final Item block = null;
 	public NichtshardItem(VanillaForgingElements instance) {
-		super(instance, 83);
+		super(instance, 91);
 	}
 
 	@Override

@@ -46,10 +46,12 @@ import net.minecraft.block.HorizontalBlock;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
 
+import net.mcreator.vanillaforging.procedures.MetallurgyTableGUIProcedureProcedure;
 import net.mcreator.vanillaforging.itemgroup.BlocksItemGroup;
 import net.mcreator.vanillaforging.gui.Metallurgy_Table_UIGui;
 import net.mcreator.vanillaforging.VanillaForgingElements;
 
+import java.util.Random;
 import java.util.List;
 import java.util.Collections;
 
@@ -62,7 +64,7 @@ public class MetallurgyTableBlock extends VanillaForgingElements.ModElement {
 	@ObjectHolder("vanillaforging:metallurgytable")
 	public static final TileEntityType<CustomTileEntity> tileEntityType = null;
 	public MetallurgyTableBlock(VanillaForgingElements instance) {
-		super(instance, 50);
+		super(instance, 41);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 
@@ -109,6 +111,32 @@ public class MetallurgyTableBlock extends VanillaForgingElements.ModElement {
 			if (!dropsOriginal.isEmpty())
 				return dropsOriginal;
 			return Collections.singletonList(new ItemStack(this, 1));
+		}
+
+		@Override
+		public void onBlockAdded(BlockState state, World world, BlockPos pos, BlockState oldState, boolean moving) {
+			super.onBlockAdded(state, world, pos, oldState, moving);
+			int x = pos.getX();
+			int y = pos.getY();
+			int z = pos.getZ();
+			world.getPendingBlockTicks().scheduleTick(new BlockPos(x, y, z), this, this.tickRate(world));
+		}
+
+		@Override
+		public void tick(BlockState state, World world, BlockPos pos, Random random) {
+			super.tick(state, world, pos, random);
+			int x = pos.getX();
+			int y = pos.getY();
+			int z = pos.getZ();
+			{
+				java.util.HashMap<String, Object> $_dependencies = new java.util.HashMap<>();
+				$_dependencies.put("x", x);
+				$_dependencies.put("y", y);
+				$_dependencies.put("z", z);
+				$_dependencies.put("world", world);
+				MetallurgyTableGUIProcedureProcedure.executeProcedure($_dependencies);
+			}
+			world.getPendingBlockTicks().scheduleTick(new BlockPos(x, y, z), this, this.tickRate(world));
 		}
 
 		@Override

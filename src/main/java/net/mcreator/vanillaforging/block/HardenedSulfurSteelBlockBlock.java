@@ -13,7 +13,7 @@ import net.minecraft.block.SoundType;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
 
-import net.mcreator.vanillaforging.itemgroup.MainForgePartsItemGroup;
+import net.mcreator.vanillaforging.itemgroup.BlocksItemGroup;
 import net.mcreator.vanillaforging.VanillaForgingElements;
 
 import java.util.List;
@@ -24,14 +24,13 @@ public class HardenedSulfurSteelBlockBlock extends VanillaForgingElements.ModEle
 	@ObjectHolder("vanillaforging:hardenedsulfursteelblock")
 	public static final Block block = null;
 	public HardenedSulfurSteelBlockBlock(VanillaForgingElements instance) {
-		super(instance, 221);
+		super(instance, 55);
 	}
 
 	@Override
 	public void initElements() {
 		elements.blocks.add(() -> new CustomBlock());
-		elements.items
-				.add(() -> new BlockItem(block, new Item.Properties().group(MainForgePartsItemGroup.tab)).setRegistryName(block.getRegistryName()));
+		elements.items.add(() -> new BlockItem(block, new Item.Properties().group(BlocksItemGroup.tab)).setRegistryName(block.getRegistryName()));
 	}
 	public static class CustomBlock extends Block {
 		public CustomBlock() {

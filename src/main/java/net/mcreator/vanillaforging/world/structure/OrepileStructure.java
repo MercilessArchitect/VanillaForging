@@ -31,7 +31,7 @@ import java.util.Random;
 @VanillaForgingElements.ModElement.Tag
 public class OrepileStructure extends VanillaForgingElements.ModElement {
 	public OrepileStructure(VanillaForgingElements instance) {
-		super(instance, 194);
+		super(instance, 205);
 	}
 
 	@Override

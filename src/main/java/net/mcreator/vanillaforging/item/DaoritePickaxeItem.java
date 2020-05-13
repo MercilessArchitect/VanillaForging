@@ -16,7 +16,7 @@ public class DaoritePickaxeItem extends VanillaForgingElements.ModElement {
 	@ObjectHolder("vanillaforging:daoritepickaxe")
 	public static final Item block = null;
 	public DaoritePickaxeItem(VanillaForgingElements instance) {
-		super(instance, 103);
+		super(instance, 120);
 	}
 
 	@Override

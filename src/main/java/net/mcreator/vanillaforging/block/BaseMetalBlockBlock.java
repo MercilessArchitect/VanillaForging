@@ -24,7 +24,7 @@ public class BaseMetalBlockBlock extends VanillaForgingElements.ModElement {
 	@ObjectHolder("vanillaforging:basemetalblock")
 	public static final Block block = null;
 	public BaseMetalBlockBlock(VanillaForgingElements instance) {
-		super(instance, 215);
+		super(instance, 54);
 	}
 
 	@Override
