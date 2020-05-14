@@ -92,14 +92,11 @@
         }
       },
       {
-        "type": "inputslot",
+        "type": "outputslot",
         "data": {
-          "inputLimit": {
-            "value": ""
-          },
           "id": 7,
           "name": "Slot #7",
-          "x": 498,
+          "x": 516,
           "y": 132
         }
       }

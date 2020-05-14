@@ -3,15 +3,10 @@ package net.mcreator.vanillaforging.item;
 
 import net.minecraftforge.registries.ObjectHolder;
 
-import net.minecraft.world.World;
-import net.minecraft.util.Hand;
-import net.minecraft.util.ActionResult;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
-import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.block.BlockState;
 
-import net.mcreator.vanillaforging.procedures.CoaldustRightClickedInAirProcedure;
 import net.mcreator.vanillaforging.itemgroup.MainForgePartsItemGroup;
 import net.mcreator.vanillaforging.VanillaForgingElements;
 
@@ -46,21 +41,6 @@ public class CoaldustItem extends VanillaForgingElements.ModElement {
 		@Override
 		public float getDestroySpeed(ItemStack par1ItemStack, BlockState par2Block) {
 			return 1F;
-		}
-
-		@Override
-		public ActionResult<ItemStack> onItemRightClick(World world, PlayerEntity entity, Hand hand) {
-			ActionResult<ItemStack> ar = super.onItemRightClick(world, entity, hand);
-			ItemStack itemstack = ar.getResult();
-			int x = (int) entity.posX;
-			int y = (int) entity.posY;
-			int z = (int) entity.posZ;
-			{
-				java.util.HashMap<String, Object> $_dependencies = new java.util.HashMap<>();
-				$_dependencies.put("entity", entity);
-				CoaldustRightClickedInAirProcedure.executeProcedure($_dependencies);
-			}
-			return ar;
 		}
 	}
 }

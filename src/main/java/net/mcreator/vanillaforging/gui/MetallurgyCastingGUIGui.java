@@ -101,7 +101,11 @@ public class MetallurgyCastingGUIGui extends VanillaForgingElements.ModElement {
 			}));
 			this.customSlots.put(6, this.addSlot(new Slot(internal, 6, 8, 39) {
 			}));
-			this.customSlots.put(7, this.addSlot(new Slot(internal, 7, 125, 30) {
+			this.customSlots.put(7, this.addSlot(new Slot(internal, 7, 134, 30) {
+				@Override
+				public boolean isItemValid(ItemStack stack) {
+					return false;
+				}
 			}));
 			int si;
 			int sj;

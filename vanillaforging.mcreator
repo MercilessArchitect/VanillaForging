@@ -58,22 +58,6 @@
       "ids": {}
     },
     {
-      "name": "CoaldustRightClickedInAir",
-      "type": "procedure",
-      "sortid": 128,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      }
-    },
-    {
       "name": "Sulfuralloypaste",
       "type": "item",
       "sortid": 60,
