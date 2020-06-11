@@ -12,15 +12,15 @@ import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.block.BlockState;
 
 import net.mcreator.vanillaforging.itemgroup.MainForgePartsItemGroup;
-import net.mcreator.vanillaforging.VanillaForgingElements;
+import net.mcreator.vanillaforging.VanillaforgingModElements;
 
 import java.util.List;
 
-@VanillaForgingElements.ModElement.Tag
-public class LightshardsItem extends VanillaForgingElements.ModElement {
+@VanillaforgingModElements.ModElement.Tag
+public class LightshardsItem extends VanillaforgingModElements.ModElement {
 	@ObjectHolder("vanillaforging:lightshards")
 	public static final Item block = null;
-	public LightshardsItem(VanillaForgingElements instance) {
+	public LightshardsItem(VanillaforgingModElements instance) {
 		super(instance, 73);
 	}
 

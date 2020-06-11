@@ -8,13 +8,13 @@ import net.minecraft.item.Item;
 import net.minecraft.block.BlockState;
 
 import net.mcreator.vanillaforging.itemgroup.MainForgePartsItemGroup;
-import net.mcreator.vanillaforging.VanillaForgingElements;
+import net.mcreator.vanillaforging.VanillaforgingModElements;
 
-@VanillaForgingElements.ModElement.Tag
-public class PortalcoreItem extends VanillaForgingElements.ModElement {
+@VanillaforgingModElements.ModElement.Tag
+public class PortalcoreItem extends VanillaforgingModElements.ModElement {
 	@ObjectHolder("vanillaforging:portalcore")
 	public static final Item block = null;
-	public PortalcoreItem(VanillaForgingElements instance) {
+	public PortalcoreItem(VanillaforgingModElements instance) {
 		super(instance, 76);
 	}
 

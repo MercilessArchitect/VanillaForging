@@ -8,13 +8,13 @@ import net.minecraft.item.Item;
 import net.minecraft.block.BlockState;
 
 import net.mcreator.vanillaforging.itemgroup.MainForgePartsItemGroup;
-import net.mcreator.vanillaforging.VanillaForgingElements;
+import net.mcreator.vanillaforging.VanillaforgingModElements;
 
-@VanillaForgingElements.ModElement.Tag
-public class HardenedSulfurSteelDustItem extends VanillaForgingElements.ModElement {
+@VanillaforgingModElements.ModElement.Tag
+public class HardenedSulfurSteelDustItem extends VanillaforgingModElements.ModElement {
 	@ObjectHolder("vanillaforging:hardenedsulfursteeldust")
 	public static final Item block = null;
-	public HardenedSulfurSteelDustItem(VanillaForgingElements instance) {
+	public HardenedSulfurSteelDustItem(VanillaforgingModElements instance) {
 		super(instance, 66);
 	}
 

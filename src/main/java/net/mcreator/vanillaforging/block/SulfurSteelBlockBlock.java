@@ -16,16 +16,16 @@ import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
 
 import net.mcreator.vanillaforging.itemgroup.BlocksItemGroup;
-import net.mcreator.vanillaforging.VanillaForgingElements;
+import net.mcreator.vanillaforging.VanillaforgingModElements;
 
 import java.util.List;
 import java.util.Collections;
 
-@VanillaForgingElements.ModElement.Tag
-public class SulfurSteelBlockBlock extends VanillaForgingElements.ModElement {
+@VanillaforgingModElements.ModElement.Tag
+public class SulfurSteelBlockBlock extends VanillaforgingModElements.ModElement {
 	@ObjectHolder("vanillaforging:sulfursteelblock")
 	public static final Block block = null;
-	public SulfurSteelBlockBlock(VanillaForgingElements instance) {
+	public SulfurSteelBlockBlock(VanillaforgingModElements instance) {
 		super(instance, 6);
 	}
 

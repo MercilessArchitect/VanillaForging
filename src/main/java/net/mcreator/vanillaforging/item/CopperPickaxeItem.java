@@ -9,13 +9,13 @@ import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Item;
 import net.minecraft.item.IItemTier;
 
-import net.mcreator.vanillaforging.VanillaForgingElements;
+import net.mcreator.vanillaforging.VanillaforgingModElements;
 
-@VanillaForgingElements.ModElement.Tag
-public class CopperPickaxeItem extends VanillaForgingElements.ModElement {
+@VanillaforgingModElements.ModElement.Tag
+public class CopperPickaxeItem extends VanillaforgingModElements.ModElement {
 	@ObjectHolder("vanillaforging:copperpickaxe")
 	public static final Item block = null;
-	public CopperPickaxeItem(VanillaForgingElements instance) {
+	public CopperPickaxeItem(VanillaforgingModElements instance) {
 		super(instance, 116);
 	}
 

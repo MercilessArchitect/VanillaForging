@@ -1,12 +1,12 @@
 {
   "parent": "block/cube",
   "textures": {
-    "down": "vanillaforging:blocks/framed_metallurgy_base",
+    "down": "vanillaforging:blocks/forge_framed",
     "up": "vanillaforging:blocks/metallurgy_table_top",
-    "north": "vanillaforging:blocks/metallurgy_table_side1",
-    "east": "vanillaforging:blocks/metallurgy_table_side",
-    "south": "vanillaforging:blocks/metallurgy_table_side1",
-    "west": "vanillaforging:blocks/metallurgy_table_side",
-    "particle": "vanillaforging:blocks/framed_metallurgy_base"
+    "north": "vanillaforging:blocks/metallurgy_table_side",
+    "east": "vanillaforging:blocks/metallurgy_table_side1",
+    "south": "vanillaforging:blocks/metallurgy_table_side",
+    "west": "vanillaforging:blocks/metallurgy_table_side1",
+    "particle": "vanillaforging:blocks/forge_framed"
   }
 }

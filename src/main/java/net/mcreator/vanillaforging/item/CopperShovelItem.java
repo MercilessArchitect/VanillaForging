@@ -9,13 +9,13 @@ import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Item;
 import net.minecraft.item.IItemTier;
 
-import net.mcreator.vanillaforging.VanillaForgingElements;
+import net.mcreator.vanillaforging.VanillaforgingModElements;
 
-@VanillaForgingElements.ModElement.Tag
-public class CopperShovelItem extends VanillaForgingElements.ModElement {
+@VanillaforgingModElements.ModElement.Tag
+public class CopperShovelItem extends VanillaforgingModElements.ModElement {
 	@ObjectHolder("vanillaforging:coppershovel")
 	public static final Item block = null;
-	public CopperShovelItem(VanillaForgingElements instance) {
+	public CopperShovelItem(VanillaforgingModElements instance) {
 		super(instance, 118);
 	}
 

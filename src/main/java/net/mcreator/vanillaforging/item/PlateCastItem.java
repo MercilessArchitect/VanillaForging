@@ -8,13 +8,13 @@ import net.minecraft.item.Item;
 import net.minecraft.block.BlockState;
 
 import net.mcreator.vanillaforging.itemgroup.MainForgePartsItemGroup;
-import net.mcreator.vanillaforging.VanillaForgingElements;
+import net.mcreator.vanillaforging.VanillaforgingModElements;
 
-@VanillaForgingElements.ModElement.Tag
-public class PlateCastItem extends VanillaForgingElements.ModElement {
+@VanillaforgingModElements.ModElement.Tag
+public class PlateCastItem extends VanillaforgingModElements.ModElement {
 	@ObjectHolder("vanillaforging:platecast")
 	public static final Item block = null;
-	public PlateCastItem(VanillaForgingElements instance) {
+	public PlateCastItem(VanillaforgingModElements instance) {
 		super(instance, 102);
 	}
 

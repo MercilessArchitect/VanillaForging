@@ -1,17 +1,18 @@
 {
-  "_fv": 6,
+  "_fv": 8,
   "_type": "block",
   "definition": {
     "texture": "framed_metallurgy_base",
     "textureTop": "metallurgy_smithing_top",
-    "textureLeft": "metallurgy_smithing_table_side",
+    "textureLeft": "metallurgy_smithing_table_side2",
     "textureFront": "metallurgy_smithing_front",
-    "textureRight": "metallurgy_smithing_table_side2",
+    "textureRight": "metallurgy_smithing_table_side",
     "textureBack": "metallurgy_casting_back",
     "renderType": 10,
     "customModelName": "Normal",
     "rotationMode": 1,
     "hasTransparency": false,
+    "connectedSides": false,
     "transparencyType": "SOLID",
     "mx": 0.0,
     "my": 0.0,
@@ -19,8 +20,7 @@
     "Mx": 1.0,
     "My": 1.0,
     "Mz": 1.0,
-    "faceShape": "SOLID",
-    "name": "Metallurgy Smithing Table",
+    "name": "Metalurgy Smithing Table",
     "specialInfo": [],
     "hardness": 12.0,
     "resistance": 60.0,
@@ -29,7 +29,6 @@
       "value": "CUSTOM:Blocks"
     },
     "destroyTool": "pickaxe",
-    "affectedBySilkTouch": true,
     "customDrop": {
       "value": ""
     },
@@ -49,6 +48,8 @@
     "creativePickItem": {
       "value": ""
     },
+    "offsetType": "NONE",
+    "aiPathNodeType": "BLOCKED",
     "flammability": 0,
     "fireSpreadSpeed": 0,
     "isLadder": false,
@@ -75,11 +76,26 @@
     "inventorySize": 16,
     "inventoryStackSize": 64,
     "inventoryDropWhenDestroyed": true,
-    "inventoryComparatorPower": true,
+    "inventoryComparatorPower": false,
     "inventoryOutSlotIDs": [
       13,
       14,
       15
+    ],
+    "inventoryInSlotIDs": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
     ],
     "onTickUpdate": {
       "name": "MetallurgySmithingProcedure"

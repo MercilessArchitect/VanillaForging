@@ -1,8 +1,8 @@
 {
   "parent": "block/slab_top",
   "textures": {
-    "bottom": "vanillaforging:blocks/ironwood_plank",
-    "top": "vanillaforging:blocks/ironwood_plank",
-    "side": "vanillaforging:blocks/ironwood_plank"
+    "bottom": "vanillaforging:blocks/ironwoodplanks",
+    "top": "vanillaforging:blocks/ironwoodplanks",
+    "side": "vanillaforging:blocks/ironwoodplanks"
   }
 }

@@ -4,9 +4,9 @@
     "down": "vanillaforging:blocks/framed_metallurgy_base",
     "up": "vanillaforging:blocks/metallurgy_smithing_top",
     "north": "vanillaforging:blocks/metallurgy_smithing_front",
-    "east": "vanillaforging:blocks/metallurgy_smithing_table_side",
+    "east": "vanillaforging:blocks/metallurgy_smithing_table_side2",
     "south": "vanillaforging:blocks/metallurgy_casting_back",
-    "west": "vanillaforging:blocks/metallurgy_smithing_table_side2",
+    "west": "vanillaforging:blocks/metallurgy_smithing_table_side",
     "particle": "vanillaforging:blocks/framed_metallurgy_base"
   }
 }

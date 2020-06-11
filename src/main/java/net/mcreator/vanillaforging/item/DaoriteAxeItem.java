@@ -9,13 +9,13 @@ import net.minecraft.item.Item;
 import net.minecraft.item.IItemTier;
 import net.minecraft.item.AxeItem;
 
-import net.mcreator.vanillaforging.VanillaForgingElements;
+import net.mcreator.vanillaforging.VanillaforgingModElements;
 
-@VanillaForgingElements.ModElement.Tag
-public class DaoriteAxeItem extends VanillaForgingElements.ModElement {
+@VanillaforgingModElements.ModElement.Tag
+public class DaoriteAxeItem extends VanillaforgingModElements.ModElement {
 	@ObjectHolder("vanillaforging:daoriteaxe")
 	public static final Item block = null;
-	public DaoriteAxeItem(VanillaForgingElements instance) {
+	public DaoriteAxeItem(VanillaforgingModElements instance) {
 		super(instance, 121);
 	}
 

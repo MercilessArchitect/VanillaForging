@@ -8,11 +8,11 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemGroup;
 
 import net.mcreator.vanillaforging.item.SulfurSteelIngotItem;
-import net.mcreator.vanillaforging.VanillaForgingElements;
+import net.mcreator.vanillaforging.VanillaforgingModElements;
 
-@VanillaForgingElements.ModElement.Tag
-public class MainForgePartsItemGroup extends VanillaForgingElements.ModElement {
-	public MainForgePartsItemGroup(VanillaForgingElements instance) {
+@VanillaforgingModElements.ModElement.Tag
+public class MainForgePartsItemGroup extends VanillaforgingModElements.ModElement {
+	public MainForgePartsItemGroup(VanillaforgingModElements instance) {
 		super(instance, 126);
 	}
 

@@ -9,13 +9,13 @@ import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Item;
 import net.minecraft.item.IItemTier;
 
-import net.mcreator.vanillaforging.VanillaForgingElements;
+import net.mcreator.vanillaforging.VanillaforgingModElements;
 
-@VanillaForgingElements.ModElement.Tag
-public class DaoritePickaxeItem extends VanillaForgingElements.ModElement {
+@VanillaforgingModElements.ModElement.Tag
+public class DaoritePickaxeItem extends VanillaforgingModElements.ModElement {
 	@ObjectHolder("vanillaforging:daoritepickaxe")
 	public static final Item block = null;
-	public DaoritePickaxeItem(VanillaForgingElements instance) {
+	public DaoritePickaxeItem(VanillaforgingModElements instance) {
 		super(instance, 120);
 	}
 

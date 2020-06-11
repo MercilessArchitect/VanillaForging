@@ -1,5 +1,5 @@
 {
-  "_fv": 6,
+  "_fv": 8,
   "_type": "item",
   "definition": {
     "renderType": 0,
@@ -22,6 +22,8 @@
       "shattered parts of a larger crystal formation",
       "possibly from another dimension"
     ],
-    "hasGlow": false
+    "hasGlow": false,
+    "inventorySize": 9,
+    "inventoryStackSize": 64
   }
 }

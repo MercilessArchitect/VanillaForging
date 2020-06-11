@@ -8,13 +8,13 @@ import net.minecraft.item.Item;
 import net.minecraft.block.BlockState;
 
 import net.mcreator.vanillaforging.itemgroup.MainForgePartsItemGroup;
-import net.mcreator.vanillaforging.VanillaForgingElements;
+import net.mcreator.vanillaforging.VanillaforgingModElements;
 
-@VanillaForgingElements.ModElement.Tag
-public class CoppernuggetItem extends VanillaForgingElements.ModElement {
+@VanillaforgingModElements.ModElement.Tag
+public class CoppernuggetItem extends VanillaforgingModElements.ModElement {
 	@ObjectHolder("vanillaforging:coppernugget")
 	public static final Item block = null;
-	public CoppernuggetItem(VanillaForgingElements instance) {
+	public CoppernuggetItem(VanillaforgingModElements instance) {
 		super(instance, 59);
 	}
 

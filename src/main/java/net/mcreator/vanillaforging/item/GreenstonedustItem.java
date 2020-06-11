@@ -12,15 +12,15 @@ import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.block.BlockState;
 
 import net.mcreator.vanillaforging.itemgroup.MainForgePartsItemGroup;
-import net.mcreator.vanillaforging.VanillaForgingElements;
+import net.mcreator.vanillaforging.VanillaforgingModElements;
 
 import java.util.List;
 
-@VanillaForgingElements.ModElement.Tag
-public class GreenstonedustItem extends VanillaForgingElements.ModElement {
+@VanillaforgingModElements.ModElement.Tag
+public class GreenstonedustItem extends VanillaforgingModElements.ModElement {
 	@ObjectHolder("vanillaforging:greenstonedust")
 	public static final Item block = null;
-	public GreenstonedustItem(VanillaForgingElements instance) {
+	public GreenstonedustItem(VanillaforgingModElements instance) {
 		super(instance, 72);
 	}
 

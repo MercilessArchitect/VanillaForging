@@ -1,9 +1,10 @@
 {
-  "_fv": 6,
+  "_fv": 8,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
     "xpReward": 0.0,
+    "cookingTime": 200,
     "recipeRetstackSize": 1,
     "group": "",
     "recipeShapeless": false,
@@ -12,7 +13,7 @@
         "value": "CUSTOM:CastingAlloyIngot"
       },
       {
-        "value": "CUSTOM:IronwoodCraftingTable"
+        "value": "CUSTOM:HardenedSulfurSteelNugget"
       },
       {
         "value": "CUSTOM:CastingAlloyIngot"
@@ -21,7 +22,7 @@
         "value": "Items.EXPERIENCE_BOTTLE"
       },
       {
-        "value": "Items.CHORUS_FRUIT_POPPED"
+        "value": "CUSTOM:IronwoodCraftingTable"
       },
       {
         "value": "Items.EXPERIENCE_BOTTLE"

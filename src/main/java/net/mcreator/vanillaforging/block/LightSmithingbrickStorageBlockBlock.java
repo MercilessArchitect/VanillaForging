@@ -14,16 +14,16 @@ import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
 
 import net.mcreator.vanillaforging.itemgroup.BlocksItemGroup;
-import net.mcreator.vanillaforging.VanillaForgingElements;
+import net.mcreator.vanillaforging.VanillaforgingModElements;
 
 import java.util.List;
 import java.util.Collections;
 
-@VanillaForgingElements.ModElement.Tag
-public class LightSmithingbrickStorageBlockBlock extends VanillaForgingElements.ModElement {
+@VanillaforgingModElements.ModElement.Tag
+public class LightSmithingbrickStorageBlockBlock extends VanillaforgingModElements.ModElement {
 	@ObjectHolder("vanillaforging:lightsmithingbrickstorageblock")
 	public static final Block block = null;
-	public LightSmithingbrickStorageBlockBlock(VanillaForgingElements instance) {
+	public LightSmithingbrickStorageBlockBlock(VanillaforgingModElements instance) {
 		super(instance, 29);
 	}
 

@@ -9,6 +9,7 @@ import net.minecraft.world.gen.placement.Placement;
 import net.minecraft.world.gen.placement.IPlacementConfig;
 import net.minecraft.world.gen.feature.template.Template;
 import net.minecraft.world.gen.feature.template.PlacementSettings;
+import net.minecraft.world.gen.feature.template.BlockIgnoreStructureProcessor;
 import net.minecraft.world.gen.feature.NoFeatureConfig;
 import net.minecraft.world.gen.feature.IFeatureConfig;
 import net.minecraft.world.gen.feature.Feature;
@@ -24,13 +25,13 @@ import net.minecraft.util.Rotation;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.Mirror;
 
-import net.mcreator.vanillaforging.VanillaForgingElements;
+import net.mcreator.vanillaforging.VanillaforgingModElements;
 
 import java.util.Random;
 
-@VanillaForgingElements.ModElement.Tag
-public class PortalPillarStructure extends VanillaForgingElements.ModElement {
-	public PortalPillarStructure(VanillaForgingElements instance) {
+@VanillaforgingModElements.ModElement.Tag
+public class PortalPillarStructure extends VanillaforgingModElements.ModElement {
+	public PortalPillarStructure(VanillaforgingModElements instance) {
 		super(instance, 152);
 	}
 
@@ -61,8 +62,10 @@ public class PortalPillarStructure extends VanillaForgingElements.ModElement {
 						Rotation rotation = Rotation.values()[random.nextInt(3)];
 						Mirror mirror = Mirror.values()[random.nextInt(2)];
 						BlockPos spawnTo = new BlockPos(i, j + 0, k);
-						template.addBlocksToWorldChunk(iworld, spawnTo, new PlacementSettings().setRotation(rotation).setRandom(random)
-								.setMirror(mirror).setChunk((ChunkPos) null).setIgnoreEntities(false));
+						template.addBlocksToWorldChunk(iworld, spawnTo,
+								new PlacementSettings().setRotation(rotation).setRandom(random).setMirror(mirror)
+										.addProcessor(BlockIgnoreStructureProcessor.STRUCTURE_BLOCK).setChunk((ChunkPos) null)
+										.setIgnoreEntities(false));
 					}
 				}
 				return true;
@@ -74,8 +77,8 @@ public class PortalPillarStructure extends VanillaForgingElements.ModElement {
 				biomeCriteria = true;
 			if (!biomeCriteria)
 				continue;
-			biome.addFeature(GenerationStage.Decoration.SURFACE_STRUCTURES,
-					Biome.createDecoratedFeature(feature, IFeatureConfig.NO_FEATURE_CONFIG, Placement.NOPE, IPlacementConfig.NO_PLACEMENT_CONFIG));
+			biome.addFeature(GenerationStage.Decoration.SURFACE_STRUCTURES, feature.withConfiguration(IFeatureConfig.NO_FEATURE_CONFIG)
+					.withPlacement(Placement.NOPE.configure(IPlacementConfig.NO_PLACEMENT_CONFIG)));
 		}
 	}
 }

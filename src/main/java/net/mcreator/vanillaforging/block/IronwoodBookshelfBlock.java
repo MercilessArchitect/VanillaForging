@@ -19,16 +19,16 @@ import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
 
 import net.mcreator.vanillaforging.itemgroup.BlocksItemGroup;
-import net.mcreator.vanillaforging.VanillaForgingElements;
+import net.mcreator.vanillaforging.VanillaforgingModElements;
 
 import java.util.List;
 import java.util.Collections;
 
-@VanillaForgingElements.ModElement.Tag
-public class IronwoodBookshelfBlock extends VanillaForgingElements.ModElement {
+@VanillaforgingModElements.ModElement.Tag
+public class IronwoodBookshelfBlock extends VanillaforgingModElements.ModElement {
 	@ObjectHolder("vanillaforging:ironwoodbookshelf")
 	public static final Block block = null;
-	public IronwoodBookshelfBlock(VanillaForgingElements instance) {
+	public IronwoodBookshelfBlock(VanillaforgingModElements instance) {
 		super(instance, 10);
 	}
 

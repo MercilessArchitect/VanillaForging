@@ -8,13 +8,13 @@ import net.minecraft.item.Item;
 import net.minecraft.block.BlockState;
 
 import net.mcreator.vanillaforging.itemgroup.MainForgePartsItemGroup;
-import net.mcreator.vanillaforging.VanillaForgingElements;
+import net.mcreator.vanillaforging.VanillaforgingModElements;
 
-@VanillaForgingElements.ModElement.Tag
-public class EnhancedCraftingGridItem extends VanillaForgingElements.ModElement {
+@VanillaforgingModElements.ModElement.Tag
+public class EnhancedCraftingGridItem extends VanillaforgingModElements.ModElement {
 	@ObjectHolder("vanillaforging:enhancedcraftinggrid")
 	public static final Item block = null;
-	public EnhancedCraftingGridItem(VanillaForgingElements instance) {
+	public EnhancedCraftingGridItem(VanillaforgingModElements instance) {
 		super(instance, 93);
 	}
 

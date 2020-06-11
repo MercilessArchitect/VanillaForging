@@ -12,15 +12,15 @@ import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.block.BlockState;
 
 import net.mcreator.vanillaforging.itemgroup.MainForgePartsItemGroup;
-import net.mcreator.vanillaforging.VanillaForgingElements;
+import net.mcreator.vanillaforging.VanillaforgingModElements;
 
 import java.util.List;
 
-@VanillaForgingElements.ModElement.Tag
-public class InfusedcarbonItem extends VanillaForgingElements.ModElement {
+@VanillaforgingModElements.ModElement.Tag
+public class InfusedcarbonItem extends VanillaforgingModElements.ModElement {
 	@ObjectHolder("vanillaforging:infusedcarbon")
 	public static final Item block = null;
-	public InfusedcarbonItem(VanillaForgingElements instance) {
+	public InfusedcarbonItem(VanillaforgingModElements instance) {
 		super(instance, 70);
 	}
 

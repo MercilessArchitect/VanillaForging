@@ -8,13 +8,13 @@ import net.minecraft.item.Item;
 import net.minecraft.block.BlockState;
 
 import net.mcreator.vanillaforging.itemgroup.MainForgePartsItemGroup;
-import net.mcreator.vanillaforging.VanillaForgingElements;
+import net.mcreator.vanillaforging.VanillaforgingModElements;
 
-@VanillaForgingElements.ModElement.Tag
-public class RodCastItem extends VanillaForgingElements.ModElement {
+@VanillaforgingModElements.ModElement.Tag
+public class RodCastItem extends VanillaforgingModElements.ModElement {
 	@ObjectHolder("vanillaforging:rodcast")
 	public static final Item block = null;
-	public RodCastItem(VanillaForgingElements instance) {
+	public RodCastItem(VanillaforgingModElements instance) {
 		super(instance, 101);
 	}
 

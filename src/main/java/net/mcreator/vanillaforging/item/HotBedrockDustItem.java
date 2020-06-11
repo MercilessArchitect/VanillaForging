@@ -8,13 +8,13 @@ import net.minecraft.item.Item;
 import net.minecraft.block.BlockState;
 
 import net.mcreator.vanillaforging.itemgroup.MainForgePartsItemGroup;
-import net.mcreator.vanillaforging.VanillaForgingElements;
+import net.mcreator.vanillaforging.VanillaforgingModElements;
 
-@VanillaForgingElements.ModElement.Tag
-public class HotBedrockDustItem extends VanillaForgingElements.ModElement {
+@VanillaforgingModElements.ModElement.Tag
+public class HotBedrockDustItem extends VanillaforgingModElements.ModElement {
 	@ObjectHolder("vanillaforging:hotbedrockdust")
 	public static final Item block = null;
-	public HotBedrockDustItem(VanillaForgingElements instance) {
+	public HotBedrockDustItem(VanillaforgingModElements instance) {
 		super(instance, 113);
 	}
 

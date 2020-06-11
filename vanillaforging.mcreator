@@ -1442,14 +1442,6 @@
       "ids": {}
     },
     {
-      "name": "MetallurgyTable",
-      "type": "block",
-      "sortid": 41,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {}
-    },
-    {
       "name": "Metallurgytablerecipe1",
       "type": "recipe",
       "sortid": 210,
@@ -1517,14 +1509,6 @@
       "name": "PlateCastGridRecipe",
       "type": "recipe",
       "sortid": 215,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {}
-    },
-    {
-      "name": "MetallurgySmithingTable",
-      "type": "block",
-      "sortid": 43,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -1770,14 +1754,6 @@
       "ids": {}
     },
     {
-      "name": "GrindstoneGUI",
-      "type": "gui",
-      "sortid": 227,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {}
-    },
-    {
       "name": "GrindstoneGUIProcedure",
       "type": "procedure",
       "sortid": 228,
@@ -1984,6 +1960,41 @@
           }
         ]
       }
+    },
+    {
+      "name": "MetallurgyTable",
+      "type": "block",
+      "sortid": 235,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "GrindstoneGUI",
+      "type": "gui",
+      "sortid": 236,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "grindstone_gui"
+    },
+    {
+      "name": "MetalurgySmithingTable",
+      "type": "block",
+      "sortid": 237,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "metalurgy_smithing_table"
+    },
+    {
+      "name": "MetallurgySmithingTableRecipe",
+      "type": "recipe",
+      "sortid": 238,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "metallurgy_smithing_table_recipe"
     }
   ],
   "variable_elements": [],
@@ -1995,22 +2006,22 @@
       "block.vanillaforging.hardenedsulfursteelblock": "Hardened Sulfur Steel Block",
       "item.vanillaforging.castingalloy": "Casting Alloy",
       "block.vanillaforging.lightsmithingbrickslab": "Light Smithingbrick Slab",
-      "item.vanillaforging.temporaldust": "Temporal Dust",
       "block.vanillaforging.nichtore": "Nicht Ore",
+      "item.vanillaforging.temporaldust": "Temporal Dust",
       "block.vanillaforging.copperore": "Copper Ore",
       "biome.vanillaforging.orousforest": "Orous Forest",
       "item.vanillaforging.scrap": "Scrap",
       "item.vanillaforging.hardenedsulfursteelbucket": "Hardened Sulfur Steel Bucket",
       "item.vanillaforging.weakcastingalloy": "Weak Casting Alloy",
-      "item.vanillaforging.copperaxe": "Copper Axe",
-      "item.vanillaforging.copperpickaxe": "Copper Pickaxe",
       "item.vanillaforging.hardenedsulfursteeldust": "Hardened Sulfur Steel Dust",
+      "item.vanillaforging.copperpickaxe": "Copper Pickaxe",
+      "item.vanillaforging.copperaxe": "Copper Axe",
       "item.vanillaforging.hardenedsulfursteelrod": "Hardened Sulfur Steel Rod",
       "item.vanillaforging.infusedcarbon": "Infused Carbon",
       "block.vanillaforging.lightsmithingbrickfence": "Light Smithingbrick Fence",
       "item.vanillaforging.wootzsteelbasebucket": "Wootz Steel Base Bucket",
-      "block.vanillaforging.smithingbrickfence": "Smithingbrick Fence",
       "item.vanillaforging.portalcore": "Portal Core",
+      "block.vanillaforging.smithingbrickfence": "Smithingbrick Fence",
       "block.vanillaforging.lightsmithingbricksmoothslab": "Light Smithingbrick Smoothslab",
       "itemGroup.tabmainforgeparts": "Main Forge Parts",
       "item.vanillaforging.greenstonedust": "Greenstonedust",
@@ -2077,6 +2088,7 @@
       "item.vanillaforging.quartzdust": "Quartzdust",
       "block.vanillaforging.lightsmithingbrickstairs": "Light Smithingbrickstairs",
       "item.vanillaforging.gearcast": "Gear Cast",
+      "block.vanillaforging.metalurgy_smithing_table": "Metalurgy Smithing Table",
       "block.vanillaforging.essencewoodslab": "Essencewoodslab",
       "block.vanillaforging.metallurgygrindstone": "Metallurgy Grindstone",
       "item.vanillaforging.copperingot": "Copper Ingot",
@@ -2102,7 +2114,6 @@
       "block.vanillaforging.daoriteoreblock": "Block of Daorite",
       "item.vanillaforging.irondust": "Iron Dust",
       "block.vanillaforging.lightsmithingbrickstorageblock": "Light Smithingbrick Storage Block",
-      "block.vanillaforging.metallurgysmithingtable": "Metallurgy Smithing Table",
       "item.vanillaforging.castingalloyingot": "Casting Alloy Ingot",
       "item.vanillaforging.sulfuralloypaste": "Sulfur Alloy Paste",
       "item.vanillaforging.sulfurdust": "Sulfur Dust",
@@ -2122,7 +2133,7 @@
   },
   "workspaceSettings": {
     "modid": "vanillaforging",
-    "modName": "Vanilla_Forging",
+    "modName": "Vanilla Forging",
     "version": "1.0.0",
     "author": "Merciless",
     "websiteURL": "https://mcreator.net",
@@ -2132,9 +2143,10 @@
     "dependencies": [],
     "dependants": [],
     "mcreatorDependencies": [],
-    "currentGenerator": "1.14.4",
+    "currentGenerator": "forge-1.15.2",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
     "modElementsPackage": "net.mcreator.vanillaforging",
     "lockBaseModFiles": false
   },
-  "mcreatorVersion": 202000214217
+  "mcreatorVersion": 202000322116
 }

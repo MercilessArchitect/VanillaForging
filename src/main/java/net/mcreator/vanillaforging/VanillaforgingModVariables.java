@@ -14,7 +14,7 @@ import net.minecraft.client.Minecraft;
 
 import java.util.function.Supplier;
 
-public class VanillaForgingVariables {
+public class VanillaforgingModVariables {
 	public static class WorldVariables extends WorldSavedData {
 		public static final String DATA_NAME = "vanillaforging_worldvars";
 		public WorldVariables() {
@@ -37,9 +37,9 @@ public class VanillaForgingVariables {
 		public void syncData(World world) {
 			this.markDirty();
 			if (world.isRemote) {
-				VanillaForging.PACKET_HANDLER.sendToServer(new WorldSavedDataSyncMessage(1, this));
+				VanillaforgingMod.PACKET_HANDLER.sendToServer(new WorldSavedDataSyncMessage(1, this));
 			} else {
-				VanillaForging.PACKET_HANDLER.send(PacketDistributor.DIMENSION.with(world.dimension::getType),
+				VanillaforgingMod.PACKET_HANDLER.send(PacketDistributor.DIMENSION.with(world.dimension::getType),
 						new WorldSavedDataSyncMessage(1, this));
 			}
 		}
@@ -75,9 +75,9 @@ public class VanillaForgingVariables {
 		public void syncData(World world) {
 			this.markDirty();
 			if (world.isRemote) {
-				VanillaForging.PACKET_HANDLER.sendToServer(new WorldSavedDataSyncMessage(0, this));
+				VanillaforgingMod.PACKET_HANDLER.sendToServer(new WorldSavedDataSyncMessage(0, this));
 			} else {
-				VanillaForging.PACKET_HANDLER.send(PacketDistributor.ALL.noArg(), new WorldSavedDataSyncMessage(0, this));
+				VanillaforgingMod.PACKET_HANDLER.send(PacketDistributor.ALL.noArg(), new WorldSavedDataSyncMessage(0, this));
 			}
 		}
 		static MapVariables clientSide = new MapVariables();
@@ -127,10 +127,10 @@ public class VanillaForgingVariables {
 			if (side.isServer()) {
 				message.data.markDirty();
 				if (message.type == 0) {
-					VanillaForging.PACKET_HANDLER.send(PacketDistributor.ALL.noArg(), message);
+					VanillaforgingMod.PACKET_HANDLER.send(PacketDistributor.ALL.noArg(), message);
 					world.getServer().getWorld(DimensionType.OVERWORLD).getSavedData().set(message.data);
 				} else {
-					VanillaForging.PACKET_HANDLER.send(PacketDistributor.DIMENSION.with(world.dimension::getType), message);
+					VanillaforgingMod.PACKET_HANDLER.send(PacketDistributor.DIMENSION.with(world.dimension::getType), message);
 					((ServerWorld) world).getSavedData().set(message.data);
 				}
 			} else {

@@ -8,13 +8,13 @@ import net.minecraft.item.Item;
 import net.minecraft.block.BlockState;
 
 import net.mcreator.vanillaforging.itemgroup.MainForgePartsItemGroup;
-import net.mcreator.vanillaforging.VanillaForgingElements;
+import net.mcreator.vanillaforging.VanillaforgingModElements;
 
-@VanillaForgingElements.ModElement.Tag
-public class FirmweakcastingalloyItem extends VanillaForgingElements.ModElement {
+@VanillaforgingModElements.ModElement.Tag
+public class FirmweakcastingalloyItem extends VanillaforgingModElements.ModElement {
 	@ObjectHolder("vanillaforging:firmweakcastingalloy")
 	public static final Item block = null;
-	public FirmweakcastingalloyItem(VanillaForgingElements instance) {
+	public FirmweakcastingalloyItem(VanillaforgingModElements instance) {
 		super(instance, 87);
 	}
 

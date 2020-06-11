@@ -3,9 +3,14 @@ package net.mcreator.vanillaforging.gui;
 
 import org.lwjgl.opengl.GL11;
 
+import net.minecraftforge.items.SlotItemHandler;
+import net.minecraftforge.items.ItemStackHandler;
+import net.minecraftforge.items.IItemHandler;
+import net.minecraftforge.items.CapabilityItemHandler;
 import net.minecraftforge.fml.network.NetworkEvent;
 import net.minecraftforge.fml.network.IContainerFactory;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.minecraftforge.fml.DeferredWorkQueue;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.api.distmarker.OnlyIn;
@@ -21,8 +26,6 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.inventory.container.Slot;
 import net.minecraft.inventory.container.ContainerType;
 import net.minecraft.inventory.container.Container;
-import net.minecraft.inventory.Inventory;
-import net.minecraft.inventory.IInventory;
 import net.minecraft.entity.player.ServerPlayerEntity;
 import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.entity.player.PlayerEntity;
@@ -30,18 +33,18 @@ import net.minecraft.client.gui.screen.inventory.ContainerScreen;
 import net.minecraft.client.gui.ScreenManager;
 import net.minecraft.client.Minecraft;
 
-import net.mcreator.vanillaforging.VanillaForgingElements;
-import net.mcreator.vanillaforging.VanillaForging;
+import net.mcreator.vanillaforging.VanillaforgingModElements;
+import net.mcreator.vanillaforging.VanillaforgingMod;
 
 import java.util.function.Supplier;
 import java.util.Map;
 import java.util.HashMap;
 
-@VanillaForgingElements.ModElement.Tag
-public class Metallurgy_Table_UIGui extends VanillaForgingElements.ModElement {
+@VanillaforgingModElements.ModElement.Tag
+public class Metallurgy_Table_UIGui extends VanillaforgingModElements.ModElement {
 	public static HashMap guistate = new HashMap();
 	private static ContainerType<GuiContainerMod> containerType = null;
-	public Metallurgy_Table_UIGui(VanillaForgingElements instance) {
+	public Metallurgy_Table_UIGui(VanillaforgingModElements instance) {
 		super(instance, 229);
 		elements.addNetworkMessage(ButtonPressedMessage.class, ButtonPressedMessage::buffer, ButtonPressedMessage::new,
 				ButtonPressedMessage::handler);
@@ -53,7 +56,7 @@ public class Metallurgy_Table_UIGui extends VanillaForgingElements.ModElement {
 
 	@OnlyIn(Dist.CLIENT)
 	public void initElements() {
-		ScreenManager.registerFactory(containerType, GuiWindow::new);
+		DeferredWorkQueue.runLater(() -> ScreenManager.registerFactory(containerType, GuiWindow::new));
 	}
 
 	@SubscribeEvent
@@ -70,64 +73,84 @@ public class Metallurgy_Table_UIGui extends VanillaForgingElements.ModElement {
 		private World world;
 		private PlayerEntity entity;
 		private int x, y, z;
-		private IInventory internal;
+		private IItemHandler internal;
 		private Map<Integer, Slot> customSlots = new HashMap<>();
+		private boolean bound = false;
 		public GuiContainerMod(int id, PlayerInventory inv, PacketBuffer extraData) {
 			super(containerType, id);
 			this.entity = inv.player;
 			this.world = inv.player.world;
-			this.internal = new Inventory(19);
+			this.internal = new ItemStackHandler(19);
+			BlockPos pos = null;
 			if (extraData != null) {
-				BlockPos pos = extraData.readBlockPos();
+				pos = extraData.readBlockPos();
 				this.x = pos.getX();
 				this.y = pos.getY();
 				this.z = pos.getZ();
-				TileEntity ent = inv.player != null ? inv.player.world.getTileEntity(pos) : null;
-				if (ent instanceof IInventory)
-					this.internal = (IInventory) ent;
 			}
-			internal.openInventory(inv.player);
-			this.customSlots.put(0, this.addSlot(new Slot(internal, 0, 44, 40) {
+			if (pos != null) {
+				if (extraData.readableBytes() == 1) { // bound to item
+					byte hand = extraData.readByte();
+					ItemStack itemstack;
+					if (hand == 0)
+						itemstack = this.entity.getHeldItemMainhand();
+					else
+						itemstack = this.entity.getHeldItemOffhand();
+					itemstack.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
+						this.internal = capability;
+						this.bound = true;
+					});
+				} else { // might be bound to block
+					TileEntity ent = inv.player != null ? inv.player.world.getTileEntity(pos) : null;
+					if (ent != null) {
+						ent.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
+							this.internal = capability;
+							this.bound = true;
+						});
+					}
+				}
+			}
+			this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 43, 40) {
 			}));
-			this.customSlots.put(1, this.addSlot(new Slot(internal, 1, 44, 22) {
+			this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 43, 22) {
 			}));
-			this.customSlots.put(2, this.addSlot(new Slot(internal, 2, 62, 40) {
+			this.customSlots.put(2, this.addSlot(new SlotItemHandler(internal, 2, 61, 40) {
 			}));
-			this.customSlots.put(4, this.addSlot(new Slot(internal, 4, 26, 40) {
+			this.customSlots.put(4, this.addSlot(new SlotItemHandler(internal, 4, 25, 40) {
 			}));
-			this.customSlots.put(3, this.addSlot(new Slot(internal, 3, 44, 58) {
+			this.customSlots.put(3, this.addSlot(new SlotItemHandler(internal, 3, 43, 58) {
 			}));
-			this.customSlots.put(5, this.addSlot(new Slot(internal, 5, 26, 22) {
+			this.customSlots.put(5, this.addSlot(new SlotItemHandler(internal, 5, 25, 22) {
 			}));
-			this.customSlots.put(6, this.addSlot(new Slot(internal, 6, 62, 22) {
+			this.customSlots.put(6, this.addSlot(new SlotItemHandler(internal, 6, 61, 22) {
 			}));
-			this.customSlots.put(7, this.addSlot(new Slot(internal, 7, 62, 58) {
+			this.customSlots.put(7, this.addSlot(new SlotItemHandler(internal, 7, 61, 58) {
 			}));
-			this.customSlots.put(9, this.addSlot(new Slot(internal, 9, 8, 40) {
+			this.customSlots.put(9, this.addSlot(new SlotItemHandler(internal, 9, 7, 40) {
 			}));
-			this.customSlots.put(8, this.addSlot(new Slot(internal, 8, 26, 58) {
+			this.customSlots.put(8, this.addSlot(new SlotItemHandler(internal, 8, 25, 58) {
 			}));
-			this.customSlots.put(10, this.addSlot(new Slot(internal, 10, 44, 4) {
+			this.customSlots.put(10, this.addSlot(new SlotItemHandler(internal, 10, 43, 4) {
 			}));
-			this.customSlots.put(11, this.addSlot(new Slot(internal, 11, 80, 40) {
+			this.customSlots.put(11, this.addSlot(new SlotItemHandler(internal, 11, 79, 40) {
 			}));
-			this.customSlots.put(12, this.addSlot(new Slot(internal, 12, 44, 76) {
+			this.customSlots.put(12, this.addSlot(new SlotItemHandler(internal, 12, 43, 76) {
 			}));
-			this.customSlots.put(13, this.addSlot(new Slot(internal, 13, 8, 76) {
+			this.customSlots.put(13, this.addSlot(new SlotItemHandler(internal, 13, 7, 76) {
 			}));
-			this.customSlots.put(14, this.addSlot(new Slot(internal, 14, 8, 4) {
+			this.customSlots.put(14, this.addSlot(new SlotItemHandler(internal, 14, 7, 4) {
 			}));
-			this.customSlots.put(15, this.addSlot(new Slot(internal, 15, 80, 4) {
+			this.customSlots.put(15, this.addSlot(new SlotItemHandler(internal, 15, 79, 4) {
 			}));
-			this.customSlots.put(16, this.addSlot(new Slot(internal, 16, 80, 76) {
+			this.customSlots.put(16, this.addSlot(new SlotItemHandler(internal, 16, 79, 76) {
 			}));
-			this.customSlots.put(18, this.addSlot(new Slot(internal, 18, 143, 40) {
+			this.customSlots.put(18, this.addSlot(new SlotItemHandler(internal, 18, 142, 40) {
 				@Override
 				public boolean isItemValid(ItemStack stack) {
 					return false;
 				}
 			}));
-			this.customSlots.put(17, this.addSlot(new Slot(internal, 17, 107, 40) {
+			this.customSlots.put(17, this.addSlot(new SlotItemHandler(internal, 17, 106, 40) {
 			}));
 			int si;
 			int sj;
@@ -144,7 +167,7 @@ public class Metallurgy_Table_UIGui extends VanillaForgingElements.ModElement {
 
 		@Override
 		public boolean canInteractWith(PlayerEntity player) {
-			return internal.isUsableByPlayer(player);
+			return true;
 		}
 
 		@Override
@@ -268,15 +291,23 @@ public class Metallurgy_Table_UIGui extends VanillaForgingElements.ModElement {
 		@Override
 		public void onContainerClosed(PlayerEntity playerIn) {
 			super.onContainerClosed(playerIn);
-			internal.closeInventory(playerIn);
-			if ((internal instanceof Inventory) && (playerIn instanceof ServerPlayerEntity)) {
-				this.clearContainer(playerIn, playerIn.world, internal);
+			if (!bound && (playerIn instanceof ServerPlayerEntity)) {
+				if (!playerIn.isAlive() || playerIn instanceof ServerPlayerEntity && ((ServerPlayerEntity) playerIn).hasDisconnected()) {
+					for (int j = 0; j < internal.getSlots(); ++j) {
+						playerIn.dropItem(internal.extractItem(j, internal.getStackInSlot(j).getCount(), false), false);
+					}
+				} else {
+					for (int i = 0; i < internal.getSlots(); ++i) {
+						playerIn.inventory.placeItemBackInInventory(playerIn.world,
+								internal.extractItem(i, internal.getStackInSlot(i).getCount(), false));
+					}
+				}
 			}
 		}
 
 		private void slotChanged(int slotid, int ctype, int meta) {
 			if (this.world != null && this.world.isRemote) {
-				VanillaForging.PACKET_HANDLER.sendToServer(new GUISlotChangedMessage(slotid, x, y, z, ctype, meta));
+				VanillaforgingMod.PACKET_HANDLER.sendToServer(new GUISlotChangedMessage(slotid, x, y, z, ctype, meta));
 				handleSlotAction(entity, slotid, ctype, meta, x, y, z);
 			}
 		}

@@ -14,16 +14,16 @@ import net.minecraft.block.Block;
 
 import net.mcreator.vanillaforging.itemgroup.BlocksItemGroup;
 import net.mcreator.vanillaforging.item.PortalcoreItem;
-import net.mcreator.vanillaforging.VanillaForgingElements;
+import net.mcreator.vanillaforging.VanillaforgingModElements;
 
 import java.util.List;
 import java.util.Collections;
 
-@VanillaForgingElements.ModElement.Tag
-public class BrokenPortalDeviceBlock extends VanillaForgingElements.ModElement {
+@VanillaforgingModElements.ModElement.Tag
+public class BrokenPortalDeviceBlock extends VanillaforgingModElements.ModElement {
 	@ObjectHolder("vanillaforging:brokenportaldevice")
 	public static final Block block = null;
-	public BrokenPortalDeviceBlock(VanillaForgingElements instance) {
+	public BrokenPortalDeviceBlock(VanillaforgingModElements instance) {
 		super(instance, 40);
 	}
 

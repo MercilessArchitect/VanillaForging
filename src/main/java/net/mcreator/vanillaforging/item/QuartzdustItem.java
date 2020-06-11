@@ -8,13 +8,13 @@ import net.minecraft.item.Item;
 import net.minecraft.block.BlockState;
 
 import net.mcreator.vanillaforging.itemgroup.MainForgePartsItemGroup;
-import net.mcreator.vanillaforging.VanillaForgingElements;
+import net.mcreator.vanillaforging.VanillaforgingModElements;
 
-@VanillaForgingElements.ModElement.Tag
-public class QuartzdustItem extends VanillaForgingElements.ModElement {
+@VanillaforgingModElements.ModElement.Tag
+public class QuartzdustItem extends VanillaforgingModElements.ModElement {
 	@ObjectHolder("vanillaforging:quartzdust")
 	public static final Item block = null;
-	public QuartzdustItem(VanillaForgingElements instance) {
+	public QuartzdustItem(VanillaforgingModElements instance) {
 		super(instance, 79);
 	}
 

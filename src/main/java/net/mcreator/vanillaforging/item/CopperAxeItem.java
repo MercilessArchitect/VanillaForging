@@ -9,13 +9,13 @@ import net.minecraft.item.Item;
 import net.minecraft.item.IItemTier;
 import net.minecraft.item.AxeItem;
 
-import net.mcreator.vanillaforging.VanillaForgingElements;
+import net.mcreator.vanillaforging.VanillaforgingModElements;
 
-@VanillaForgingElements.ModElement.Tag
-public class CopperAxeItem extends VanillaForgingElements.ModElement {
+@VanillaforgingModElements.ModElement.Tag
+public class CopperAxeItem extends VanillaforgingModElements.ModElement {
 	@ObjectHolder("vanillaforging:copperaxe")
 	public static final Item block = null;
-	public CopperAxeItem(VanillaForgingElements instance) {
+	public CopperAxeItem(VanillaforgingModElements instance) {
 		super(instance, 117);
 	}
 

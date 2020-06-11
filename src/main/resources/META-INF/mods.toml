@@ -1,10 +1,10 @@
 modLoader="javafml"
-loaderVersion="[28,)"
+loaderVersion="[31,)"
 
 [[mods]]
 modId="vanillaforging"
 version="1.0.0"
-displayName="Vanilla_Forging"
+displayName="Vanilla Forging"
 credits="Created using mod maker MCreator - https://mcreator.net/about"
 displayURL="https://mcreator.net"
 authors="Merciless"
@@ -12,7 +12,7 @@ authors="Merciless"
 [[dependencies.vanillaforging]]
     modId="minecraft"
     mandatory=true
-    versionRange="[1.14.4]"
+    versionRange="[1.15.2]"
     ordering="NONE"
     side="BOTH"
 

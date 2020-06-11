@@ -2,10 +2,15 @@
 package net.mcreator.vanillaforging.block;
 
 import net.minecraftforge.registries.ObjectHolder;
+import net.minecraftforge.items.wrapper.SidedInvWrapper;
+import net.minecraftforge.items.IItemHandler;
+import net.minecraftforge.items.CapabilityItemHandler;
 import net.minecraftforge.fml.network.NetworkHooks;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.event.RegistryEvent;
+import net.minecraftforge.common.util.LazyOptional;
+import net.minecraftforge.common.capabilities.Capability;
 import net.minecraftforge.common.ToolType;
 
 import net.minecraft.world.storage.loot.LootContext;
@@ -20,6 +25,7 @@ import net.minecraft.util.NonNullList;
 import net.minecraft.util.Mirror;
 import net.minecraft.util.Hand;
 import net.minecraft.util.Direction;
+import net.minecraft.util.ActionResultType;
 import net.minecraft.tileentity.TileEntityType;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.tileentity.LockableLootTileEntity;
@@ -37,6 +43,7 @@ import net.minecraft.inventory.container.INamedContainerProvider;
 import net.minecraft.inventory.container.Container;
 import net.minecraft.inventory.ItemStackHelper;
 import net.minecraft.inventory.InventoryHelper;
+import net.minecraft.inventory.ISidedInventory;
 import net.minecraft.entity.player.ServerPlayerEntity;
 import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.entity.player.PlayerEntity;
@@ -46,24 +53,25 @@ import net.minecraft.block.HorizontalBlock;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
 
-import net.mcreator.vanillaforging.procedures.MetallurgyCastingProcedureProcedure;
 import net.mcreator.vanillaforging.itemgroup.BlocksItemGroup;
 import net.mcreator.vanillaforging.gui.MetallurgyCastingGUIGui;
-import net.mcreator.vanillaforging.VanillaForgingElements;
+import net.mcreator.vanillaforging.VanillaforgingModElements;
 
-import java.util.Random;
+import javax.annotation.Nullable;
+
+import java.util.stream.IntStream;
 import java.util.List;
 import java.util.Collections;
 
 import io.netty.buffer.Unpooled;
 
-@VanillaForgingElements.ModElement.Tag
-public class MetallurgyCastingTableBlock extends VanillaForgingElements.ModElement {
+@VanillaforgingModElements.ModElement.Tag
+public class MetallurgyCastingTableBlock extends VanillaforgingModElements.ModElement {
 	@ObjectHolder("vanillaforging:metallurgycastingtable")
 	public static final Block block = null;
 	@ObjectHolder("vanillaforging:metallurgycastingtable")
 	public static final TileEntityType<CustomTileEntity> tileEntityType = null;
-	public MetallurgyCastingTableBlock(VanillaForgingElements instance) {
+	public MetallurgyCastingTableBlock(VanillaforgingModElements instance) {
 		super(instance, 42);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
@@ -115,34 +123,9 @@ public class MetallurgyCastingTableBlock extends VanillaForgingElements.ModEleme
 		}
 
 		@Override
-		public void onBlockAdded(BlockState state, World world, BlockPos pos, BlockState oldState, boolean moving) {
-			super.onBlockAdded(state, world, pos, oldState, moving);
-			int x = pos.getX();
-			int y = pos.getY();
-			int z = pos.getZ();
-			world.getPendingBlockTicks().scheduleTick(new BlockPos(x, y, z), this, this.tickRate(world));
-		}
-
-		@Override
-		public void tick(BlockState state, World world, BlockPos pos, Random random) {
-			super.tick(state, world, pos, random);
-			int x = pos.getX();
-			int y = pos.getY();
-			int z = pos.getZ();
-			{
-				java.util.HashMap<String, Object> $_dependencies = new java.util.HashMap<>();
-				$_dependencies.put("x", x);
-				$_dependencies.put("y", y);
-				$_dependencies.put("z", z);
-				$_dependencies.put("world", world);
-				MetallurgyCastingProcedureProcedure.executeProcedure($_dependencies);
-			}
-			world.getPendingBlockTicks().scheduleTick(new BlockPos(x, y, z), this, this.tickRate(world));
-		}
-
-		@Override
-		public boolean onBlockActivated(BlockState state, World world, BlockPos pos, PlayerEntity entity, Hand hand, BlockRayTraceResult hit) {
-			boolean retval = super.onBlockActivated(state, world, pos, entity, hand, hit);
+		public ActionResultType onBlockActivated(BlockState state, World world, BlockPos pos, PlayerEntity entity, Hand hand,
+				BlockRayTraceResult hit) {
+			super.onBlockActivated(state, world, pos, entity, hand, hit);
 			int x = pos.getX();
 			int y = pos.getY();
 			int z = pos.getZ();
@@ -160,7 +143,7 @@ public class MetallurgyCastingTableBlock extends VanillaForgingElements.ModEleme
 					}
 				}, new BlockPos(x, y, z));
 			}
-			return true;
+			return ActionResultType.SUCCESS;
 		}
 
 		@Override
@@ -197,23 +180,9 @@ public class MetallurgyCastingTableBlock extends VanillaForgingElements.ModEleme
 				super.onReplaced(state, world, pos, newState, isMoving);
 			}
 		}
-
-		@Override
-		public boolean hasComparatorInputOverride(BlockState state) {
-			return true;
-		}
-
-		@Override
-		public int getComparatorInputOverride(BlockState blockState, World world, BlockPos pos) {
-			TileEntity tileentity = world.getTileEntity(pos);
-			if (tileentity instanceof CustomTileEntity)
-				return Container.calcRedstoneFromInventory((CustomTileEntity) tileentity);
-			else
-				return 0;
-		}
 	}
 
-	public static class CustomTileEntity extends LockableLootTileEntity {
+	public static class CustomTileEntity extends LockableLootTileEntity implements ISidedInventory {
 		private NonNullList<ItemStack> stacks = NonNullList.<ItemStack>withSize(8, ItemStack.EMPTY);
 		protected CustomTileEntity() {
 			super(tileEntityType);
@@ -222,14 +191,18 @@ public class MetallurgyCastingTableBlock extends VanillaForgingElements.ModEleme
 		@Override
 		public void read(CompoundNBT compound) {
 			super.read(compound);
-			this.stacks = NonNullList.withSize(this.getSizeInventory(), ItemStack.EMPTY);
+			if (!this.checkLootAndRead(compound)) {
+				this.stacks = NonNullList.withSize(this.getSizeInventory(), ItemStack.EMPTY);
+			}
 			ItemStackHelper.loadAllItems(compound, this.stacks);
 		}
 
 		@Override
 		public CompoundNBT write(CompoundNBT compound) {
 			super.write(compound);
-			ItemStackHelper.saveAllItems(compound, this.stacks);
+			if (!this.checkLootAndWrite(compound)) {
+				ItemStackHelper.saveAllItems(compound, this.stacks);
+			}
 			return compound;
 		}
 
@@ -250,7 +223,7 @@ public class MetallurgyCastingTableBlock extends VanillaForgingElements.ModEleme
 
 		@Override
 		public int getSizeInventory() {
-			return 8;
+			return stacks.size();
 		}
 
 		@Override
@@ -259,18 +232,6 @@ public class MetallurgyCastingTableBlock extends VanillaForgingElements.ModEleme
 				if (!itemstack.isEmpty())
 					return false;
 			return true;
-		}
-
-		@Override
-		public boolean isItemValidForSlot(int index, ItemStack stack) {
-			if (index == 7)
-				return false;
-			return true;
-		}
-
-		@Override
-		public ItemStack getStackInSlot(int slot) {
-			return stacks.get(slot);
 		}
 
 		@Override
@@ -301,6 +262,56 @@ public class MetallurgyCastingTableBlock extends VanillaForgingElements.ModEleme
 		@Override
 		protected void setItems(NonNullList<ItemStack> stacks) {
 			this.stacks = stacks;
+		}
+
+		@Override
+		public boolean isItemValidForSlot(int index, ItemStack stack) {
+			if (index == 7)
+				return false;
+			return true;
+		}
+
+		@Override
+		public int[] getSlotsForFace(Direction side) {
+			return IntStream.range(0, this.getSizeInventory()).toArray();
+		}
+
+		@Override
+		public boolean canInsertItem(int index, ItemStack stack, @Nullable Direction direction) {
+			return this.isItemValidForSlot(index, stack);
+		}
+
+		@Override
+		public boolean canExtractItem(int index, ItemStack stack, Direction direction) {
+			if (index == 0)
+				return false;
+			if (index == 1)
+				return false;
+			if (index == 2)
+				return false;
+			if (index == 3)
+				return false;
+			if (index == 4)
+				return false;
+			if (index == 5)
+				return false;
+			if (index == 6)
+				return false;
+			return true;
+		}
+		private final LazyOptional<? extends IItemHandler>[] handlers = SidedInvWrapper.create(this, Direction.values());
+		@Override
+		public <T> LazyOptional<T> getCapability(Capability<T> capability, @Nullable Direction facing) {
+			if (!this.removed && facing != null && capability == CapabilityItemHandler.ITEM_HANDLER_CAPABILITY)
+				return handlers[facing.ordinal()].cast();
+			return super.getCapability(capability, facing);
+		}
+
+		@Override
+		public void remove() {
+			super.remove();
+			for (LazyOptional<? extends IItemHandler> handler : handlers)
+				handler.invalidate();
 		}
 	}
 }

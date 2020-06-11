@@ -30,17 +30,17 @@ import net.minecraft.block.Block;
 
 import net.mcreator.vanillaforging.itemgroup.BlocksItemGroup;
 import net.mcreator.vanillaforging.item.CorruptingdustItem;
-import net.mcreator.vanillaforging.VanillaForgingElements;
+import net.mcreator.vanillaforging.VanillaforgingModElements;
 
 import java.util.Random;
 import java.util.List;
 import java.util.Collections;
 
-@VanillaForgingElements.ModElement.Tag
-public class CorruptedpodzolBlock extends VanillaForgingElements.ModElement {
+@VanillaforgingModElements.ModElement.Tag
+public class CorruptedpodzolBlock extends VanillaforgingModElements.ModElement {
 	@ObjectHolder("vanillaforging:corruptedpodzol")
 	public static final Block block = null;
-	public CorruptedpodzolBlock(VanillaForgingElements instance) {
+	public CorruptedpodzolBlock(VanillaforgingModElements instance) {
 		super(instance, 20);
 	}
 
@@ -72,7 +72,7 @@ public class CorruptedpodzolBlock extends VanillaForgingElements.ModElement {
 				biomeCriteria = true;
 			if (!biomeCriteria)
 				continue;
-			biome.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, Biome.createDecoratedFeature(new OreFeature(OreFeatureConfig::deserialize) {
+			biome.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, new OreFeature(OreFeatureConfig::deserialize) {
 				@Override
 				public boolean place(IWorld world, ChunkGenerator generator, Random rand, BlockPos pos, OreFeatureConfig config) {
 					DimensionType dimensionType = world.getDimension().getType();
@@ -83,14 +83,14 @@ public class CorruptedpodzolBlock extends VanillaForgingElements.ModElement {
 						return false;
 					return super.place(world, generator, rand, pos, config);
 				}
-			}, new OreFeatureConfig(OreFeatureConfig.FillerBlockType.create("corruptedpodzol", "corruptedpodzol", blockAt -> {
+			}.withConfiguration(new OreFeatureConfig(OreFeatureConfig.FillerBlockType.create("corruptedpodzol", "corruptedpodzol", blockAt -> {
 				boolean blockCriteria = false;
 				if (blockAt.getBlock() == Blocks.PODZOL.getDefaultState().getBlock())
 					blockCriteria = true;
 				if (blockAt.getBlock() == Blocks.COARSE_DIRT.getDefaultState().getBlock())
 					blockCriteria = true;
 				return blockCriteria;
-			}), block.getDefaultState(), 5), Placement.COUNT_RANGE, new CountRangeConfig(30, 55, 55, 80)));
+			}), block.getDefaultState(), 5)).withPlacement(Placement.COUNT_RANGE.configure(new CountRangeConfig(30, 55, 55, 80))));
 		}
 	}
 }

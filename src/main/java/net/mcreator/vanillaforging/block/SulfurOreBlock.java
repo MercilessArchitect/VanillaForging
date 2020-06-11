@@ -28,17 +28,17 @@ import net.minecraft.block.Block;
 
 import net.mcreator.vanillaforging.itemgroup.BlocksItemGroup;
 import net.mcreator.vanillaforging.item.SulfurdustItem;
-import net.mcreator.vanillaforging.VanillaForgingElements;
+import net.mcreator.vanillaforging.VanillaforgingModElements;
 
 import java.util.Random;
 import java.util.List;
 import java.util.Collections;
 
-@VanillaForgingElements.ModElement.Tag
-public class SulfurOreBlock extends VanillaForgingElements.ModElement {
+@VanillaforgingModElements.ModElement.Tag
+public class SulfurOreBlock extends VanillaforgingModElements.ModElement {
 	@ObjectHolder("vanillaforging:sulfurore")
 	public static final Block block = null;
-	public SulfurOreBlock(VanillaForgingElements instance) {
+	public SulfurOreBlock(VanillaforgingModElements instance) {
 		super(instance, 1);
 	}
 
@@ -65,7 +65,7 @@ public class SulfurOreBlock extends VanillaForgingElements.ModElement {
 	@Override
 	public void init(FMLCommonSetupEvent event) {
 		for (Biome biome : ForgeRegistries.BIOMES.getValues()) {
-			biome.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, Biome.createDecoratedFeature(new OreFeature(OreFeatureConfig::deserialize) {
+			biome.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, new OreFeature(OreFeatureConfig::deserialize) {
 				@Override
 				public boolean place(IWorld world, ChunkGenerator generator, Random rand, BlockPos pos, OreFeatureConfig config) {
 					DimensionType dimensionType = world.getDimension().getType();
@@ -76,12 +76,12 @@ public class SulfurOreBlock extends VanillaForgingElements.ModElement {
 						return false;
 					return super.place(world, generator, rand, pos, config);
 				}
-			}, new OreFeatureConfig(OreFeatureConfig.FillerBlockType.create("sulfurore", "sulfurore", blockAt -> {
+			}.withConfiguration(new OreFeatureConfig(OreFeatureConfig.FillerBlockType.create("sulfurore", "sulfurore", blockAt -> {
 				boolean blockCriteria = false;
 				if (blockAt.getBlock() == Blocks.NETHERRACK.getDefaultState().getBlock())
 					blockCriteria = true;
 				return blockCriteria;
-			}), block.getDefaultState(), 6), Placement.COUNT_RANGE, new CountRangeConfig(6, 0, 0, 128)));
+			}), block.getDefaultState(), 6)).withPlacement(Placement.COUNT_RANGE.configure(new CountRangeConfig(6, 0, 0, 128))));
 		}
 	}
 }

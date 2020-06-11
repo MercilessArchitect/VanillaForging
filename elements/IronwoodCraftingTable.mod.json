@@ -1,8 +1,8 @@
 {
-  "_fv": 6,
+  "_fv": 8,
   "_type": "block",
   "definition": {
-    "texture": "ironwood_plank",
+    "texture": "ironwoodplanks",
     "textureTop": "ironwood_crafting_top",
     "textureLeft": "ironwood_crafting_table_side",
     "textureFront": "ironwood_crafting_front",
@@ -12,6 +12,7 @@
     "customModelName": "Normal",
     "rotationMode": 1,
     "hasTransparency": false,
+    "connectedSides": false,
     "transparencyType": "SOLID",
     "mx": 0.0,
     "my": 0.0,
@@ -19,7 +20,6 @@
     "Mx": 1.0,
     "My": 1.0,
     "Mz": 1.0,
-    "faceShape": "SOLID",
     "name": "Ironwood Crafting Table",
     "specialInfo": [
       "this currently has no functionality",
@@ -32,7 +32,6 @@
       "value": "CUSTOM:Blocks"
     },
     "destroyTool": "axe",
-    "affectedBySilkTouch": true,
     "customDrop": {
       "value": ""
     },
@@ -52,6 +51,8 @@
     "creativePickItem": {
       "value": ""
     },
+    "offsetType": "NONE",
+    "aiPathNodeType": "DEFAULT",
     "flammability": 0,
     "fireSpreadSpeed": 0,
     "isLadder": false,
@@ -82,6 +83,7 @@
     "inventoryOutSlotIDs": [
       9
     ],
+    "inventoryInSlotIDs": [],
     "spawnWorldTypes": [],
     "restrictionBiomes": [],
     "blocksToReplace": [

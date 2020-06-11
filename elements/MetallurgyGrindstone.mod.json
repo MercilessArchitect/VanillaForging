@@ -1,5 +1,5 @@
 {
-  "_fv": 6,
+  "_fv": 8,
   "_type": "block",
   "definition": {
     "texture": "forge_framed",
@@ -10,8 +10,9 @@
     "textureBack": "",
     "renderType": 2,
     "customModelName": "metallurgy_grindstone:default",
-    "rotationMode": 1,
+    "rotationMode": 5,
     "hasTransparency": true,
+    "connectedSides": false,
     "transparencyType": "SOLID",
     "mx": 0.0,
     "my": 0.0,
@@ -19,7 +20,6 @@
     "Mx": 1.0,
     "My": 1.0,
     "Mz": 1.0,
-    "faceShape": "SOLID",
     "name": "Metallurgy Grindstone",
     "specialInfo": [],
     "hardness": 12.0,
@@ -29,7 +29,6 @@
       "value": "CUSTOM:Blocks"
     },
     "destroyTool": "pickaxe",
-    "affectedBySilkTouch": true,
     "customDrop": {
       "value": ""
     },
@@ -49,6 +48,8 @@
     "creativePickItem": {
       "value": ""
     },
+    "offsetType": "NONE",
+    "aiPathNodeType": "DEFAULT",
     "flammability": 0,
     "fireSpreadSpeed": 0,
     "isLadder": false,
@@ -75,9 +76,14 @@
     "inventorySize": 4,
     "inventoryStackSize": 64,
     "inventoryDropWhenDestroyed": true,
-    "inventoryComparatorPower": true,
+    "inventoryComparatorPower": false,
     "inventoryOutSlotIDs": [
       3
+    ],
+    "inventoryInSlotIDs": [
+      0,
+      1,
+      2
     ],
     "onTickUpdate": {
       "name": "GrindstoneGUIProcedure"

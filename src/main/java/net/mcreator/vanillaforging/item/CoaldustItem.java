@@ -8,13 +8,13 @@ import net.minecraft.item.Item;
 import net.minecraft.block.BlockState;
 
 import net.mcreator.vanillaforging.itemgroup.MainForgePartsItemGroup;
-import net.mcreator.vanillaforging.VanillaForgingElements;
+import net.mcreator.vanillaforging.VanillaforgingModElements;
 
-@VanillaForgingElements.ModElement.Tag
-public class CoaldustItem extends VanillaForgingElements.ModElement {
+@VanillaforgingModElements.ModElement.Tag
+public class CoaldustItem extends VanillaforgingModElements.ModElement {
 	@ObjectHolder("vanillaforging:coaldust")
 	public static final Item block = null;
-	public CoaldustItem(VanillaForgingElements instance) {
+	public CoaldustItem(VanillaforgingModElements instance) {
 		super(instance, 71);
 	}
 

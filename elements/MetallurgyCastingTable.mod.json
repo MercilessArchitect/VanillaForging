@@ -1,5 +1,5 @@
 {
-  "_fv": 6,
+  "_fv": 8,
   "_type": "block",
   "definition": {
     "texture": "framed_metallurgy_base",
@@ -12,6 +12,7 @@
     "customModelName": "Normal",
     "rotationMode": 1,
     "hasTransparency": false,
+    "connectedSides": false,
     "transparencyType": "SOLID",
     "mx": 0.0,
     "my": 0.0,
@@ -19,7 +20,6 @@
     "Mx": 1.0,
     "My": 1.0,
     "Mz": 1.0,
-    "faceShape": "SOLID",
     "name": "Metallurgy Casting Table",
     "specialInfo": [],
     "hardness": 20.0,
@@ -29,7 +29,6 @@
       "value": "CUSTOM:Blocks"
     },
     "destroyTool": "pickaxe",
-    "affectedBySilkTouch": true,
     "customDrop": {
       "value": ""
     },
@@ -49,6 +48,8 @@
     "creativePickItem": {
       "value": ""
     },
+    "offsetType": "NONE",
+    "aiPathNodeType": "DEFAULT",
     "flammability": 0,
     "fireSpreadSpeed": 0,
     "isLadder": false,
@@ -75,13 +76,19 @@
     "inventorySize": 8,
     "inventoryStackSize": 64,
     "inventoryDropWhenDestroyed": true,
-    "inventoryComparatorPower": true,
+    "inventoryComparatorPower": false,
     "inventoryOutSlotIDs": [
       7
     ],
-    "onTickUpdate": {
-      "name": "MetallurgyCastingProcedure"
-    },
+    "inventoryInSlotIDs": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
     "spawnWorldTypes": [],
     "restrictionBiomes": [],
     "blocksToReplace": [

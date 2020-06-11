@@ -1,5 +1,5 @@
 {
-  "_fv": 6,
+  "_fv": 8,
   "_type": "gui",
   "definition": {
     "type": 1,
@@ -14,6 +14,7 @@
             "value": ""
           },
           "id": 0,
+          "disableStackInteraction": false,
           "name": "Slot #0",
           "x": 354,
           "y": 78
@@ -26,6 +27,7 @@
             "value": ""
           },
           "id": 1,
+          "disableStackInteraction": false,
           "name": "Slot #1",
           "x": 354,
           "y": 132
@@ -38,6 +40,7 @@
             "value": ""
           },
           "id": 2,
+          "disableStackInteraction": false,
           "name": "Slot #2",
           "x": 354,
           "y": 186
@@ -50,6 +53,7 @@
             "value": ""
           },
           "id": 4,
+          "disableStackInteraction": false,
           "name": "Slot #4",
           "x": 282,
           "y": 168
@@ -62,6 +66,7 @@
             "value": ""
           },
           "id": 3,
+          "disableStackInteraction": false,
           "name": "Slot #3",
           "x": 282,
           "y": 96
@@ -71,6 +76,7 @@
         "type": "outputslot",
         "data": {
           "id": 5,
+          "disableStackInteraction": false,
           "name": "Slot #5",
           "x": 516,
           "y": 132

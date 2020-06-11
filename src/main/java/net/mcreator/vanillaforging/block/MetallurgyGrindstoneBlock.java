@@ -2,15 +2,22 @@
 package net.mcreator.vanillaforging.block;
 
 import net.minecraftforge.registries.ObjectHolder;
+import net.minecraftforge.items.wrapper.SidedInvWrapper;
+import net.minecraftforge.items.IItemHandler;
+import net.minecraftforge.items.CapabilityItemHandler;
 import net.minecraftforge.fml.network.NetworkHooks;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.event.RegistryEvent;
+import net.minecraftforge.common.util.LazyOptional;
+import net.minecraftforge.common.capabilities.Capability;
 import net.minecraftforge.common.ToolType;
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.storage.loot.LootContext;
+import net.minecraft.world.server.ServerWorld;
 import net.minecraft.world.World;
 import net.minecraft.world.IBlockReader;
 import net.minecraft.util.text.StringTextComponent;
@@ -19,10 +26,9 @@ import net.minecraft.util.math.BlockRayTraceResult;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.Rotation;
 import net.minecraft.util.NonNullList;
-import net.minecraft.util.Mirror;
 import net.minecraft.util.Hand;
 import net.minecraft.util.Direction;
-import net.minecraft.util.BlockRenderLayer;
+import net.minecraft.util.ActionResultType;
 import net.minecraft.tileentity.TileEntityType;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.tileentity.LockableLootTileEntity;
@@ -40,33 +46,39 @@ import net.minecraft.inventory.container.INamedContainerProvider;
 import net.minecraft.inventory.container.Container;
 import net.minecraft.inventory.ItemStackHelper;
 import net.minecraft.inventory.InventoryHelper;
+import net.minecraft.inventory.ISidedInventory;
 import net.minecraft.entity.player.ServerPlayerEntity;
 import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.client.renderer.RenderTypeLookup;
+import net.minecraft.client.renderer.RenderType;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.SoundType;
-import net.minecraft.block.HorizontalBlock;
+import net.minecraft.block.DirectionalBlock;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
 
 import net.mcreator.vanillaforging.procedures.GrindstoneGUIProcedureProcedure;
 import net.mcreator.vanillaforging.itemgroup.BlocksItemGroup;
 import net.mcreator.vanillaforging.gui.GrindstoneGUIGui;
-import net.mcreator.vanillaforging.VanillaForgingElements;
+import net.mcreator.vanillaforging.VanillaforgingModElements;
 
+import javax.annotation.Nullable;
+
+import java.util.stream.IntStream;
 import java.util.Random;
 import java.util.List;
 import java.util.Collections;
 
 import io.netty.buffer.Unpooled;
 
-@VanillaForgingElements.ModElement.Tag
-public class MetallurgyGrindstoneBlock extends VanillaForgingElements.ModElement {
+@VanillaforgingModElements.ModElement.Tag
+public class MetallurgyGrindstoneBlock extends VanillaforgingModElements.ModElement {
 	@ObjectHolder("vanillaforging:metallurgygrindstone")
 	public static final Block block = null;
 	@ObjectHolder("vanillaforging:metallurgygrindstone")
 	public static final TileEntityType<CustomTileEntity> tileEntityType = null;
-	public MetallurgyGrindstoneBlock(VanillaForgingElements instance) {
+	public MetallurgyGrindstoneBlock(VanillaforgingModElements instance) {
 		super(instance, 53);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
@@ -81,19 +93,19 @@ public class MetallurgyGrindstoneBlock extends VanillaForgingElements.ModElement
 	public void registerTileEntity(RegistryEvent.Register<TileEntityType<?>> event) {
 		event.getRegistry().register(TileEntityType.Builder.create(CustomTileEntity::new, block).build(null).setRegistryName("metallurgygrindstone"));
 	}
+
+	@Override
+	@OnlyIn(Dist.CLIENT)
+	public void clientLoad(FMLClientSetupEvent event) {
+		RenderTypeLookup.setRenderLayer(block, RenderType.getCutout());
+	}
 	public static class CustomBlock extends Block {
-		public static final DirectionProperty FACING = HorizontalBlock.HORIZONTAL_FACING;
+		public static final DirectionProperty FACING = DirectionalBlock.FACING;
 		public CustomBlock() {
 			super(Block.Properties.create(Material.IRON).sound(SoundType.METAL).hardnessAndResistance(12f, 60f).lightValue(0).harvestLevel(3)
-					.harvestTool(ToolType.PICKAXE));
-			this.setDefaultState(this.stateContainer.getBaseState().with(FACING, Direction.NORTH));
+					.harvestTool(ToolType.PICKAXE).notSolid());
+			this.setDefaultState(this.stateContainer.getBaseState().with(FACING, Direction.SOUTH));
 			setRegistryName("metallurgygrindstone");
-		}
-
-		@OnlyIn(Dist.CLIENT)
-		@Override
-		public BlockRenderLayer getRenderLayer() {
-			return BlockRenderLayer.CUTOUT;
 		}
 
 		@Override
@@ -111,17 +123,28 @@ public class MetallurgyGrindstoneBlock extends VanillaForgingElements.ModElement
 			builder.add(FACING);
 		}
 
+		@Override
 		public BlockState rotate(BlockState state, Rotation rot) {
-			return state.with(FACING, rot.rotate(state.get(FACING)));
-		}
-
-		public BlockState mirror(BlockState state, Mirror mirrorIn) {
-			return state.rotate(mirrorIn.toRotation(state.get(FACING)));
+			if (rot == Rotation.CLOCKWISE_90 || rot == Rotation.COUNTERCLOCKWISE_90) {
+				if ((Direction) state.get(FACING) == Direction.WEST || (Direction) state.get(FACING) == Direction.EAST) {
+					return state.with(FACING, Direction.UP);
+				} else if ((Direction) state.get(FACING) == Direction.UP || (Direction) state.get(FACING) == Direction.DOWN) {
+					return state.with(FACING, Direction.WEST);
+				}
+			}
+			return state;
 		}
 
 		@Override
 		public BlockState getStateForPlacement(BlockItemUseContext context) {
-			return this.getDefaultState().with(FACING, context.getPlacementHorizontalFacing().getOpposite());
+			Direction facing = context.getFace();
+			if (facing == Direction.WEST || facing == Direction.EAST)
+				facing = Direction.UP;
+			else if (facing == Direction.NORTH || facing == Direction.SOUTH)
+				facing = Direction.EAST;
+			else
+				facing = Direction.SOUTH;
+			return this.getDefaultState().with(FACING, facing);
 		}
 
 		@Override
@@ -142,7 +165,7 @@ public class MetallurgyGrindstoneBlock extends VanillaForgingElements.ModElement
 		}
 
 		@Override
-		public void tick(BlockState state, World world, BlockPos pos, Random random) {
+		public void tick(BlockState state, ServerWorld world, BlockPos pos, Random random) {
 			super.tick(state, world, pos, random);
 			int x = pos.getX();
 			int y = pos.getY();
@@ -159,8 +182,9 @@ public class MetallurgyGrindstoneBlock extends VanillaForgingElements.ModElement
 		}
 
 		@Override
-		public boolean onBlockActivated(BlockState state, World world, BlockPos pos, PlayerEntity entity, Hand hand, BlockRayTraceResult hit) {
-			boolean retval = super.onBlockActivated(state, world, pos, entity, hand, hit);
+		public ActionResultType onBlockActivated(BlockState state, World world, BlockPos pos, PlayerEntity entity, Hand hand,
+				BlockRayTraceResult hit) {
+			super.onBlockActivated(state, world, pos, entity, hand, hit);
 			int x = pos.getX();
 			int y = pos.getY();
 			int z = pos.getZ();
@@ -178,7 +202,7 @@ public class MetallurgyGrindstoneBlock extends VanillaForgingElements.ModElement
 					}
 				}, new BlockPos(x, y, z));
 			}
-			return true;
+			return ActionResultType.SUCCESS;
 		}
 
 		@Override
@@ -215,23 +239,9 @@ public class MetallurgyGrindstoneBlock extends VanillaForgingElements.ModElement
 				super.onReplaced(state, world, pos, newState, isMoving);
 			}
 		}
-
-		@Override
-		public boolean hasComparatorInputOverride(BlockState state) {
-			return true;
-		}
-
-		@Override
-		public int getComparatorInputOverride(BlockState blockState, World world, BlockPos pos) {
-			TileEntity tileentity = world.getTileEntity(pos);
-			if (tileentity instanceof CustomTileEntity)
-				return Container.calcRedstoneFromInventory((CustomTileEntity) tileentity);
-			else
-				return 0;
-		}
 	}
 
-	public static class CustomTileEntity extends LockableLootTileEntity {
+	public static class CustomTileEntity extends LockableLootTileEntity implements ISidedInventory {
 		private NonNullList<ItemStack> stacks = NonNullList.<ItemStack>withSize(4, ItemStack.EMPTY);
 		protected CustomTileEntity() {
 			super(tileEntityType);
@@ -240,14 +250,18 @@ public class MetallurgyGrindstoneBlock extends VanillaForgingElements.ModElement
 		@Override
 		public void read(CompoundNBT compound) {
 			super.read(compound);
-			this.stacks = NonNullList.withSize(this.getSizeInventory(), ItemStack.EMPTY);
+			if (!this.checkLootAndRead(compound)) {
+				this.stacks = NonNullList.withSize(this.getSizeInventory(), ItemStack.EMPTY);
+			}
 			ItemStackHelper.loadAllItems(compound, this.stacks);
 		}
 
 		@Override
 		public CompoundNBT write(CompoundNBT compound) {
 			super.write(compound);
-			ItemStackHelper.saveAllItems(compound, this.stacks);
+			if (!this.checkLootAndWrite(compound)) {
+				ItemStackHelper.saveAllItems(compound, this.stacks);
+			}
 			return compound;
 		}
 
@@ -268,7 +282,7 @@ public class MetallurgyGrindstoneBlock extends VanillaForgingElements.ModElement
 
 		@Override
 		public int getSizeInventory() {
-			return 4;
+			return stacks.size();
 		}
 
 		@Override
@@ -277,18 +291,6 @@ public class MetallurgyGrindstoneBlock extends VanillaForgingElements.ModElement
 				if (!itemstack.isEmpty())
 					return false;
 			return true;
-		}
-
-		@Override
-		public boolean isItemValidForSlot(int index, ItemStack stack) {
-			if (index == 3)
-				return false;
-			return true;
-		}
-
-		@Override
-		public ItemStack getStackInSlot(int slot) {
-			return stacks.get(slot);
 		}
 
 		@Override
@@ -319,6 +321,48 @@ public class MetallurgyGrindstoneBlock extends VanillaForgingElements.ModElement
 		@Override
 		protected void setItems(NonNullList<ItemStack> stacks) {
 			this.stacks = stacks;
+		}
+
+		@Override
+		public boolean isItemValidForSlot(int index, ItemStack stack) {
+			if (index == 3)
+				return false;
+			return true;
+		}
+
+		@Override
+		public int[] getSlotsForFace(Direction side) {
+			return IntStream.range(0, this.getSizeInventory()).toArray();
+		}
+
+		@Override
+		public boolean canInsertItem(int index, ItemStack stack, @Nullable Direction direction) {
+			return this.isItemValidForSlot(index, stack);
+		}
+
+		@Override
+		public boolean canExtractItem(int index, ItemStack stack, Direction direction) {
+			if (index == 0)
+				return false;
+			if (index == 1)
+				return false;
+			if (index == 2)
+				return false;
+			return true;
+		}
+		private final LazyOptional<? extends IItemHandler>[] handlers = SidedInvWrapper.create(this, Direction.values());
+		@Override
+		public <T> LazyOptional<T> getCapability(Capability<T> capability, @Nullable Direction facing) {
+			if (!this.removed && facing != null && capability == CapabilityItemHandler.ITEM_HANDLER_CAPABILITY)
+				return handlers[facing.ordinal()].cast();
+			return super.getCapability(capability, facing);
+		}
+
+		@Override
+		public void remove() {
+			super.remove();
+			for (LazyOptional<? extends IItemHandler> handler : handlers)
+				handler.invalidate();
 		}
 	}
 }

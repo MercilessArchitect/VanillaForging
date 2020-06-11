@@ -8,13 +8,13 @@ import net.minecraft.item.Item;
 import net.minecraft.block.BlockState;
 
 import net.mcreator.vanillaforging.itemgroup.MainForgePartsItemGroup;
-import net.mcreator.vanillaforging.VanillaForgingElements;
+import net.mcreator.vanillaforging.VanillaforgingModElements;
 
-@VanillaForgingElements.ModElement.Tag
-public class CorruptingdustItem extends VanillaForgingElements.ModElement {
+@VanillaforgingModElements.ModElement.Tag
+public class CorruptingdustItem extends VanillaforgingModElements.ModElement {
 	@ObjectHolder("vanillaforging:corruptingdust")
 	public static final Item block = null;
-	public CorruptingdustItem(VanillaForgingElements instance) {
+	public CorruptingdustItem(VanillaforgingModElements instance) {
 		super(instance, 75);
 	}
 

@@ -8,13 +8,13 @@ import net.minecraft.item.Item;
 import net.minecraft.block.BlockState;
 
 import net.mcreator.vanillaforging.itemgroup.MainForgePartsItemGroup;
-import net.mcreator.vanillaforging.VanillaForgingElements;
+import net.mcreator.vanillaforging.VanillaforgingModElements;
 
-@VanillaForgingElements.ModElement.Tag
-public class SulfurSteelAlloyScrapItem extends VanillaForgingElements.ModElement {
+@VanillaforgingModElements.ModElement.Tag
+public class SulfurSteelAlloyScrapItem extends VanillaforgingModElements.ModElement {
 	@ObjectHolder("vanillaforging:sulfursteelalloyscrap")
 	public static final Item block = null;
-	public SulfurSteelAlloyScrapItem(VanillaForgingElements instance) {
+	public SulfurSteelAlloyScrapItem(VanillaforgingModElements instance) {
 		super(instance, 62);
 	}
 

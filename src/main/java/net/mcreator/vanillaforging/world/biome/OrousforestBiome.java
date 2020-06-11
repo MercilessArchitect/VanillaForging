@@ -15,12 +15,10 @@ import net.minecraft.world.gen.placement.FrequencyConfig;
 import net.minecraft.world.gen.placement.ChanceConfig;
 import net.minecraft.world.gen.placement.AtSurfaceWithExtraConfig;
 import net.minecraft.world.gen.feature.TwoFeatureChoiceConfig;
-import net.minecraft.world.gen.feature.NoFeatureConfig;
-import net.minecraft.world.gen.feature.IFeatureConfig;
 import net.minecraft.world.gen.feature.Feature;
-import net.minecraft.world.gen.feature.BushConfig;
-import net.minecraft.world.gen.feature.BigMushroomFeatureConfig;
+import net.minecraft.world.gen.feature.BaseTreeFeatureConfig;
 import net.minecraft.world.gen.feature.AbstractTreeFeature;
+import net.minecraft.world.gen.blockstateprovider.SimpleBlockStateProvider;
 import net.minecraft.world.gen.IWorldGenerationReader;
 import net.minecraft.world.gen.GenerationStage;
 import net.minecraft.world.biome.DefaultBiomeFeatures;
@@ -40,16 +38,16 @@ import net.minecraft.block.Block;
 
 import net.mcreator.vanillaforging.block.IronwoodleavesBlock;
 import net.mcreator.vanillaforging.block.IronwoodLogBlock;
-import net.mcreator.vanillaforging.VanillaForgingElements;
+import net.mcreator.vanillaforging.VanillaforgingModElements;
 
 import java.util.Set;
 import java.util.Random;
 
-@VanillaForgingElements.ModElement.Tag
-public class OrousforestBiome extends VanillaForgingElements.ModElement {
+@VanillaforgingModElements.ModElement.Tag
+public class OrousforestBiome extends VanillaforgingModElements.ModElement {
 	@ObjectHolder("vanillaforging:orousforest")
 	public static final CustomBiome biome = null;
-	public OrousforestBiome(VanillaForgingElements instance) {
+	public OrousforestBiome(VanillaforgingModElements instance) {
 		super(instance, 141);
 	}
 
@@ -75,17 +73,20 @@ public class OrousforestBiome extends VanillaForgingElements.ModElement {
 			DefaultBiomeFeatures.addStructures(this);
 			DefaultBiomeFeatures.addMonsterRooms(this);
 			DefaultBiomeFeatures.addOres(this);
-			addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, Biome.createDecoratedFeature(Feature.BUSH,
-					new BushConfig(Blocks.BROWN_MUSHROOM.getDefaultState()), Placement.CHANCE_HEIGHTMAP_DOUBLE, new ChanceConfig(30)));
-			addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, Biome.createDecoratedFeature(Feature.BUSH,
-					new BushConfig(Blocks.RED_MUSHROOM.getDefaultState()), Placement.CHANCE_HEIGHTMAP_DOUBLE, new ChanceConfig(30)));
-			addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, Biome.createDecoratedFeature(new CustomTreeFeature(),
-					IFeatureConfig.NO_FEATURE_CONFIG, Placement.COUNT_EXTRA_HEIGHTMAP, new AtSurfaceWithExtraConfig(3, 0.1F, 1)));
 			addFeature(GenerationStage.Decoration.VEGETAL_DECORATION,
-					Biome.createDecoratedFeature(
-							Feature.RANDOM_BOOLEAN_SELECTOR, new TwoFeatureChoiceConfig(Feature.HUGE_RED_MUSHROOM,
-									new BigMushroomFeatureConfig(false), Feature.HUGE_BROWN_MUSHROOM, new BigMushroomFeatureConfig(false)),
-							Placement.COUNT_HEIGHTMAP, new FrequencyConfig(1)));
+					Feature.RANDOM_PATCH.withConfiguration(DefaultBiomeFeatures.BROWN_MUSHROOM_CONFIG)
+							.withPlacement(Placement.CHANCE_HEIGHTMAP_DOUBLE.configure(new ChanceConfig(30))));
+			addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, Feature.RANDOM_PATCH.withConfiguration(DefaultBiomeFeatures.RED_MUSHROOM_CONFIG)
+					.withPlacement(Placement.CHANCE_HEIGHTMAP_DOUBLE.configure(new ChanceConfig(30))));
+			addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, new CustomTreeFeature()
+					.withConfiguration((new BaseTreeFeatureConfig.Builder(new SimpleBlockStateProvider(IronwoodLogBlock.block.getDefaultState()),
+							new SimpleBlockStateProvider(IronwoodleavesBlock.block.getDefaultState()))).baseHeight(8)
+									.setSapling((net.minecraftforge.common.IPlantable) Blocks.JUNGLE_SAPLING).build())
+					.withPlacement(Placement.COUNT_EXTRA_HEIGHTMAP.configure(new AtSurfaceWithExtraConfig(3, 0.1F, 1))));
+			addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, Feature.RANDOM_BOOLEAN_SELECTOR
+					.withConfiguration(new TwoFeatureChoiceConfig(Feature.HUGE_RED_MUSHROOM.withConfiguration(DefaultBiomeFeatures.BIG_RED_MUSHROOM),
+							Feature.HUGE_BROWN_MUSHROOM.withConfiguration(DefaultBiomeFeatures.BIG_BROWN_MUSHROOM)))
+					.withPlacement(Placement.COUNT_HEIGHTMAP.configure(new FrequencyConfig(1))));
 			this.addSpawn(EntityClassification.CREATURE, new Biome.SpawnListEntry(EntityType.ENDERMITE, 15, 1, 5));
 			this.addSpawn(EntityClassification.CREATURE, new Biome.SpawnListEntry(EntityType.IRON_GOLEM, 15, 1, 5));
 			this.addSpawn(EntityClassification.CREATURE, new Biome.SpawnListEntry(EntityType.SILVERFISH, 15, 1, 5));
@@ -94,30 +95,31 @@ public class OrousforestBiome extends VanillaForgingElements.ModElement {
 
 		@OnlyIn(Dist.CLIENT)
 		@Override
-		public int getGrassColor(BlockPos pos) {
+		public int getGrassColor(double posX, double posZ) {
 			return -10079488;
 		}
 
 		@OnlyIn(Dist.CLIENT)
 		@Override
-		public int getFoliageColor(BlockPos pos) {
+		public int getFoliageColor() {
 			return -10079488;
 		}
 
 		@OnlyIn(Dist.CLIENT)
 		@Override
-		public int getSkyColorByTemp(float currentTemperature) {
+		public int getSkyColor() {
 			return -5916161;
 		}
 	}
 
-	static class CustomTreeFeature extends AbstractTreeFeature<NoFeatureConfig> {
+	static class CustomTreeFeature extends AbstractTreeFeature<BaseTreeFeatureConfig> {
 		CustomTreeFeature() {
-			super(NoFeatureConfig::deserialize, false);
+			super(BaseTreeFeatureConfig::deserialize);
 		}
 
 		@Override
-		public boolean place(Set<BlockPos> changedBlocks, IWorldGenerationReader worldgen, Random rand, BlockPos position, MutableBoundingBox bbox) {
+		protected boolean place(IWorldGenerationReader worldgen, Random rand, BlockPos position, Set<BlockPos> changedBlocks,
+				Set<BlockPos> changedBlocks2, MutableBoundingBox bbox, BaseTreeFeatureConfig conf) {
 			if (!(worldgen instanceof IWorld))
 				return false;
 			IWorld world = (IWorld) worldgen;
@@ -222,7 +224,7 @@ public class OrousforestBiome extends VanillaForgingElements.ModElement {
 		}
 
 		private void setTreeBlockState(Set<BlockPos> changedBlocks, IWorldWriter world, BlockPos pos, BlockState state, MutableBoundingBox mbb) {
-			super.setLogState(changedBlocks, world, pos, state, mbb);
+			super.func_227217_a_(world, pos, state, mbb);
 			changedBlocks.add(pos.toImmutable());
 		}
 	}

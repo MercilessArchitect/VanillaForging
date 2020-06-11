@@ -1,12 +1,12 @@
 {
   "parent": "block/cube",
   "textures": {
-    "down": "vanillaforging:blocks/ironwood_plank",
-    "up": "vanillaforging:blocks/ironwood_plank",
-    "north": "vanillaforging:blocks/ironwood_plank",
-    "east": "vanillaforging:blocks/ironwood_plank",
-    "south": "vanillaforging:blocks/ironwood_plank",
-    "west": "vanillaforging:blocks/ironwood_plank",
-    "particle": "vanillaforging:blocks/ironwood_plank"
+    "down": "vanillaforging:blocks/ironwoodplanks",
+    "up": "vanillaforging:blocks/ironwoodplanks",
+    "north": "vanillaforging:blocks/ironwoodplanks",
+    "east": "vanillaforging:blocks/ironwoodplanks",
+    "south": "vanillaforging:blocks/ironwoodplanks",
+    "west": "vanillaforging:blocks/ironwoodplanks",
+    "particle": "vanillaforging:blocks/ironwoodplanks"
   }
 }

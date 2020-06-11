@@ -9,13 +9,13 @@ import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Item;
 import net.minecraft.item.IItemTier;
 
-import net.mcreator.vanillaforging.VanillaForgingElements;
+import net.mcreator.vanillaforging.VanillaforgingModElements;
 
-@VanillaForgingElements.ModElement.Tag
-public class DaoriteShovelItem extends VanillaForgingElements.ModElement {
+@VanillaforgingModElements.ModElement.Tag
+public class DaoriteShovelItem extends VanillaforgingModElements.ModElement {
 	@ObjectHolder("vanillaforging:daoriteshovel")
 	public static final Item block = null;
-	public DaoriteShovelItem(VanillaForgingElements instance) {
+	public DaoriteShovelItem(VanillaforgingModElements instance) {
 		super(instance, 122);
 	}
 

@@ -8,13 +8,13 @@ import net.minecraft.item.Item;
 import net.minecraft.block.BlockState;
 
 import net.mcreator.vanillaforging.itemgroup.MainForgePartsItemGroup;
-import net.mcreator.vanillaforging.VanillaForgingElements;
+import net.mcreator.vanillaforging.VanillaforgingModElements;
 
-@VanillaForgingElements.ModElement.Tag
-public class GearCastItem extends VanillaForgingElements.ModElement {
+@VanillaforgingModElements.ModElement.Tag
+public class GearCastItem extends VanillaforgingModElements.ModElement {
 	@ObjectHolder("vanillaforging:gearcast")
 	public static final Item block = null;
-	public GearCastItem(VanillaForgingElements instance) {
+	public GearCastItem(VanillaforgingModElements instance) {
 		super(instance, 100);
 	}
 

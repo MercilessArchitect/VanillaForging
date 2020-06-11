@@ -8,11 +8,11 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemGroup;
 
 import net.mcreator.vanillaforging.block.SmithingbrickstorageblockBlock;
-import net.mcreator.vanillaforging.VanillaForgingElements;
+import net.mcreator.vanillaforging.VanillaforgingModElements;
 
-@VanillaForgingElements.ModElement.Tag
-public class BlocksItemGroup extends VanillaForgingElements.ModElement {
-	public BlocksItemGroup(VanillaForgingElements instance) {
+@VanillaforgingModElements.ModElement.Tag
+public class BlocksItemGroup extends VanillaforgingModElements.ModElement {
+	public BlocksItemGroup(VanillaforgingModElements instance) {
 		super(instance, 209);
 	}
 

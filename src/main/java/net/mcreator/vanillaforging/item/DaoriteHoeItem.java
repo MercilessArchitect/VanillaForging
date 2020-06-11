@@ -9,13 +9,13 @@ import net.minecraft.item.Item;
 import net.minecraft.item.IItemTier;
 import net.minecraft.item.HoeItem;
 
-import net.mcreator.vanillaforging.VanillaForgingElements;
+import net.mcreator.vanillaforging.VanillaforgingModElements;
 
-@VanillaForgingElements.ModElement.Tag
-public class DaoriteHoeItem extends VanillaForgingElements.ModElement {
+@VanillaforgingModElements.ModElement.Tag
+public class DaoriteHoeItem extends VanillaforgingModElements.ModElement {
 	@ObjectHolder("vanillaforging:daoritehoe")
 	public static final Item block = null;
-	public DaoriteHoeItem(VanillaForgingElements instance) {
+	public DaoriteHoeItem(VanillaforgingModElements instance) {
 		super(instance, 123);
 	}
 

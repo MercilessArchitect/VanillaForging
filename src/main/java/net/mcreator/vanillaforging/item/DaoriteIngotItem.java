@@ -8,13 +8,13 @@ import net.minecraft.item.Item;
 import net.minecraft.block.BlockState;
 
 import net.mcreator.vanillaforging.itemgroup.MainForgePartsItemGroup;
-import net.mcreator.vanillaforging.VanillaForgingElements;
+import net.mcreator.vanillaforging.VanillaforgingModElements;
 
-@VanillaForgingElements.ModElement.Tag
-public class DaoriteIngotItem extends VanillaForgingElements.ModElement {
+@VanillaforgingModElements.ModElement.Tag
+public class DaoriteIngotItem extends VanillaforgingModElements.ModElement {
 	@ObjectHolder("vanillaforging:daoriteingot")
 	public static final Item block = null;
-	public DaoriteIngotItem(VanillaForgingElements instance) {
+	public DaoriteIngotItem(VanillaforgingModElements instance) {
 		super(instance, 89);
 	}
 

@@ -11,11 +11,14 @@ import net.minecraftforge.fml.network.PacketDistributor;
 import net.minecraftforge.fml.network.NetworkEvent;
 import net.minecraftforge.fml.event.server.FMLServerStartingEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
+import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.ModList;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.event.entity.player.PlayerEvent;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.common.MinecraftForge;
+import net.minecraftforge.api.distmarker.OnlyIn;
+import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.storage.WorldSavedData;
 import net.minecraft.world.biome.Biome;
@@ -40,31 +43,32 @@ import java.util.ArrayList;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Retention;
 
-public class VanillaForgingElements {
+public class VanillaforgingModElements {
 	public final List<ModElement> elements = new ArrayList<>();
 	public final List<Supplier<Block>> blocks = new ArrayList<>();
 	public final List<Supplier<Item>> items = new ArrayList<>();
 	public final List<Supplier<Biome>> biomes = new ArrayList<>();
 	public final List<Supplier<EntityType<?>>> entities = new ArrayList<>();
 	public static Map<ResourceLocation, net.minecraft.util.SoundEvent> sounds = new HashMap<>();
-	public VanillaForgingElements() {
+	public VanillaforgingModElements() {
 		try {
 			ModFileScanData modFileInfo = ModList.get().getModFileById("vanillaforging").getFile().getScanResult();
 			Set<ModFileScanData.AnnotationData> annotations = modFileInfo.getAnnotations();
 			for (ModFileScanData.AnnotationData annotationData : annotations) {
 				if (annotationData.getAnnotationType().getClassName().equals(ModElement.Tag.class.getName())) {
 					Class<?> clazz = Class.forName(annotationData.getClassType().getClassName());
-					if (clazz.getSuperclass() == VanillaForgingElements.ModElement.class)
-						elements.add((VanillaForgingElements.ModElement) clazz.getConstructor(this.getClass()).newInstance(this));
+					if (clazz.getSuperclass() == VanillaforgingModElements.ModElement.class)
+						elements.add((VanillaforgingModElements.ModElement) clazz.getConstructor(this.getClass()).newInstance(this));
 				}
 			}
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
 		Collections.sort(elements);
-		elements.forEach(VanillaForgingElements.ModElement::initElements);
-		this.addNetworkMessage(VanillaForgingVariables.WorldSavedDataSyncMessage.class, VanillaForgingVariables.WorldSavedDataSyncMessage::buffer,
-				VanillaForgingVariables.WorldSavedDataSyncMessage::new, VanillaForgingVariables.WorldSavedDataSyncMessage::handler);
+		elements.forEach(VanillaforgingModElements.ModElement::initElements);
+		this.addNetworkMessage(VanillaforgingModVariables.WorldSavedDataSyncMessage.class,
+				VanillaforgingModVariables.WorldSavedDataSyncMessage::buffer, VanillaforgingModVariables.WorldSavedDataSyncMessage::new,
+				VanillaforgingModVariables.WorldSavedDataSyncMessage::handler);
 		MinecraftForge.EVENT_BUS.register(this);
 	}
 
@@ -76,30 +80,30 @@ public class VanillaForgingElements {
 	@SubscribeEvent
 	public void onPlayerLoggedIn(PlayerEvent.PlayerLoggedInEvent event) {
 		if (!event.getPlayer().world.isRemote) {
-			WorldSavedData mapdata = VanillaForgingVariables.MapVariables.get(event.getPlayer().world);
-			WorldSavedData worlddata = VanillaForgingVariables.WorldVariables.get(event.getPlayer().world);
+			WorldSavedData mapdata = VanillaforgingModVariables.MapVariables.get(event.getPlayer().world);
+			WorldSavedData worlddata = VanillaforgingModVariables.WorldVariables.get(event.getPlayer().world);
 			if (mapdata != null)
-				VanillaForging.PACKET_HANDLER.send(PacketDistributor.PLAYER.with(() -> (ServerPlayerEntity) event.getPlayer()),
-						new VanillaForgingVariables.WorldSavedDataSyncMessage(0, mapdata));
+				VanillaforgingMod.PACKET_HANDLER.send(PacketDistributor.PLAYER.with(() -> (ServerPlayerEntity) event.getPlayer()),
+						new VanillaforgingModVariables.WorldSavedDataSyncMessage(0, mapdata));
 			if (worlddata != null)
-				VanillaForging.PACKET_HANDLER.send(PacketDistributor.PLAYER.with(() -> (ServerPlayerEntity) event.getPlayer()),
-						new VanillaForgingVariables.WorldSavedDataSyncMessage(1, worlddata));
+				VanillaforgingMod.PACKET_HANDLER.send(PacketDistributor.PLAYER.with(() -> (ServerPlayerEntity) event.getPlayer()),
+						new VanillaforgingModVariables.WorldSavedDataSyncMessage(1, worlddata));
 		}
 	}
 
 	@SubscribeEvent
 	public void onPlayerChangedDimension(PlayerEvent.PlayerChangedDimensionEvent event) {
 		if (!event.getPlayer().world.isRemote) {
-			WorldSavedData worlddata = VanillaForgingVariables.WorldVariables.get(event.getPlayer().world);
+			WorldSavedData worlddata = VanillaforgingModVariables.WorldVariables.get(event.getPlayer().world);
 			if (worlddata != null)
-				VanillaForging.PACKET_HANDLER.send(PacketDistributor.PLAYER.with(() -> (ServerPlayerEntity) event.getPlayer()),
-						new VanillaForgingVariables.WorldSavedDataSyncMessage(1, worlddata));
+				VanillaforgingMod.PACKET_HANDLER.send(PacketDistributor.PLAYER.with(() -> (ServerPlayerEntity) event.getPlayer()),
+						new VanillaforgingModVariables.WorldSavedDataSyncMessage(1, worlddata));
 		}
 	}
 	private int messageID = 0;
 	public <T> void addNetworkMessage(Class<T> messageType, BiConsumer<T, PacketBuffer> encoder, Function<PacketBuffer, T> decoder,
 			BiConsumer<T, Supplier<NetworkEvent.Context>> messageConsumer) {
-		VanillaForging.PACKET_HANDLER.registerMessage(messageID, messageType, encoder, decoder, messageConsumer);
+		VanillaforgingMod.PACKET_HANDLER.registerMessage(messageID, messageType, encoder, decoder, messageConsumer);
 		messageID++;
 	}
 
@@ -126,9 +130,9 @@ public class VanillaForgingElements {
 		@Retention(RetentionPolicy.RUNTIME)
 		public @interface Tag {
 		}
-		protected final VanillaForgingElements elements;
+		protected final VanillaforgingModElements elements;
 		protected final int sortid;
-		public ModElement(VanillaForgingElements elements, int sortid) {
+		public ModElement(VanillaforgingModElements elements, int sortid) {
 			this.elements = elements;
 			this.sortid = sortid;
 		}
@@ -140,6 +144,10 @@ public class VanillaForgingElements {
 		}
 
 		public void serverLoad(FMLServerStartingEvent event) {
+		}
+
+		@OnlyIn(Dist.CLIENT)
+		public void clientLoad(FMLClientSetupEvent event) {
 		}
 
 		@Override
